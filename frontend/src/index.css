@@ -16,3 +16,8 @@
   border-color: greenyellow;
   background-color: black;
 }
+
+#footer {
+  background: url("src/assets/image 6.png");
+  object-fit: cover;
+}

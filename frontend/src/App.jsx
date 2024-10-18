@@ -8,6 +8,8 @@ import Accord from "./components/Accord";
 import Form from "./components/Form";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
+import Footer from "./components/Footer";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
       <HeroSection />
       {/* <Button /> */}
       <Services />
+      <AboutUs />
       <Accord />
       <Form />
+      <Footer />
     </>
   );
 }

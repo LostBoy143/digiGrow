@@ -60,3 +60,8 @@
   /* font-weight: normal;
   font-style: normal; */
 }
+
+#footer {
+  background: url("src/assets/image 6.png");
+  object-fit: cover;
+}

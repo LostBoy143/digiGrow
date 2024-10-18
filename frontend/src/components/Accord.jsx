@@ -10,28 +10,21 @@ const Accord = () => {
     "AFFILIATE MARKETING",
   ];
 
-  const [color, setColor] = useState("black");
-  const changeColor = () => {
-    setColor("green");
-  };
-  const changeBack = () => {
-    setColor("black");
-  };
-
   return (
-    <div className=" mt-6 " id="accord-container">
-      <h1 className="text-center text-6xl font-extrabold mb-4">
+    <div
+      className=" mt-12 py-7 "
+      id="accord-container"
+    >
+      <h1 className="text-center text-6xl font-extrabold mb-5">
         What We Do
       </h1>
       {slogans.map((item, idx) => {
         return (
           <div
-            className="items group font-bold pr-28 text-3xl  pl-28 cursor-pointer "
+            className="group items   font-thunder  px-28 cursor-pointer "
             key={idx}
-            onMouseOver={changeColor}
-            onMouseOut={changeBack}
           >
-            <h2 className="group-hover:text-green-400  duration-300 group-hover:text-4xl">
+            <h2 className="group-hover:text-lime-500  leading-4percent tracking-wider  duration-500 text-6xl group-hover:text-[66px]">
               {item}
             </h2>
             <div className="icon">
@@ -50,13 +43,13 @@ const Accord = () => {
                 </mask>
                 <path
                   d="M0 106L-4.63341e-06 0L0 106ZM103 -3C106.314 -3 109 -0.31371 109 3L109 100C109 103.314 106.314 106 103 106C103 106 103 104.657 103 103L103 3L103 -3ZM106 106L0 106L106 106ZM-4.50227e-06 3C-4.64712e-06 -0.313705 2.68629 -3 6 -3L103 -3C106.314 -3 109 -0.31371 109 3L103 3L3 3C1.34314 3 -4.50227e-06 3 -4.50227e-06 3Z"
-                  className="fill-black group-hover:fill-green-600 duration-300"
+                  className="fill-black group-hover:fill-lime-500 duration-300"
                   mask="url(#path-1-inside-1_222_21)"
                   strokeWidth="6"
                 />
                 <path
                   d="M1.93945 103.939L102.939 2.93945"
-                  className="stroke-black group-hover:stroke-green-600 duration-300"
+                  className="stroke-black group-hover:stroke-lime-500 duration-300"
                   strokeWidth="3"
                   strokeLinecap="round"
                   strokeLinejoin="round"

@@ -5,7 +5,7 @@ const Button = () => {
   return (
     <div
       id="button"
-      className=" group mt-4 flex ml-10  h-16 duration-1000 w-72 "
+      className=" group mt-12 flex ml-10   h-16 duration-1000 w-72 "
     >
       <button
         className="w-60 h-full text-2xl bg-green-400 text-black font-bold rounded-tl-full rounded-bl-full  transition-all duration-500 group-hover:bg-black  group-hover:text-green-400  group-hover:rounded-full "

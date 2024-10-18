@@ -13,23 +13,24 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="h-24 border-cyan-600 border-2 w-full flex justify-around items-center"
+      className="h-20 fixed top-0 z-10 bg-white w-full flex justify-between px-[108px] items-center"
     >
-      <div
-        id="logo"
-        className="bg-slate-600 w-1/4 h-1/2"
-      >
-        Digigrove
+      <div id="logo">
+        <img
+          src="src/assets/nav-logo.png"
+          alt=""
+          className=" w-[230px] h-[40px] aspect-auto"
+        />
       </div>
       <div
         id="menu-icons"
-        className="bg-slate-300 w-2/4   h-1/2 rounded-full"
+        className="bg-gray-300 w-[48%]   h-[55%] rounded-full"
       >
         <ul className="flex justify-evenly items-center h-full">
           {navItems.map((item, index) => (
             <li
               key={index}
-              className={`rounded-full flex font-semi-bold justify-center items-center cursor-pointer w-1/4 h-full duration-500 ${
+              className={`rounded-full flex font-semi-bold justify-center font-semibold items-center cursor-pointer w-1/4 h-full duration-500 ${
                 activeIndex === index
                   ? "bg-black text-white"
                   : "bg-slate-300 text-black"

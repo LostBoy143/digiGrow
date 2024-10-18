@@ -17,9 +17,9 @@ function App() {
       <Navbar />
       <HeroSection />
       {/* <Button /> */}
-      <Services />
       <AboutUs />
       <Accord />
+      <Services />
       <Form />
       <Footer />
     </>

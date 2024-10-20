@@ -42,7 +42,7 @@ const Services = () => {
     >
       <div
         id="ellipse-container"
-        className="h-40 px-20 absolute -z-20 flex justify-between items-center top-[38%] w-full"
+        className="h-40 px-20 absolute -z-20 flex justify-between items-center top-[42%] w-full"
       >
         <div className="ellipses"></div>
         <div className="ellipses"></div>
@@ -61,12 +61,14 @@ const Services = () => {
         {details.map((item, idx) => {
           return (
             <div
-              className="text-white p-5 flex flex-col  items-center gap-4 h-[453px] w-[424px] bg-black rounded-3xl bg-opacity-20 backdrop-blur-lg"
+              className="text-white p-5 flex flex-col  items-center gap-4 md:h-[373px] md:w-[354px] h-[293px] w-[274px] bg-black rounded-3xl bg-opacity-20 backdrop-blur-lg"
               key={idx}
             >
               <img src={item.img} className="h-[56px] w-[56px]" alt="" />
               <div className="center text-[#8cc540] text-[26px] font-bold">
-                <h1 className="text-center text-4xl font-bold">{item.title}</h1>
+                <h1 className="text-center text-42xl font-bold">
+                  {item.title}
+                </h1>
               </div>
               <h3 className="text-center font-medium text-2xl">{item.desc}</h3>
             </div>

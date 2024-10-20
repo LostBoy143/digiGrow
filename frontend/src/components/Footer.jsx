@@ -3,10 +3,10 @@ import Img from "../assets/DigiGrove Logo (Final-2) 1.png";
 const Footer = () => {
   return (
     <div id="footer">
-      <div className="w-full h-96 flex justify-evenly  font-sans text-[24px] text-[#232233]">
+      <div className="w-full h-80 flex justify-evenly  font-sans text-[24px] text-[#232233]">
         {/* <img className="w-full h-96 absolute" src={Img2}></img> */}
         <div>
-          <img src={Img} className="w-96 h-72 object-cover"></img>
+          <img src={Img} className="w-80 h-72 aspect-auto object-contain"></img>
         </div>
         <div className=" w-96 h-96 p-4 m-2">
           <ul className="flex flex-col gap-8">

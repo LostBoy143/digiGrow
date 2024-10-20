@@ -1,9 +1,8 @@
 import Img from "../assets/vackground-com-uAvq7gFQecc-unsplash 1.png";
-import Img2 from "../assets/1724992750660 1.png";
 
 const AboutUs = () => {
   return (
-    <div className="relative w-full h-[780px] py-16 bg-[#0A291C]  leading-tight text-white">
+    <div className="relative -z-20 w-full h-[780px] py-16 bg-[#0A291C]  leading-tight text-white">
       <img
         className="w-full h-[780px] aspect-auto object-cover absolute top-0 left-0 mix-blend-overlay"
         src={Img}
@@ -15,13 +14,18 @@ const AboutUs = () => {
             About Us
           </h1>
           <h3 className="text-4xl font-medium py-4">
-            DigiGrove is a company comprised of integrated teams of
-            technicians/engineers, project leaders, account managers, writers
-            and administrative support staff.
+            DigiGrove is a company comprised of
+            integrated teams of
+            technicians/engineers, project
+            leaders, account managers, writers and
+            administrative support staff.
           </h3>
           <h3 className="text-4xl font-medium">
-            <span className="text-[#FCE100]">Our Goal</span> : To Develop and
-            sell high quality products.
+            <span className="text-[#FCE100]">
+              Our Goal
+            </span>{" "}
+            : To Develop and sell high quality
+            products.
           </h3>
         </div>
       </div>

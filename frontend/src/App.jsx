@@ -5,11 +5,11 @@ import "./App.css";
 // import Button from "./components/Button";
 import Navbar from "./components/Navbar";
 import Accord from "./components/Accord";
-import Form from "./components/Form";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -17,10 +17,10 @@ function App() {
       <Navbar />
       <HeroSection />
       {/* <Button /> */}
-      <Services />
       <AboutUs />
       <Accord />
-      <Form />
+      <Services />
+      <Contact />
       <Footer />
     </>
   );

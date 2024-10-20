@@ -1,60 +1,67 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import Button from "./Button";
 
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
 
   const change = (e) => {
-    e.target.name === "name"
-      ? setName(e.target.value)
-      : setEmail(e.target.value);
+    if (e.target.name === "name") {
+      setName(e.target.value);
+    } else if (e.target.name === "mail") {
+      setEmail(e.target.value);
+    } else {
+      setMsg(e.target.value);
+    }
   };
   const submitHandle = (e) => {
     e.preventDefault();
     setName("");
     setEmail("");
+    setMsg("");
     console.log("submitted");
   };
 
   return (
-    <div>
-      <form
-        onSubmit={(e) => {
-          submitHandle(e);
-        }}
-        className=" bg-slate-500 shadow-black shadow-2xl rounded-xl flex-col gap-2 ml-80 pr-12 pl-12 pt-3 mt-6 mb-16 min-h-72  w-1/2  flex justif-center items-center"
-      >
-        <h1 className="text-center font-bold text-white">
-          Form Handling
-        </h1>
-        <p className="text-center text-white">
-          with prevent default and two way binding
-        </p>
-        <input
-          className="w-full h-12 p-2 outline-none  rounded-full text-black"
-          type="text"
-          name="name"
-          value={name}
-          onChange={(e) => change(e)}
-          placeholder="Enter your name "
-        />
-        <input
-          className="w-full h-12 p-2  outline-none rounded-full text-black"
-          type="text"
-          name="mail"
-          value={email}
-          onChange={(e) => change(e)}
-          placeholder="Enter your email "
-        />
-        <button
-          type="submit"
-          className="bg-emerald-400 hover:bg-emerald-600 text-white w-1/3 rounded-full h-12"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
+    <form
+      onSubmit={(e) => {
+        submitHandle(e);
+      }}
+      className="  mt-[25%] border-[1px] border-zinc-100  bg-black rounded-3xl bg-opacity-10 backdrop-blur-2xl flex-col gap-2 w-[80%] h-[90%]   flex items-center justify-evenly py-6 px-6"
+    >
+      <h1 className="w-full flex justify-start md:text-3xl text-[106px] font-bold text-white">
+        Contact Us
+      </h1>
+
+      <input
+        className="w-full h-[10%] p-2  bg-transparent border-[1px] border-white outline-none  rounded-lg text-white"
+        type="text"
+        name="name"
+        value={name}
+        onChange={(e) => change(e)}
+        placeholder="Name"
+      />
+      <input
+        className="w-full h-[10%] p-2 bg-transparent border-[1px] border-white  outline-none rounded-lg text-white"
+        type="text"
+        name="mail"
+        value={email}
+        onChange={(e) => change(e)}
+        placeholder="Email"
+      />
+      <textarea
+        className="w-full h-[30%] p-2 bg-transparent border-[1px] border-white  outline-none rounded-lg text-white"
+        type="text"
+        name="msg"
+        value={msg}
+        onChange={(e) => change(e)}
+        placeholder="Message"
+      />
+
+      <Button />
+    </form>
   );
 };
 

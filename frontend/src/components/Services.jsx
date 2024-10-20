@@ -64,13 +64,19 @@ const Services = () => {
               className="text-white p-5 flex flex-col  items-center gap-4 md:h-[373px] md:w-[354px] h-[293px] w-[274px] bg-black rounded-3xl bg-opacity-20 backdrop-blur-lg"
               key={idx}
             >
-              <img src={item.img} className="h-[56px] w-[56px]" alt="" />
+              <img
+                src={item.img}
+                className="h-[56px] w-[56px]"
+                alt=""
+              />
               <div className="center text-[#8cc540] text-[26px] font-bold">
                 <h1 className="text-center text-42xl font-bold">
                   {item.title}
                 </h1>
               </div>
-              <h3 className="text-center font-medium text-2xl">{item.desc}</h3>
+              <h3 className="text-center font-medium text-2xl">
+                {item.desc}
+              </h3>
             </div>
           );
         })}

@@ -56,9 +56,14 @@
   flex: 0 0 33.33% !important; /* Each item takes 1/3 of the container width (for 3 columns) */
   box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
+#contact-section {
+  margin-top: 100px;
+}
+
 @font-face {
   font-family: "Thunder";
-  src: url("THUNDER/Fonts/Web-PS/Thunder-SemiBoldLC.woff2") format("woff2");
+  src: url("THUNDER/Fonts/Web-PS/Thunder-SemiBoldLC.woff2")
+    format("woff2");
 
   /* font-weight: normal;
   font-style: normal; */

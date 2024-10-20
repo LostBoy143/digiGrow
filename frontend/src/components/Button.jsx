@@ -5,16 +5,17 @@ const Button = () => {
   return (
     <div
       id="button"
-      className=" group mt-12 flex ml-10   h-16 duration-1000 w-72 "
+      className=" group  flex   h-12 duration-1000 w-44   "
+      type="submit"
     >
       <button
-        className="w-60 h-full text-2xl bg-green-400 text-black font-bold rounded-tl-full rounded-bl-full  transition-all duration-500 group-hover:bg-black  group-hover:text-green-400  group-hover:rounded-full "
+        className=" group-hover:text-black w-32 h-full text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-white text-white font-semibold rounded-tl-full rounded-bl-full  transition-all duration-500 group-hover:bg-[#8cc540] group-hover:border-none   group-hover:rounded-full "
         id="btn1"
       >
-        Connect with Us !
+        Submit
       </button>
       <button
-        className="w-16 h-full bg-green-400  text-black font-bold rounded-tr-full rounded-br-full flex justify-start items-center  transition-all duration-500 group-hover:bg-black    group-hover:rounded-full  "
+        className="w-12 h-full  bg-transparent  text-white border-t-[1px] border-r-[1px] border-b-[1px] border-white font-bold rounded-tr-full rounded-br-full flex justify-start items-center  transition-all duration-500 group-hover:bg-[#8cc540] group-hover:border-none   group-hover:rounded-full  "
         id="btn2"
       >
         <svg
@@ -23,7 +24,7 @@ const Button = () => {
           viewBox="0 0 24 24"
           strokeWidth="2.5"
           stroke="currentColor"
-          className="size-10 transition-all duration-300 group-hover:translate-x-3 group-hover:text-green-400"
+          className="size-6 transition-all duration-300 group-hover:translate-x-3 group-hover:text-black"
         >
           <path
             strokeLinecap="round"

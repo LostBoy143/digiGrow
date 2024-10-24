@@ -49,11 +49,6 @@ const Services = () => {
         <div className="ellipses"></div>
       </div>
 
-      {/* <div
-        id="services-section"
-        className="h-full flex justify-center items-center"
-      ></div> */}
-
       <div
         id="serve"
         className="w-full py-12 absolute z-20 h-[130vh] top-0 flex gap-8 flex-wrap justify-evenly px-12"

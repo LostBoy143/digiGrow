@@ -9,18 +9,27 @@ const HeroSection = () => {
     >
       <div
         id="left-content"
-        className=" mt-12 ml-28 w-[36%] h-full flex flex-col justify-center items-center"
+        className=" mt-12 ml-[12%] w-[480px] h-full flex flex-col justify-center items-center"
       >
-        <h1 className="text-[48px] font-semibold leading-tight tracking-wider inline">
+        <h1
+          id="hero-h1"
+          className="text-[3rem] font-semibold leading-tight tracking-wider inline"
+        >
           Your business success starts here
-          <div className="w-[165px] ml-3 mb-3 h-[2.5px] bg-black inline-block"></div>
+          <div
+            id="hero-line"
+            className="w-[175px] ml-3 mb-3 h-[2.5px] bg-black inline-block"
+          ></div>
           <img
             src="src/assets/globe-icon.png"
             alt=""
             className="inline-block h-[50px] mb-[6px] w-[50px]"
           />
         </h1>
-        <h2 className="text-[19.5px]">
+        <h2
+          id="hero-h2"
+          className="text-[19.5px]"
+        >
           Grow your client base with DigiGrove and
           targeting strategies
         </h2>
@@ -28,7 +37,7 @@ const HeroSection = () => {
       <div id="right-content">
         <img
           src="src/assets/Simon Lee Asset-unsplash.png"
-          className="h-[910px] w-[910px]"
+          className="h-[150%] w-[130%]"
         ></img>
       </div>
     </div>

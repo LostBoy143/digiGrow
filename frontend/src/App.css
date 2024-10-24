@@ -3,3 +3,26 @@
     height: 95vh;
   }
 }
+@media (min-width: 1900px) {
+  #nav-li {
+    font-size: 28px;
+  }
+
+  #left-content {
+    width: 580px;
+  }
+
+  #hero-h1 {
+    font-size: 4rem;
+  }
+  #hero-h2 {
+    font-size: 30px;
+  }
+  #hero-line {
+    width: 230px;
+  }
+  #logo-img {
+    width: 350px;
+    height: 70px;
+  }
+}

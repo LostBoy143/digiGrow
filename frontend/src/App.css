@@ -3,6 +3,44 @@
     height: 95vh;
   }
 }
+
+@media (max-width: 900px) {
+  #navbar {
+    padding: 0 40px 0 40px;
+  }
+}
+@media (max-width: 670px) {
+  #navbar {
+    display: none;
+  }
+  #about {
+    display: none;
+  }
+  #hero-img {
+    width: 50vw;
+    height: 100vh;
+  }
+  #right-content {
+    width: 100%;
+  }
+  #left-content {
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    padding: 10px;
+  }
+
+  #hero-h1 {
+    font-size: 1.5rem;
+  }
+  #hero-h2 {
+    font-size: 16px;
+  }
+  #hero-line {
+    width: 30px;
+  }
+}
+
 @media (min-width: 1900px) {
   #nav-li {
     font-size: 28px;
@@ -19,7 +57,8 @@
     font-size: 30px;
   }
   #hero-line {
-    width: 230px;
+    width: 250px;
+    margin-bottom: 17px;
   }
   #logo-img {
     width: 350px;

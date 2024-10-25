@@ -9,7 +9,7 @@ const HeroSection = () => {
     >
       <div
         id="left-content"
-        className=" mt-12 ml-[12%] w-[480px] h-full flex flex-col justify-center items-center"
+        className=" mt-12 ml-[12%] 2-[100%] md:w-[480px] h-full flex flex-col justify-center items-center"
       >
         <h1
           id="hero-h1"
@@ -36,6 +36,7 @@ const HeroSection = () => {
       </div>
       <div id="right-content">
         <img
+          id="hero-img"
           src="src/assets/Simon Lee Asset-unsplash.png"
           className="h-[150%] w-[130%]"
         ></img>

@@ -2,7 +2,10 @@ import Img from "../assets/vackground-com-uAvq7gFQecc-unsplash 1.png";
 
 const AboutUs = () => {
   return (
-    <div className="relative -z-20 w-full h-[780px] py-16 bg-[#0A291C]  leading-tight text-white">
+    <div
+      id="about"
+      className="relative -z-20 w-full h-[780px] py-16 bg-[#0A291C]  leading-tight text-white"
+    >
       <img
         className="w-full h-[780px] aspect-auto object-cover absolute top-0 left-0 mix-blend-overlay"
         src={Img}

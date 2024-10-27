@@ -13,10 +13,11 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="h-20 fixed top-0 z-10 bg-white w-full flex justify-between px-[108px] items-center"
+      className="h-[14%]  fixed top-0 z-10 bg-white w-full flex justify-between px-[108px] items-center"
     >
       <div id="logo">
         <img
+          id="logo-img"
           src="src/assets/nav-logo.png"
           alt=""
           className=" w-[230px] h-[40px] aspect-auto"
@@ -30,7 +31,8 @@ const Navbar = () => {
           {navItems.map((item, index) => (
             <li
               key={index}
-              className={`rounded-full flex font-semi-bold justify-center font-semibold items-center cursor-pointer w-1/4 h-full duration-500 ${
+              id="nav-li"
+              className={`rounded-full  flex font-semi-bold justify-center font-semibold items-center cursor-pointer w-1/4 h-full duration-500 ${
                 activeIndex === index
                   ? "bg-black text-white"
                   : "bg-slate-300 text-black"

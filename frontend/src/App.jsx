@@ -18,10 +18,10 @@ function App() {
       <HeroSection />
       {/* <Button /> */}
       <AboutUs />
-      <Accord />
-      <Services />
+      {/*<Accord />
+      <Services />*/}
       <Contact />
-      <Footer />
+      {/*<Footer /> */}
     </>
   );
 }

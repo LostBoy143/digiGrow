@@ -3,3 +3,94 @@
     height: 95vh;
   }
 }
+
+@media (max-width: 900px) {
+  #navbar {
+    padding: 0 40px 0 40px;
+  }
+}
+@media (max-width: 440px) {
+  #hero-img {
+    width: 90vw;
+    height: 100vh;
+    margin-right: -35%;
+  }
+  #right-content {
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+  }
+  #left-content {
+    width: 200px;
+    position: absolute;
+
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: -20%;
+
+    margin-left: 10px;
+  }
+
+  #hero-h1 {
+    font-size: 1.3rem;
+  }
+  #hero-h2 {
+    font-size: 14px;
+  }
+  #hero-line {
+    width: 50px;
+    margin-bottom: 6px;
+  }
+  #about {
+    margin-top: -60%;
+  }
+  #contact-section h1 {
+    font-size: 1.5rem;
+  }
+  #contact-section h2 {
+    font-size: 1rem;
+  }
+  #left {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1900px) {
+  #nav-li {
+    font-size: 28px;
+  }
+
+  #left-content {
+    width: 580px;
+  }
+
+  #hero-h1 {
+    font-size: 4rem;
+  }
+  #hero-h2 {
+    font-size: 30px;
+  }
+  #hero-line {
+    width: 250px;
+    margin-bottom: 17px;
+  }
+  #logo-img {
+    width: 350px;
+    height: 70px;
+  }
+  #object-img {
+    width: 1400px;
+    height: 1400px;
+    margin-top: -200px;
+  }
+  #contact-section h1 {
+    font-size: 6rem;
+  }
+}

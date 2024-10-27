@@ -14,19 +14,26 @@ const AboutUs = () => {
             About Us
           </h1>
           <h3 className="text-4xl font-medium py-4">
-            DigiGrove is a company comprised of
-            integrated teams of
-            technicians/engineers, project
-            leaders, account managers, writers and
-            administrative support staff.
+            DigiGrove is a company comprised of integrated teams of
+            technicians/engineers, project leaders, account managers, writers
+            and administrative support staff.
           </h3>
           <h3 className="text-4xl font-medium">
-            <span className="text-[#FCE100]">
-              Our Goal
-            </span>{" "}
-            : To Develop and sell high quality
-            products.
+            <span className="text-[#FCE100]">Our Goal</span> : To Develop and
+            sell high quality products.
           </h3>
+        </div>
+        <div className="relative w-[400px] h-[350px] overflow-hidden">
+          <img
+            src="/src/assets/1724992750660 1.png" // Replace with the correct path
+            alt="Clipped Example"
+            className="w-full h-full object-cover"
+            style={{
+              clipPath:
+                "polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%)",
+              borderRadius: "20px",
+            }}
+          />
         </div>
       </div>
     </div>

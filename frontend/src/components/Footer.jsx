@@ -3,30 +3,30 @@ import Img from "../assets/DigiGrove Logo (Final-2) 1.png";
 const Footer = () => {
   return (
     <div id="footer">
-      <div className="w-full h-80 flex justify-evenly  font-sans text-[24px] text-[#232233]">
+      <div className="w-full h-64 flex justify-evenly pt-6 font-sans text-xl text-[#232233]">
         {/* <img className="w-full h-96 absolute" src={Img2}></img> */}
-        <div>
-          <img src={Img} className="w-80 h-72 aspect-auto object-contain"></img>
+        <div className="hidden md:block">
+          <img src={Img} className="w-64 h-60 aspect-auto object-contain"></img>
         </div>
-        <div className=" w-96 h-96 p-4 m-2">
-          <ul className="flex flex-col gap-8">
+        <div className=" w-96  p-4 m-2">
+          <ul className="flex flex-col gap-3 md:gap-6">
             <li>Contact Us</li>
             <li>Terms & Conditions</li>
             <li>FAQs</li>
           </ul>
         </div>
-        <div className=" w-96 h-96 p-4 m-2 ">
-          <ul className="flex flex-col gap-8">
+        <div className=" w-96 p-4 m-2 ">
+          <ul className="flex flex-col gap-3 md:gap-6">
             <li>Admin@digigrove.com</li>
             <li>
               Plot No. 334, 5th Floor, Udyog Vihar, Phase IV, Sector 18,
               Gurugram, Haryana, 122015
             </li>
           </ul>
-          <span className="flex items-center gap-[25px] pt-12">
+          <span className="flex items-center gap-4 pt-4">
             <svg
-              width="48"
-              height="48"
+              width="36"
+              height="36"
               viewBox="0 0 48 48"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -37,8 +37,8 @@ const Footer = () => {
               />
             </svg>
             <svg
-              width="40"
-              height="36"
+              width="30"
+              height="26"
               viewBox="0 0 40 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +49,8 @@ const Footer = () => {
               />
             </svg>
             <svg
-              width="40"
-              height="40"
+              width="30"
+              height="30"
               viewBox="0 0 40 40"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -63,24 +63,26 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <p className="m-auto text-center text-base flex items-center justify-center space-x-1  pb-8">
-        <span>Copyright</span>
-        <span>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.88 7.14C11.16 7.2 11.49 8.29 11.51 8.8H13.3C13.22 6.82 11.81 5.61 9.85 5.61C7.64 5.61 6 7 6 10.14C6 12.08 6.93 14.38 9.84 14.38C12.06 14.38 13.25 12.73 13.28 11.43H11.49C11.46 12.02 11.04 12.81 9.86 12.87C8.55 12.83 8 11.81 8 10.14C8 7.25 9.28 7.16 9.88 7.14ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z"
-              fill="black"
-            />
-          </svg>
-        </span>
-        <span>2024, All Rights Reserved</span>
-      </p>
+      <div className="m-auto text-center text-base flex items-center justify-center space-x-1  pb-8">
+        <p className="flex gap-2 items-center">
+          <span>Copyright</span>
+          <span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.88 7.14C11.16 7.2 11.49 8.29 11.51 8.8H13.3C13.22 6.82 11.81 5.61 9.85 5.61C7.64 5.61 6 7 6 10.14C6 12.08 6.93 14.38 9.84 14.38C12.06 14.38 13.25 12.73 13.28 11.43H11.49C11.46 12.02 11.04 12.81 9.86 12.87C8.55 12.83 8 11.81 8 10.14C8 7.25 9.28 7.16 9.88 7.14ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z"
+                fill="black"
+              />
+            </svg>
+          </span>
+          <span>2024, All Rights Reserved</span>
+        </p>
+      </div>
     </div>
   );
 };

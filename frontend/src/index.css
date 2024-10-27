@@ -13,12 +13,12 @@
 #left-content {
   font-family: "poppins", sans-serif;
 }
-#services-container {
+/* #services-container {
   background: url("src/assets/crumpled-black.png");
 
   mix-blend-mode: overlay;
   opacity: 0.9;
-}
+} */
 
 .items {
   width: 100%;
@@ -62,8 +62,7 @@
 
 @font-face {
   font-family: "Thunder";
-  src: url("THUNDER/Fonts/Web-PS/Thunder-SemiBoldLC.woff2")
-    format("woff2");
+  src: url("THUNDER/Fonts/Web-PS/Thunder-SemiBoldLC.woff2") format("woff2");
 
   /* font-weight: normal;
   font-style: normal; */

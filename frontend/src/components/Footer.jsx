@@ -3,19 +3,19 @@ import Img from "../assets/DigiGrove Logo (Final-2) 1.png";
 const Footer = () => {
   return (
     <div id="footer">
-      <div className="w-full h-64 flex justify-evenly pt-6 font-sans text-xl text-[#232233]">
+      <div className="w-full h-60 md:h-64 flex justify-evenly pt-6 font-sans text-xl text-[#232233]">
         {/* <img className="w-full h-96 absolute" src={Img2}></img> */}
-        <div className="hidden md:block">
-          <img src={Img} className="w-64 h-60 aspect-auto object-contain"></img>
+        <div className="hidden md:block px-4">
+          <img src={Img} className="w-64 h-60 aspect-auto object-fill"></img>
         </div>
-        <div className=" w-96  p-4 m-2">
+        <div className=" w-96 p-2 md:p-4 m-1 md:m-2">
           <ul className="flex flex-col gap-3 md:gap-6">
             <li>Contact Us</li>
             <li>Terms & Conditions</li>
             <li>FAQs</li>
           </ul>
         </div>
-        <div className=" w-96 p-4 m-2 ">
+        <div className=" w-96 p-2 md:p-4 m-1 md:m-2 ">
           <ul className="flex flex-col gap-3 md:gap-6">
             <li>Admin@digigrove.com</li>
             <li>
@@ -80,7 +80,7 @@ const Footer = () => {
               />
             </svg>
           </span>
-          <span>2024, All Rights Reserved</span>
+          <span className="pt-2">2024, All Rights Reserved</span>
         </p>
       </div>
     </div>

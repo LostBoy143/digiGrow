@@ -21,7 +21,7 @@ function App() {
       {/*<Accord />
       <Services />*/}
       <Contact />
-      {/*<Footer /> */}
+      <Footer />
     </>
   );
 }

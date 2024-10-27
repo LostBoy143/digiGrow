@@ -34,13 +34,10 @@ const Contact = () => {
   return (
     <div
       id="contact-section"
-      className="h-[110vh] relative mb-20 overflow-hidden w-full  flex flex-col bg-black"
+      className="h-[110vh] relative mb-20 overflow-hidden w-full  flex flex-col bg-[#232233]"
     >
       <h1 className="h-[15%] absolute  text-white w-full font-extrabold text-6xl flex items-center justify-center">
-        Let’s Build{" "}
-        <span className="ml-[2%] text-[#8cc540]">
-          Together
-        </span>
+        Let’s Build <span className="ml-[2%] text-[#8cc540]">Together</span>
       </h1>
       <div
         id="slogan"
@@ -50,14 +47,103 @@ const Contact = () => {
         <h2>Have a general question?</h2>
         <h2>We are just an email away!</h2>
       </div>
-      <div
-        id="down"
-        className="w-full h-[85%] flex relative"
-      >
+      <div id="down" className="w-full h-[85%] flex relative">
         <div
           id="left"
-          className="w-[43%]  flex items-center justify-end h-[110vhvh] "
+          className="w-[43%] relative flex items-center justify-end h-[110vhvh] "
         >
+          <div className="absolute">
+            <svg
+              width="1130"
+              height="1080"
+              viewBox="0 0 1130 1080"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_f_47_354)">
+                <circle
+                  cx="269.5"
+                  cy="311.5"
+                  r="105.5"
+                  fill="url(#paint0_linear_47_354)"
+                />
+              </g>
+              <g filter="url(#filter1_f_47_354)">
+                <circle
+                  cx="724.5"
+                  cy="873.5"
+                  r="105.5"
+                  fill="url(#paint1_linear_47_354)"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_47_354"
+                  x="-136"
+                  y="-94"
+                  width="811"
+                  height="811"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="150"
+                    result="effect1_foregroundBlur_47_354"
+                  />
+                </filter>
+                <filter
+                  id="filter1_f_47_354"
+                  x="319"
+                  y="468"
+                  width="811"
+                  height="811"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="150"
+                    result="effect1_foregroundBlur_47_354"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_47_354"
+                  x1="269.5"
+                  y1="186.094"
+                  x2="269.5"
+                  y2="435.91"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#8CC540" />
+                  <stop offset="1" stopColor="#E5FFC2" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_47_354"
+                  x1="724.5"
+                  y1="748.094"
+                  x2="724.5"
+                  y2="997.91"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#FBE100" />
+                  <stop offset="1" stopColor="#E5FFC2" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
           <form
             onSubmit={(e) => {
               submitHandle(e);
@@ -93,18 +179,12 @@ const Contact = () => {
               placeholder="Message"
             />
 
-            <div
-              onMouseEnter={handleHover}
-              onMouseLeave={handleHoverLeave}
-            >
+            <div onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
               <Button />
             </div>
           </form>
         </div>
-        <div
-          id="right"
-          className="h-full mr-[-50%] w-[57%]  "
-        >
+        <div id="right" className="h-full mr-[-50%] w-[57%]  ">
           <svg
             className={`h-[900px] -mt-[20%] w-[900px] ${rotate} transform transition-transform duration-500  `}
             viewBox="0 0 1000 1000"

@@ -5,11 +5,11 @@ const Button = () => {
   return (
     <div
       id="button"
-      className=" group  flex   h-12 duration-1000 w-44   "
+      className=" group  flex  h-8 md:h-12 duration-1000 w-44   "
       type="submit"
     >
       <button
-        className=" group-hover:text-black w-32 h-full text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-white text-white font-semibold rounded-tl-full rounded-bl-full  transition-all duration-500 group-hover:bg-[#8cc540] group-hover:border-none   group-hover:rounded-full "
+        className=" group-hover:text-black w-32 h-full text-md md:text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-white text-white font-semibold rounded-tl-full rounded-bl-full  transition-all duration-500 group-hover:bg-[#8cc540] group-hover:border-none   group-hover:rounded-full "
         id="btn1"
       >
         Submit

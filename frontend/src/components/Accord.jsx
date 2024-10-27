@@ -12,7 +12,7 @@ const Accord = () => {
 
   return (
     <div
-      className="  py-7 "
+      className="  pt-7 "
       id="accord-container"
     >
       <h1 className="text-center text-3xl md:text-6xl font-extrabold mb-5">

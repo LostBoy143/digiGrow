@@ -1,6 +1,6 @@
 @media (min-width: 1200px) {
   #contact-section {
-    height: 95vh;
+    height: 110vh;
   }
 }
 @media (min-width: 385px) and (max-width: 488px) {
@@ -26,6 +26,12 @@
   #hero-line {
     width: 50px;
     margin-bottom: 10px;
+  }
+  #contact-section h1 {
+    font-size: 1.5rem;
+  }
+  #contact-section h2 {
+    font-size: 1rem;
   }
 }
 
@@ -69,6 +75,12 @@
   #about-h2 {
     font-size: 30px;
   }
+  #contact-section h1 {
+    font-size: 2rem;
+  }
+  #contact-section h2 {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 385px) {
   #hero-img {
@@ -110,10 +122,14 @@
     margin-top: -60%;
   }
   #contact-section h1 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
   #contact-section h2 {
     font-size: 1rem;
+  }
+  #contact-section form {
+    margin-right: 10%;
+    height: 60vh;
   }
   #left {
     position: absolute;
@@ -147,11 +163,23 @@
     height: 70px;
   }
   #object-img {
-    width: 1400px;
-    height: 1400px;
+    width: 1500px;
+    height: 1800px;
     margin-top: -200px;
   }
   #contact-section h1 {
     font-size: 6rem;
+  }
+  #contact-section {
+    height: 90vh;
+  }
+  #social-section {
+    height: 80vh;
+  }
+  .square {
+    top: 53% !important;
+  }
+  .insta {
+    height: 400px !important;
   }
 }

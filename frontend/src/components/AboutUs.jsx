@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div
       id="about"
-      className="relative -z-20 w-full h-[780px] py-16 bg-[#0A291C]  leading-tight text-white"
+      className="relative overflow-hidden  -z-20 w-full h-[780px] py-16 bg-[#0A291C]  leading-tight text-white"
     >
       <img
         className="w-full h-[780px] aspect-auto object-cover absolute top-0 left-0 mix-blend-overlay"

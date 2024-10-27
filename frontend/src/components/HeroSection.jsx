@@ -5,11 +5,11 @@ const HeroSection = () => {
   return (
     <div
       id="hero-section"
-      className="h-screen w-full  flex  justify-between"
+      className=" w-full h-screen  relative flex  justify-between"
     >
       <div
         id="left-content"
-        className=" mt-12 ml-[12%] 2-[100%] md:w-[480px] h-full flex flex-col justify-center items-center"
+        className="  md:mt-12 ml-[12%]  md:w-[480px] h-full flex flex-col justify-center items-center"
       >
         <h1
           id="hero-h1"
@@ -18,12 +18,12 @@ const HeroSection = () => {
           Your business success starts here
           <div
             id="hero-line"
-            className="w-[175px] ml-3 mb-3 h-[2.5px] bg-black inline-block"
+            className="w-[175px] ml-0 lg:ml-3 mb-1 sm:mb-3 h-[1.5px] md:h-[2.5px] bg-black inline-block"
           ></div>
           <img
             src="src/assets/globe-icon.png"
             alt=""
-            className="inline-block h-[50px] mb-[6px] w-[50px]"
+            className="inline-block h-[30px] w-[30px] md:h-[50px] mb-[6px] md:w-[50px]"
           />
         </h1>
         <h2

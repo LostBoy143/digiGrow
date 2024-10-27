@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="h-[14%] fixed top-0 z-10 bg-white w-full flex justify-between px-[108px] items-center"
+      className="h-[14%]  fixed top-0 z-10 bg-white w-full flex justify-between px-[108px] items-center"
     >
       <div id="logo">
         <img

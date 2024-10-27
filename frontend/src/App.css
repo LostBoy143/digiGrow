@@ -4,12 +4,40 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 385px) and (max-width: 768px) {
   #navbar {
     padding: 0 40px 0 40px;
   }
+  #left-content {
+    margin-top: 50px;
+    width: 300px;
+    margin-left: 10px;
+  }
+  #hero-img {
+    width: 80vw;
+    height: 120vh;
+    margin-right: -55%;
+  }
+  #hero-h1 {
+    font-size: 2rem;
+  }
+  #hero-h2 {
+    font-size: 20px;
+  }
+  #hero-section {
+    height: 80vh;
+  }
+  #hero-line {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  #right-content {
+    position: absolute;
+    right: 0;
+    margin-right: -30%;
+  }
 }
-@media (max-width: 440px) {
+@media (max-width: 385px) {
   #hero-img {
     width: 90vw;
     height: 100vh;

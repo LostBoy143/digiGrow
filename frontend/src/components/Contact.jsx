@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <div
       id="contact-section"
-      className="h-[110vh] mb-20 overflow-hidden w-full relative flex flex-col bg-black"
+      className="h-[110vh] relative mb-20 overflow-hidden w-full  flex flex-col bg-black"
     >
       <h1 className="h-[15%] absolute  text-white w-full font-extrabold text-6xl flex items-center justify-center">
         Let’s Build{" "}
@@ -43,8 +43,16 @@ const Contact = () => {
         </span>
       </h1>
       <div
+        id="slogan"
+        className="absolute top-[20%] text-right right-[5%] text-white text-4xl"
+      >
+        <h2>Interested in driving growth?</h2>
+        <h2>Have a general question?</h2>
+        <h2>We are just an email away!</h2>
+      </div>
+      <div
         id="down"
-        className="w-full h-[85%] flex"
+        className="w-full h-[85%] flex relative"
       >
         <div
           id="left"
@@ -54,7 +62,7 @@ const Contact = () => {
             onSubmit={(e) => {
               submitHandle(e);
             }}
-            className="  mt-[25%] border-[1px] border-zinc-100  bg-black rounded-3xl bg-opacity-10 backdrop-blur-2xl flex-col gap-2 w-[80%] h-[90%]   flex items-center justify-evenly py-6 px-6"
+            className="  mt-[30%] border-[1px] border-zinc-100  bg-black rounded-3xl bg-opacity-10 backdrop-blur-2xl flex-col gap-2 w-[80%] h-[90%]   flex items-center justify-evenly py-6 px-6"
           >
             <h2 className="w-full flex justify-start md:text-3xl text-[106px] font-bold text-white">
               Contact Us

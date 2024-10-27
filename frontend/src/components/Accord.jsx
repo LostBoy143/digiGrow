@@ -15,25 +15,29 @@ const Accord = () => {
       className="  py-7 "
       id="accord-container"
     >
-      <h1 className="text-center text-6xl font-extrabold mb-5">
+      <h1 className="text-center text-3xl md:text-6xl font-extrabold mb-5">
         What We Do
       </h1>
       {slogans.map((item, idx) => {
         return (
           <div
-            className="group items   font-thunder  px-28 cursor-pointer "
+            className="group items   font-thunder  px-2 md:px-28 cursor-pointer "
             key={idx}
           >
-            <h2 className="group-hover:text-lime-500  leading-4percent tracking-wider  duration-500 text-6xl group-hover:text-[66px]">
+            <h2
+              id="about-h2"
+              className="group-hover:text-lime-500  leading-4percent tracking-wide lg:tracking-wider  duration-500 text-2xl lg:text-6xl group-hover:text-[26px] lg:group-hover:text-[66px]"
+            >
               {item}
             </h2>
             <div className="icon">
               <svg
-                width="60"
-                height="60"
+                // width="60"
+                // height="60"
                 viewBox="0 0 106 106"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]"
               >
                 <mask
                   id="path-1-inside-1_222_21"

@@ -64,6 +64,11 @@
     width: 300px;
     margin-right: -10%;
   }
+  /* About Section*/
+
+  #about-h2 {
+    font-size: 30px;
+  }
 }
 @media (max-width: 385px) {
   #hero-img {

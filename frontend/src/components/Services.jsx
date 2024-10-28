@@ -5,7 +5,7 @@ const Services = () => {
   const details = [
     {
       img: "src/assets/Vector.png",
-      title: "Data Driven Marketing Solutions",
+      title: "Data-Driven Marketing Solutions",
       desc: "Our expert team delivers innovative marketing strategies powered by data, AI, and machine learning for impactful results.",
     },
     {
@@ -37,42 +37,44 @@ const Services = () => {
 
   return (
     <div
-      className="h-[125vh]  w-full mt-16 relative -z-40 bg-[#232233]" // Add mix-blend-mode here
+      className="w-full -z-40 bg-[#232233]" // Add mix-blend-mode here
       id="services-container"
     >
-      <div className="relative w-full h-full">
+      {/* <div className="w-full h-full">
         <img
           src="/src/assets/crumpled-black.png" // Replace with the correct path
           alt="Styled Background"
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-90 mix-blend-darken"
+          className="top-0 left-0 w-full h-full object-cover opacity-90 mix-blend-darken"
         />
-      </div>
-      <div
-        id="ellipse-container"
-        className="h-40 px-20 absolute  flex justify-between items-center top-[42%] w-full"
-      >
-        <div className="ellipses"></div>
-        <div className="ellipses"></div>
-        <div className="ellipses"></div>
-      </div>
+      </div> */}
 
       <div
         id="serve"
-        className="w-full stroke-white stroke-1 py-12 absolute z-20 h-[130vh] top-0 flex gap-8 flex-wrap justify-evenly px-12"
+        className="bg-[url('/src/assets/crumpled-black-shade.png')] bg-cover relative bg-center w-full stroke-white stroke-1 py-12 z-20 top-0 flex gap-8 flex-wrap justify-evenly px-12"
       >
+
+      <div
+        id="ellipse-container"
+        className="h-40 px-20 flex justify-between absolute items-center top-[42%] w-full"
+      >
+        <div className="ellipses"></div>
+        <div className="ellipses"></div>
+        <div className="ellipses"></div>
+      </div>
         {details.map((item, idx) => {
           return (
             <div
-              className="text-white  p-5 flex flex-col  items-center gap-4 md:h-[373px] md:w-[354px] h-[293px] w-[274px]   bg-opacity-20  bg-white/5 border border-white/20 rounded-[35px] backdrop-blur-[30px]"
+              className="font-poppins text-white text-center  p-5 flex flex-col items-center gap-4 md:h-[354px] md:w-[354px] h-[274px] w-[274px] bg-black rounded-3xl bg-opacity-20 backdrop-blur-lg"
               key={idx}
             >
+
               <img src={item.img} className="h-[56px] w-[56px]" alt="" />
               <div className="center text-[#8cc540] text-[26px] font-bold">
-                <h1 className="text-center text-42xl font-bold">
+                <h1 className="font-poppins text-center text-42xl font-bold">
                   {item.title}
                 </h1>
               </div>
-              <h3 className="text-center font-medium text-2xl">{item.desc}</h3>
+              <h3 className="font-poppins text-center font-small text-[18px]">{item.desc}</h3>
             </div>
           );
         })}

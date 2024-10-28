@@ -20,7 +20,7 @@ function App() {
       {/* <Button /> */}
       <AboutUs />
       <Accord />
-      {/* <Services />*/}
+      <Services />
       <Social />
       <Contact />
       <Footer />

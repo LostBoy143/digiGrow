@@ -12,12 +12,12 @@ const Accord = () => {
 
   return (
     <div
-      className="  pt-7 "
+      className="pt-7 "
       id="accord-container"
     >
-      <h1 className="text-center text-3xl md:text-6xl font-extrabold mb-5">
+      <div className="font-poppins text-center text-3xl md:text-6xl font-extrabold mb-5">
         What We Do
-      </h1>
+      </div>
       {slogans.map((item, idx) => {
         return (
           <div

@@ -15,14 +15,14 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="md:h-[14%] h-[8%] fixed top-0 z-10 bg-white w-full flex justify-between md:px-[108px] items-center"
+      className="md:h-[14%] h-[8%] fixed top-0 z-10 bg-white w-full flex justify-between px-[10px] md:px-[108px] items-center"
     >
       <div id="logo">
         <img
           id="logo-img"
           src="src/assets/nav-logo.png"
           alt=""
-          className=" w-[230px] h-[40px] aspect-auto"
+          className=" w-[150px] sm:w-[230px] h-[30px] sm:h-[40px] aspect-auto"
         />
       </div>
       <button

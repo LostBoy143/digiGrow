@@ -33,6 +33,12 @@
   #contact-section h2 {
     font-size: 1rem;
   }
+  #social-section {
+    height: 450px !important;
+  }
+  #instagram {
+    margin-right: 40px !important;
+  }
 }
 
 @media (min-width: 488px) and (max-width: 768px) {
@@ -80,6 +86,35 @@
   }
   #contact-section h2 {
     font-size: 1.2rem;
+  }
+  #social-section {
+    height: 500px !important;
+  }
+  #text-container {
+    margin-left: 2%;
+    margin-top: 100px !important;
+  }
+  #instagram {
+    margin-right: 10% !important;
+    height: 150px;
+  }
+  #facebook {
+    height: 150px;
+  }
+  #twitter {
+    height: 150px !important;
+    margin-bottom: 120px !important;
+  }
+  .down,
+  .up {
+    height: 80px !important;
+  }
+  .down-2 {
+    bottom: 80px !important;
+  }
+  .square {
+    bottom: 0px !important;
+    left: 0 !important;
   }
 }
 @media (max-width: 385px) {
@@ -139,6 +174,12 @@
   }
   #social-section {
     height: 90vh;
+  }
+  .square {
+    width: 100px !important;
+    height: 7px !important;
+    bottom: 0px !important;
+    left: 0 !important;
   }
 }
 

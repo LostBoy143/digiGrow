@@ -137,6 +137,9 @@
     width: 100%;
     margin-left: 0;
   }
+  #social-section {
+    height: 90vh;
+  }
 }
 
 @media (min-width: 1900px) {

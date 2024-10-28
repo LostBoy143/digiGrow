@@ -5,26 +5,36 @@ const Social = () => {
   return (
     <div
       id="social-section"
-      className=" p-2 h-[90vh] md:h-[120vh] w-full relative"
+      className=" p-2 h-[70vh] sm:h-[90vh] md:h-[120vh] w-full relative overflow-hidden"
     >
       {/*shapes*/}
       <div className="square absolute top-[63%] left-0 md:h-[180px] w-[20px] bg-[#8CC540]"></div>
       <img
         src="src/assets/soci-up.png"
-        className="up lg:h-[150px] absolute top-0 left-0"
+        className="up h-[50px] lg:h-[150px] absolute -z-10 top-0 left-0"
       ></img>
       <img
         src="src/assets/soci.png"
-        className="down lg:h-[120px] xl:h-[150px] absolute bottom-0 left-[50%]"
+        className="down h-[50px] lg:h-[120px] xl:h-[150px] absolute bottom-0 left-[50%]"
       ></img>
       <img
         src="src/assets/soci.png"
-        className="down lg:h-[120px] xl:h-[150px] absolute lg:bottom-[120px] xl:bottom-[150px] left-[50%]"
+        className="down h-[50px] lg:h-[120px] xl:h-[150px] absolute bottom-[50px] lg:bottom-[120px] xl:bottom-[150px] left-[50%]"
       ></img>
       <img
         id="instagram"
         src="src/assets/instagram.png"
-        className="insta h-[270px]  absolute xl:top-[30%]  right-[10%] transform transition-all duration-500 hover:rotate-12 hover:scale-125"
+        className="insta h-[100px] md:h-[270px]  absolute  top-[30%] xl:top-[30%] right-[0%] xl:right-[10%] transform transition-all duration-500 hover:rotate-12 hover:scale-125"
+      ></img>
+      <img
+        id="twitter"
+        src="src/assets/twi.png"
+        className="insta h-[100px] md:h-[300px]  absolute top-0  sm:top-[-5%] 2xl:top-[-2%] 2xl:right-[-2%] right-0 sm:right-[-10%] xl:right-[-2%] transform transition-all duration-500 hover:rotate-12 hover:scale-125"
+      ></img>
+      <img
+        id="facebook"
+        src="src/assets/Facebook 3.png"
+        className="insta h-[100px] md:h-[270px]  absolute  bottom-[1%] md:bottom-[-5%]  right-[-5%]  transform transition-all duration-500 hover:rotate-12 hover:scale-125"
       ></img>
       <div
         id="text-container"

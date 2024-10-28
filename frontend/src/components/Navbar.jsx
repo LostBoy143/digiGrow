@@ -2,14 +2,20 @@
 import React, { useState } from "react";
 
 const Navbar = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] =
+    useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = ["Home", "About", "Services", "Contact"];
+  const navItems = [
+    "Home",
+    "About",
+    "Services",
+    "Contact",
+  ];
   return (
     <div
       id="navbar"
-      className="md:h-[14%] h-[8%] fixed top-0 z-10 bg-white w-full flex justify-between px-[108px] items-center"
+      className="md:h-[14%] h-[8%] fixed top-0 z-10 bg-white w-full flex justify-between md:px-[108px] items-center"
     >
       <div id="logo">
         <img
@@ -53,7 +59,9 @@ const Navbar = () => {
                   ? "bg-black text-white"
                   : "bg-slate-300 text-black"
               }`}
-              onClick={() => setActiveIndex(index)}
+              onClick={() =>
+                setActiveIndex(index)
+              }
             >
               {item}
             </li>
@@ -62,7 +70,9 @@ const Navbar = () => {
       </div>
       <div
         className={`absolute top-0 left-0 right-0 bg-white z-20 p-6 shadow-md transform ${
-          menuOpen ? "translate-y-0" : "-translate-y-full"
+          menuOpen
+            ? "translate-y-0"
+            : "-translate-y-full"
         } transition-transform duration-300 sm:hidden`}
       >
         <button

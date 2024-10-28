@@ -10,17 +10,21 @@ import Services from "./components/Services";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
+import Marketing from "./components/ECommerceMarketing";
+import Affiliate from "./components/Affiliate";
 
 function App() {
   return (
     <>
       <Navbar />
-      <HeroSection />
-      {/* <Button /> */}
-      <AboutUs />
-      {/*<Accord />
-      <Services />*/}
-      <Contact />
+      {/* <Marketing />
+       <HeroSection />
+       <Button /> 
+       <AboutUs />
+       <Accord />
+       <Services />
+       <Contact /> */}
+      <Affiliate />
       <Footer />
     </>
   );

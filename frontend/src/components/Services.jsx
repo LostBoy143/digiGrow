@@ -63,7 +63,7 @@ const Services = () => {
         {details.map((item, idx) => {
           return (
             <div
-              className="text-white  p-5 flex flex-col  items-center gap-4 md:h-[373px] md:w-[354px] h-[293px] w-[274px] bg-black rounded-3xl bg-opacity-20 backdrop-blur-lg"
+              className="text-white  p-5 flex flex-col  items-center gap-4 md:h-[373px] md:w-[354px] h-[293px] w-[274px]   bg-opacity-20  bg-white/5 border border-white/20 rounded-[35px] backdrop-blur-[30px]"
               key={idx}
             >
               <img src={item.img} className="h-[56px] w-[56px]" alt="" />

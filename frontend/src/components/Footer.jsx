@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="m-auto text-center text-base flex items-center justify-center space-x-1  pb-8">
-        <p className="flex gap-2 items-center">
+        <p className="flex gap-2 pt-2 items-center justify-center">
           <span>Copyright</span>
           <span>
             <svg
@@ -80,7 +80,7 @@ const Footer = () => {
               />
             </svg>
           </span>
-          <span className="pt-2">2024, All Rights Reserved</span>
+          <span>2024, All Rights Reserved</span>
         </p>
       </div>
     </div>

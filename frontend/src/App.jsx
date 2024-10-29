@@ -11,18 +11,20 @@ import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Social from "./components/Social";
+import DesignBrandStrategy from "./components/DesignBrandStrategy";
 
 function App() {
   return (
     <>
       <Navbar />
-      <HeroSection />
+      <DesignBrandStrategy />
+      {/* <HeroSection /> */}
       {/* <Button /> */}
-      <AboutUs />
+      {/* <AboutUs />
       <Accord />
-      {/* <Services />*/}
+      <Services />
       <Social />
-      <Contact />
+      <Contact /> */}
       <Footer />
     </>
   );

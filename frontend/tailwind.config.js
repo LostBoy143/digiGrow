@@ -4,10 +4,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        thunder: ["Thunder", "san-serif"],
+        thunder: ["Thunder", "sans-serif"],
+        monument: ["PPMonument", "sans-serif"],
       },
       lineHeight: {
         "4percent": "1.04",
+      },
+      rotate: {
+        60: "60deg",
       },
     },
   },

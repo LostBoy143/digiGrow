@@ -53,11 +53,28 @@
 
 @font-face {
   font-family: "Thunder";
-  src: url("THUNDER/Fonts/Web-PS/Thunder-SemiBoldLC.woff2")
-    format("woff2");
+  src: url("THUNDER/Fonts/Web-PS/Thunder-SemiBoldLC.woff2") format("woff2");
 
   /* font-weight: normal;
   font-style: normal; */
+}
+
+/* @font-face {
+  font-family: "PPMonument";
+  src: url("PPMONUMENT/MonumentExtended-Regular.otf") format("otf");
+} */
+
+@font-face {
+  font-family: "PPMonument"; /* Name for your custom font */
+  src: url("PPMONUMENT/PP Monument Extended/PP Monument Extended.woff2")
+    format("woff2"); /* Path to the .otf file */
+  font-weight: normal; /* Specify the weight (normal, bold, etc.) */
+  font-style: normal; /* Specify the style (normal, italic, etc.) */
+}
+
+/* Optional: Define a custom class for the font */
+.font-monument {
+  font-family: "PPMonument", sans-serif; /* Fallback to a system font if unavailable */
 }
 
 #footer {

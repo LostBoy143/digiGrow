@@ -1,6 +1,6 @@
 @media (min-width: 1200px) {
   #contact-section {
-    height: 110vh;
+    /* height: 110vh; */
   }
 }
 @media (min-width: 385px) and (max-width: 488px) {

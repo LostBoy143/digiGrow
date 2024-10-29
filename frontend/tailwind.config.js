@@ -7,11 +7,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        thunder: ["Thunder", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
-        thunder: ["Thunder", "san-serif"],
       },
       lineHeight: {
         "4percent": "1.04",
+      },
+      colors: {
+        "semi-transparent-white": "#FFFFFF30",
+        "half-white": "rgba(255, 255, 255, 0.05)",
+      },
+      backdropBlur: {
+        "backdrop-60": "60px", // Define a custom blur
       },
     },
   },

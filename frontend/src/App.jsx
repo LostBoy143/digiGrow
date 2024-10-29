@@ -30,6 +30,11 @@ function App() {
       <Contact />*/}
       {/* <ECommerceMarketing /> */}
 
+      <AboutUs />
+      <Accord />
+      <Services />
+      <Social />
+      <Contact />
       <Footer />
     </>
   );

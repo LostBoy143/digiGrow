@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div
       id="hero-section"
-      className=" w-full h-screen  relative flex  justify-between"
+      className="w-full h-[780px]  relative flex  justify-between"
     >
       <div
         id="left-content"
@@ -13,7 +13,7 @@ const HeroSection = () => {
       >
         <h1
           id="hero-h1"
-          className="text-[3rem] font-semibold leading-tight tracking-wider inline"
+          className="text-[3rem] font-poppins font-medium text-6xl leading-tight tracking-wider inline"
         >
           Your business success starts here
           <div
@@ -28,7 +28,7 @@ const HeroSection = () => {
         </h1>
         <h2
           id="hero-h2"
-          className="text-[19.5px]"
+          className="font-poppins font-light text-[20px]"
         >
           Grow your client base with DigiGrove and
           targeting strategies

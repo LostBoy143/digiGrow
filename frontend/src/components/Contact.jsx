@@ -31,150 +31,57 @@ const Contact = () => {
     setMsg("");
     console.log("submitted");
   };
+
+  const radialStyle = {
+    background: 'linear-gradient(180deg, #FBE100 -9.43%, #E5FFC2 108.96%)',
+    filter: 'blur(80px)', // Adjust the blur intensity as needed
+
+};
+
   return (
     <div
       id="contact-section"
-      className="h-[110vh] relative mb-20 overflow-hidden w-full  flex flex-col bg-[#232233]"
+      className="relative overflow-hidden w-full flex flex-col bg-[#232233]"
     >
-      <h1 className="h-[15%] absolute  text-white w-full font-extrabold text-6xl flex items-center justify-center">
-        Let’s Build{" "}
-        <span className="ml-[2%] text-[#8cc540]">
+      <h1 className="font-poppins text-white w-full font-extrabold text-6xl flex items-center justify-center pt-[50px] pb-[32px]">
+        Let’s Build&nbsp;
+        <span className="text-[#8cc540]">
           Together
         </span>
       </h1>
-      <div
-        id="slogan"
-        className="absolute top-[14%] lg:top-[20%] text-center md:text-right right-[20%] lg:right-[5%] text-white text-4xl"
-      >
-        <h2>Interested in driving growth?</h2>
-        <h2>Have a general question?</h2>
-        <h2>We are just an email away!</h2>
-      </div>
 
-      <div className="absolute">
-        <svg
-          width="1130"
-          height="1080"
-          viewBox="0 0 1130 1080"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g filter="url(#filter0_f_47_354)">
-            <circle
-              cx="269.5"
-              cy="311.5"
-              r="105.5"
-              fill="url(#paint0_linear_47_354)"
-            />
-          </g>
-          <g filter="url(#filter1_f_47_354)">
-            <circle
-              cx="724.5"
-              cy="873.5"
-              r="105.5"
-              fill="url(#paint1_linear_47_354)"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_47_354"
-              x="-136"
-              y="-94"
-              width="811"
-              height="811"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB"
-            >
-              <feFlood
-                floodOpacity="0"
-                result="BackgroundImageFix"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="150"
-                result="effect1_foregroundBlur_47_354"
-              />
-            </filter>
-            <filter
-              id="filter1_f_47_354"
-              x="319"
-              y="468"
-              width="811"
-              height="811"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB"
-            >
-              <feFlood
-                floodOpacity="0"
-                result="BackgroundImageFix"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="150"
-                result="effect1_foregroundBlur_47_354"
-              />
-            </filter>
-            <linearGradient
-              id="paint0_linear_47_354"
-              x1="269.5"
-              y1="186.094"
-              x2="269.5"
-              y2="435.91"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#8CC540" />
-              <stop
-                offset="1"
-                stopColor="#E5FFC2"
-              />
-            </linearGradient>
-            <linearGradient
-              id="paint1_linear_47_354"
-              x1="724.5"
-              y1="748.094"
-              x2="724.5"
-              y2="997.91"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#FBE100" />
-              <stop
-                offset="1"
-                stopColor="#E5FFC2"
-              />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
       <div
         id="down"
-        className="w-full h-[85%] flex  relative"
+        className="w-full flex  relative items-center justify-center"
       >
         <div
-          id="left"
-          className="w-[43%] relative flex items-center justify-end h-[110vhvh] "
+          id="main-body"
+          className="relative gap-[152px] flex w-[80%] pb-[72px] justify-center"
         >
           <form
             onSubmit={(e) => {
               submitHandle(e);
             }}
-            className="  mt-[70%] lg:mt-[30%] border-[1px] border-zinc-100  bg-black rounded-3xl bg-opacity-0 backdrop-blur-lg flex-col gap-2 w-[80%] h-[90%]   flex items-center justify-evenly p-3 lg:p-6"
+            className="relative border w-[35%] border-semi-transparent-white rounded-3xl flex-col gap-6  flex items-center justify-evenly p-3 lg:p-6 rounded-3xl backdrop-blur-[60px] bg-half-white"
           >
-            <h2 className="w-full flex justify-start text-2xl md:text-3xl text-[106px] font-bold text-white">
+          <div
+            className="absolute h-[100px] w-[100px] top-0 left-0"
+           style={radialStyle}
+          >
+
+          </div>
+          <div
+            className="absolute h-[100px] w-[100px] bottom-0 right-0"
+           style={radialStyle}
+          >
+
+          </div>
+            <h2 className="font-poppins w-full flex justify-start text-xl md:text-xl text-[106px] font-bold text-white">
               Contact Us
             </h2>
 
             <input
-              className="w-full h-[10%] p-2  bg-transparent border-[1px] border-white outline-none  rounded-lg text-white"
+              className="w-full h-[50px] p-2  bg-transparent border-[1px] border border-semi-transparent-white outline-none  rounded-lg text-white"
               type="text"
               name="name"
               value={name}
@@ -182,7 +89,7 @@ const Contact = () => {
               placeholder="Name"
             />
             <input
-              className="w-full h-[10%] p-2 bg-transparent border-[1px] border-white  outline-none rounded-lg text-white"
+              className="w-full h-[50px] p-2 bg-transparent border-[1px] border border-semi-transparent-white  outline-none rounded-lg text-white"
               type="text"
               name="mail"
               value={email}
@@ -190,7 +97,7 @@ const Contact = () => {
               placeholder="Email"
             />
             <textarea
-              className="w-full h-[30%] p-2 bg-transparent border-[1px] border-white  outline-none rounded-lg text-white"
+              className="w-full h-[150px] p-2 bg-transparent border-[1px] border border-semi-transparent-white  outline-none rounded-lg text-white"
               type="text"
               name="msg"
               value={msg}
@@ -205,10 +112,19 @@ const Contact = () => {
               <Button />
             </div>
           </form>
+
+        <div
+          id="slogan"
+          className="font-poppins text-center md:text-right right-[20%] lg:right-[5%] text-white text-3xl"
+        >
+          <h2>Interested in driving growth?</h2>
+          <h2>Have a general question?</h2>
+          <h2>We are just an email away!</h2>
+        </div>
         </div>
         <div
           id="right"
-          className="h-full -mr-[50%] w-[57%]  "
+          className="absolute h-full -mr-[50%] -mt-[20%] w-[57%]  "
         >
           <svg
             className={`h-[1000px] -mt-[20%] w-[1000px] ${rotate} transform transition-transform duration-500  `}

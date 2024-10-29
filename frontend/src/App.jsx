@@ -11,18 +11,25 @@ import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Social from "./components/Social";
+import Email from "./components/Email";
+import ECommerceMarketing from "./components/ECommerceMarketing";
+import Choose from "./components/Choose";
 
 function App() {
   return (
     <>
       <Navbar />
-      <HeroSection />
+      <Email />
+      <Choose />
+      {/* <HeroSection /> */}
       {/* <Button /> */}
-      <AboutUs />
-      <Accord />
-      {/* <Services />*/}
-      <Social />
-      <Contact />
+      {/* <AboutUs />
+      <Accord /> */}
+      {/* <Services /> */}
+      {/* <Social />
+      <Contact />*/}
+      {/* <ECommerceMarketing /> */}
+
       <Footer />
     </>
   );

@@ -218,7 +218,7 @@
     height: 90vh;
   }
   #social-section {
-    height: 80vh;
+    height: 80vh !important;
   }
   .square {
     top: 53% !important;

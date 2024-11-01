@@ -14,28 +14,14 @@ import Social from "./components/Social";
 import Email from "./components/Email";
 import ECommerceMarketing from "./components/ECommerceMarketing";
 import Choose from "./components/Choose";
+import AnimatedComponent from "./components/Ani";
+import Vigilante from "./components/vigil/Vigilante";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Email />
-      <Choose />
-      {/* <HeroSection /> */}
-      {/* <Button /> */}
-      {/* <AboutUs />
-      <Accord /> */}
-      {/* <Services /> */}
-      {/* <Social />
-      <Contact />*/}
-      {/* <ECommerceMarketing /> */}
-
-      <AboutUs />
-      <Accord />
-      <Services />
-      <Social />
-      <Contact />
-      <Footer />
+      <Vigilante />
     </>
   );
 }

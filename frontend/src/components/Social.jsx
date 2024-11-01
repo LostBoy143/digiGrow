@@ -5,7 +5,7 @@ const Social = () => {
   return (
     <div
       id="social-section"
-      className=" p-2  w-full relative"
+      className=" p-2  w-full relative overflow-hidden"
     >
       {/*shapes*/}
       <img
@@ -56,10 +56,9 @@ const Social = () => {
         <div className="relative text-4xl md:text-9xl font-bold">
           <span>400+</span>
           <h2 className="text-xl md:text-3xl ">
-          Customers Globally
-        </h2>
+            Customers Globally
+          </h2>
         </div>
-
       </div>
     </div>
   );

@@ -68,7 +68,7 @@ const Vigilante = () => {
       <img
         src="src/assets/vigilante/sec-6.png"
         alt="dc"
-        className="xl:h-[1736px] w-full"
+        className="2xl:h-[1736px] h-auto w-full"
       />
       {/* <section-7> */}
       <img

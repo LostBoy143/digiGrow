@@ -1,34 +1,48 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Accord = () => {
   const slogans = [
-    "SEARCH ARBITRAGE",
-    "BRAND DESIGN AND STRATEGY",
-    "EMAIL MARKETING AND LEAD GENERATION",
-    "ECOMMERCE & INFLUENCER MARKETING",
-    "AFFILIATE MARKETING",
+    {
+      name: "SEARCH ARBITRAGE",
+      way: "/SearchArbitrage",
+    },
+    {
+      name: "BRAND DESIGN AND STRATEGY",
+      way: "/Brand",
+    },
+    {
+      name: "EMAIL MARKETING AND LEAD GENERATION",
+      way: "/EmailLead",
+    },
+    {
+      name: "ECOMMERCE & INFLUENCER MARKETING",
+      way: "/Ecommerce",
+    },
+    {
+      name: "AFFILIATE MARKETING",
+      way: "/AffiliateMarketing",
+    },
   ];
 
   return (
-    <div
-      className="pt-7 "
-      id="accord-container"
-    >
+    <div className="pt-7 " id="accord-container">
       <div className="font-poppins text-center text-3xl md:text-6xl font-extrabold mb-5">
         What We Do
       </div>
       {slogans.map((item, idx) => {
         return (
-          <div
+          <Link
             className="group items   font-thunder  px-2 md:px-28 cursor-pointer "
             key={idx}
+            to={item.way}
           >
             <h2
               id="about-h2"
               className="group-hover:text-lime-500  leading-4percent tracking-wide lg:tracking-wider  duration-500 text-2xl lg:text-6xl group-hover:text-[26px] lg:group-hover:text-[66px]"
             >
-              {item}
+              {item.name}
             </h2>
             <div className="icon">
               <svg
@@ -60,7 +74,7 @@ const Accord = () => {
                 />
               </svg>
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>

@@ -1,7 +1,4 @@
 @media (min-width: 1200px) {
-  #contact-section {
-    /* height: 110vh; */
-  }
 }
 @media (min-width: 385px) and (max-width: 488px) {
   #hero-img {
@@ -218,7 +215,7 @@
     height: 90vh;
   }
   #social-section {
-    height: 80vh;
+    height: 80vh !important;
   }
   .square {
     top: 53% !important;

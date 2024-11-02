@@ -1,34 +1,40 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
-// import Button from "./components/Button";
 import Navbar from "./components/Navbar";
-import Accord from "./components/Accord";
-import HeroSection from "./components/HeroSection";
-import Services from "./components/Services";
 import Footer from "./components/Footer";
-import AboutUs from "./components/AboutUs";
-import Contact from "./components/Contact";
-import Social from "./components/Social";
-import DesignBrandStrategy from "./components/DesignBrandStrategy";
-import Marketing from "./components/ECommerceMarketing";
-import Affiliate from "./components/Affiliate";
+
+import Email from "./components/Email";
+import ECommerceMarketing from "./components/ECommerceMarketing";
+import Choose from "./components/Choose";
+import AnimatedComponent from "./components/Ani";
+import Vigilante from "./components/vigil/Vigilante";
+import Home from "./pages/Home";
+import SearchArbitragePage from "./pages/SearchArbitragePage";
+import BrandPage from "./pages/BrandPage";
+import EmailLeadPage from "./pages/EmailLeadPage";
+import EcommercePage from "./pages/EcommercePage";
+import AffiliateMarketingPage from "./pages/AffiliateMarketingPage";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Affiliate />
-      {/* <Marketing /> */}
-      {/* <DesignBrandStrategy /> */}
-      {/* <HeroSection /> */}
-      {/* <Button /> */}
-      {/* <AboutUs />
-      <Accord />
-      <Services />
-      <Social />
-      <Contact /> */}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/SearchArbitrage" element={<SearchArbitragePage />} />
+        <Route path="/Brand" element={<BrandPage />} />
+        <Route path="/EmailLead" element={<EmailLeadPage />} />
+        <Route path="/Ecommerce" element={<EcommercePage />} />
+        <Route
+          path="/AffiliateMarketing"
+          element={<AffiliateMarketingPage />}
+        />
+      </Routes>
+
       <Footer />
     </>
   );

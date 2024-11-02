@@ -24,7 +24,7 @@ export default {
           "half-white": "rgba(255, 255, 255, 0.05)",
         },
       },
+      plugins: [],
     },
-    plugins: [],
   },
 };

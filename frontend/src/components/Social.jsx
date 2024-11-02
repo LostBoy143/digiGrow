@@ -3,7 +3,7 @@ import React from "react";
 
 const Social = () => {
   return (
-    <div id="social-section" className=" p-2  w-full relative">
+    <div id="social-section" className=" p-2  w-full relative overflow-hidden">
       {/*shapes*/}
       <img
         src="src/assets/soci-up.png"

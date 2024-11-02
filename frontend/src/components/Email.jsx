@@ -6,7 +6,7 @@ const Email = () => {
   return (
     <div
       id="email-marketing-container"
-      className="2xl:h-[100vh] md:h-[110vh] sm:h-[110vh] max-h-[110vh] sm:min-h-[100vh] w-full flex flex-col gap-6  sm:gap-0 sm:flex-row py-12 sm:py-0  "
+      className="2xl:h-[100vh] md:h-[110vh] sm:h-[110vh] max-h-[110vh] sm:min-h-[100vh] w-full flex flex-col gap-6  sm:gap-0 sm:flex-row py-12 sm:py-0  mt-[40px] "
     >
       <div className="left-side sm:pl-[10%] 2xl:pl-[10%] h-full w-full sm:w-[55%] pt-5 flex flex-col items-center sm:items-start sm:justify-evenly ">
         <div

@@ -52,29 +52,33 @@ const Services = () => {
         id="serve"
         className="bg-[url('/src/assets/crumpled-black-shade.png')] bg-cover relative bg-center w-full stroke-white stroke-1 py-12 z-20 top-0 flex gap-8 flex-wrap justify-evenly px-12"
       >
-
-      <div
-        id="ellipse-container"
-        className="h-40 px-20 flex justify-between absolute items-center top-[42%] w-full"
-      >
-        <div className="ellipses"></div>
-        <div className="ellipses"></div>
-        <div className="ellipses"></div>
-      </div>
+        <div
+          id="ellipse-container"
+          className="h-[90%] sm:h-40 sm:px-20 flex flex-col justify-around  sm:flex-row sm:justify-between absolute items-center sm:top-[42%] sm:w-full"
+        >
+          <div className="ellipses"></div>
+          <div className="ellipses"></div>
+          <div className="ellipses"></div>
+        </div>
         {details.map((item, idx) => {
           return (
             <div
               className="font-poppins text-white text-center  p-5 flex flex-col items-center gap-4 md:h-[354px] md:w-[354px] h-[274px] w-[274px] bg-black rounded-3xl bg-opacity-20 backdrop-blur-lg"
               key={idx}
             >
-
-              <img src={item.img} className="h-[56px] w-[56px]" alt="" />
+              <img
+                src={item.img}
+                className="h-[56px] w-[56px]"
+                alt=""
+              />
               <div className="center text-[#8cc540] text-[26px] font-bold">
-                <h1 className="font-poppins text-center text-42xl font-bold">
+                <h1 className="font-poppins text-center text-lg sm:text-xl md:text-4xl font-bold">
                   {item.title}
                 </h1>
               </div>
-              <h3 className="font-poppins text-center font-small text-[18px]">{item.desc}</h3>
+              <h3 className="font-poppins text-center font-small text-[12px] sm:text-[15px] md:text-[18px]">
+                {item.desc}
+              </h3>
             </div>
           );
         })}

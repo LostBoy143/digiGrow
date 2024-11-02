@@ -33,10 +33,10 @@ const Contact = () => {
   };
 
   const radialStyle = {
-    background: 'linear-gradient(180deg, #FBE100 -9.43%, #E5FFC2 108.96%)',
-    filter: 'blur(80px)', // Adjust the blur intensity as needed
-
-};
+    background:
+      "linear-gradient(180deg, #FBE100 -9.43%, #E5FFC2 108.96%)",
+    filter: "blur(80px)", // Adjust the blur intensity as needed
+  };
 
   return (
     <div
@@ -62,26 +62,22 @@ const Contact = () => {
             onSubmit={(e) => {
               submitHandle(e);
             }}
-            className="relative border w-[35%] border-semi-transparent-white rounded-3xl flex-col gap-6  flex items-center justify-evenly p-3 lg:p-6 rounded-3xl backdrop-blur-[60px] bg-half-white"
+            className="relative border w-[35%] border-semi-transparent-white rounded-3xl flex-col gap-6  flex items-center justify-evenly p-3 lg:p-6  backdrop-blur-[60px] bg-half-white"
           >
-          <div
-            className="absolute h-[100px] w-[100px] top-0 left-0"
-           style={radialStyle}
-          >
-
-          </div>
-          <div
-            className="absolute h-[100px] w-[100px] bottom-0 right-0"
-           style={radialStyle}
-          >
-
-          </div>
+            <div
+              className="absolute h-[100px] w-[100px] top-0 left-0"
+              style={radialStyle}
+            ></div>
+            <div
+              className="absolute h-[100px] w-[100px] bottom-0 right-0"
+              style={radialStyle}
+            ></div>
             <h2 className="font-poppins w-full flex justify-start text-xl md:text-xl text-[106px] font-bold text-white">
               Contact Us
             </h2>
 
             <input
-              className="w-full h-[50px] p-2  bg-transparent border-[1px] border border-semi-transparent-white outline-none  rounded-lg text-white"
+              className="w-full h-[50px] p-2  bg-transparent border-[1px]  border-semi-transparent-white outline-none  rounded-lg text-white"
               type="text"
               name="name"
               value={name}
@@ -89,7 +85,7 @@ const Contact = () => {
               placeholder="Name"
             />
             <input
-              className="w-full h-[50px] p-2 bg-transparent border-[1px] border border-semi-transparent-white  outline-none rounded-lg text-white"
+              className="w-full h-[50px] p-2 bg-transparent border-[1px]  border-semi-transparent-white  outline-none rounded-lg text-white"
               type="text"
               name="mail"
               value={email}
@@ -97,7 +93,7 @@ const Contact = () => {
               placeholder="Email"
             />
             <textarea
-              className="w-full h-[150px] p-2 bg-transparent border-[1px] border border-semi-transparent-white  outline-none rounded-lg text-white"
+              className="w-full h-[150px] p-2 bg-transparent border-[1px]  border-semi-transparent-white  outline-none rounded-lg text-white"
               type="text"
               name="msg"
               value={msg}
@@ -113,14 +109,14 @@ const Contact = () => {
             </div>
           </form>
 
-        <div
-          id="slogan"
-          className="font-poppins text-center md:text-right right-[20%] lg:right-[5%] text-white text-3xl"
-        >
-          <h2>Interested in driving growth?</h2>
-          <h2>Have a general question?</h2>
-          <h2>We are just an email away!</h2>
-        </div>
+          <div
+            id="slogan"
+            className=" font-poppins text-center md:text-right right-[20%] lg:right-[5%] text-white text-3xl"
+          >
+            <h2>Interested in driving growth?</h2>
+            <h2>Have a general question?</h2>
+            <h2>We are just an email away!</h2>
+          </div>
         </div>
         <div
           id="right"

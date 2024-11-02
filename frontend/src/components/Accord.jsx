@@ -27,20 +27,20 @@ const Accord = () => {
   ];
 
   return (
-    <div className="pt-7 " id="accord-container">
+    <div className="py-7 " id="accord-container">
       <div className="font-poppins text-center text-3xl md:text-6xl font-extrabold mb-5">
         What We Do
       </div>
       {slogans.map((item, idx) => {
         return (
           <Link
-            className="group items   font-thunder  px-2 md:px-28 cursor-pointer "
+            className="md:group items md:hover:bg-[#232233] h-auto sm:h-[105px] w-full py-4 sm:py-0   font-thunder  px-6 sm:px-12 md:px-28 cursor-pointer "
             key={idx}
             to={item.way}
           >
             <h2
               id="about-h2"
-              className="group-hover:text-lime-500  leading-4percent tracking-wide lg:tracking-wider  duration-500 text-2xl lg:text-6xl group-hover:text-[26px] lg:group-hover:text-[66px]"
+              className="md:group-hover:text-lime-500  sm:leading-4percent sm:tracking-wide lg:tracking-wider  duration-500 text-[22px] lg:text-6xl md:group-hover:text-[26px] lg:group-hover:text-[66px]"
             >
               {item.name}
             </h2>
@@ -51,7 +51,7 @@ const Accord = () => {
                 viewBox="0 0 106 106"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]"
+                className="sm:w-[40px] w-[25px] sm:h-[40px] h-[25px] lg:w-[60px] lg:h-[60px] "
               >
                 <mask
                   id="path-1-inside-1_222_21"

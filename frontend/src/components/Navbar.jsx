@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="md:h-[72px] h-[96px] fixed top-0 z-[150] bg-white w-full flex justify-between px-[108px] items-center"
+      className="md:h-[72px] h-[72px] fixed top-0 z-[150] bg-white w-full flex justify-between px-4 sm:px-[108px] items-center"
     >
       <div id="logo">
         <img

@@ -16,10 +16,8 @@
 }
 
 .items {
-  width: 100%;
-  height: 105px;
   border-top: 1.3px solid black;
-  /* border-bottom: 1.3px solid black; */
+  border-bottom: 1.3px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +32,6 @@
 }
 .items:hover {
   border-color: #8cc540;
-  background-color: #232233;
 }
 .ellipses {
   border-radius: 50%;

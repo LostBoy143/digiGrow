@@ -3,23 +3,27 @@ import Img from "../assets/DigiGrove Logo (Final-2) 1.png";
 const Footer = () => {
   return (
     <div id="footer">
-      <div className="w-full h-60 md:h-64 flex justify-evenly pt-6 font-sans text-xl text-[#232233]">
+      <div className="w-full h-60 md:h-64 flex justify-between sm:justify-evenly pt-6 font-sans text-xl text-[#232233]">
         {/* <img className="w-full h-96 absolute" src={Img2}></img> */}
-        <div className="hidden md:block px-4">
-          <img src={Img} className="w-64 h-60 aspect-auto object-fill"></img>
+        <div className=" py-1 px-2 sm:px-4">
+          <img
+            src={Img}
+            className="w-64 sm:w-64 h-42 sm:h-60 aspect-auto object-fill"
+          ></img>
         </div>
-        <div className=" w-96 p-2 md:p-4 m-1 md:m-2">
-          <ul className="flex flex-col gap-3 md:gap-6">
+        <div className="  w-96 sm:p-2 md:p-4 m-1 md:m-2">
+          <ul className="flex flex-col gap-3 md:gap-6 text-[12px] sm:text-lg">
             <li>Contact Us</li>
             <li>Terms & Conditions</li>
             <li>FAQs</li>
           </ul>
         </div>
-        <div className=" w-96 p-2 md:p-4 m-1 md:m-2 ">
-          <ul className="flex flex-col gap-3 md:gap-6">
+        <div className=" sm:w-96 p-2 md:p-4  md:m-2 ">
+          <ul className="flex flex-col gap-3 md:gap-6 text-[12px] sm:text-lg">
             <li>Admin@digigrove.com</li>
             <li>
-              Plot No. 334, 5th Floor, Udyog Vihar, Phase IV, Sector 18,
+              Plot No. 334, 5th Floor, Udyog
+              Vihar, Phase IV, Sector 18,
               Gurugram, Haryana, 122015
             </li>
           </ul>
@@ -80,7 +84,9 @@ const Footer = () => {
               />
             </svg>
           </span>
-          <span>2024, All Rights Reserved</span>
+          <span className="text-[12px] sm:text-[16px]">
+            2024, All Rights Reserved
+          </span>
         </p>
       </div>
     </div>

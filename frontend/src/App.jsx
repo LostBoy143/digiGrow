@@ -1,16 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-import Email from "./components/Email";
-import ECommerceMarketing from "./components/ECommerceMarketing";
-import Choose from "./components/Choose";
-import AnimatedComponent from "./components/Ani";
-import Vigilante from "./components/vigil/Vigilante";
 import Home from "./pages/Home";
 import SearchArbitragePage from "./pages/SearchArbitragePage";
 import BrandPage from "./pages/BrandPage";

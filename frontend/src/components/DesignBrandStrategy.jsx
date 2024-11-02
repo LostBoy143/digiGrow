@@ -2,17 +2,22 @@ import { useState } from "react";
 
 const DesignBrandStrategy = () => {
   const [rotate, setRotate] = useState("");
+  const [slide, setSlide] = useState("md:translate-x-96");
+  const [showCardOption, setShowCardOption] = useState(false);
+
   const handleHover = () => {
-    setRotate("rotate-60");
+    setRotate("md:rotate-60");
+    setSlide("md:translate-x-0");
   };
   const handleHoverLeave = () => {
     setRotate("");
+    setSlide("md:translate-x-96");
   };
   return (
     <div>
-      <div className="w-screen h-screen bg-[#232233] flex justify-between">
-        <div className="w-1/2 mt-44 px-20">
-          <h1 className="font-thunder text-9xl text-[#8cc540]">
+      <div className="w-full h-screen bg-[#232233] flex justify-between">
+        <div className="w-1/2 md:mt-44 mt-32 px-8 md:px-20">
+          <h1 className="font-thunder text-5xl md:text-9xl text-[#8cc540]">
             DESIGN &<br /> BRAND STRATEGY
           </h1>
           <svg
@@ -21,6 +26,7 @@ const DesignBrandStrategy = () => {
             viewBox="0 0 959 45"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="hidden md:block"
           >
             <path
               d="M942.219 24.2188V1.96875H958.625V43.9688H940.188L917.625 18.3125V43.9688H901.25V1.96875H923.781L942.219 24.2188Z"
@@ -95,19 +101,19 @@ const DesignBrandStrategy = () => {
               fill="#FBE100"
             />
           </svg>
-          <p className="font-medium text-2xl pt-8 text-white">
+          <p className="font-medium text-2xl pt-4 md:pt-8 text-white">
             At Digigrove, we are dedicated to create innovative <br /> design
             solutions that integrate seamlessly with <br /> your business needs,
             inspiring growth.
           </p>
         </div>
-        <div>
+        <div className="overflow-hidden ">
           <img
             src="src/assets/Group 31.png"
             alt="pic"
-            width={1000}
-            height={1000}
-            className={`${rotate} transform transition-transform duration-500  overflow-hidden ml-44 pl-40`}
+            width={1500}
+            height={1500}
+            className={`${rotate} transform transition-transform duration-500 ml-44 pl-40 -mt-10`}
             onMouseEnter={handleHover}
             onMouseLeave={handleHoverLeave}
           />
@@ -122,11 +128,145 @@ const DesignBrandStrategy = () => {
             width={975}
           />
         </div>
-        <div>
-          <h2 className="font-monument text-[#8CC540]">
-            Design That Speaks, <br />
-            Strategy That Delivers
-          </h2>
+        <div className="-ml-52 my-12">
+          <div className="overflow-hidden">
+            <h2
+              className={`${slide}  font-monument font-extrabold text-right mr-12 capitalize text-6xl transition-transform ease-in-out transform  duration-700 tracking-tight text-[#8CC540]`}
+            >
+              DESIGN THAT SPEAKS. <br />
+              STRATEGY THAT DELIVERS
+            </h2>
+          </div>
+          <div className="px-40 py-20 ml-32">
+            <div className="flex flex-col my-1 gap-2 justify-start items-end font-poppins">
+              <img
+                src="src/assets/Ellipse 5.png"
+                alt="elipse"
+                className="-z-10 -mb-14 -mr-6"
+                height={75}
+                width={75}
+              />
+              <h3 className="font-bold text-2xl">Understand</h3>
+              <p className="text-[#232233] w-3/4 font-medium text-right text-xl">
+                We dive deep into your brand, market, and audience to grasp your
+                unique needs and goals.
+              </p>
+            </div>
+            <div className="flex flex-col my-1 gap-4 justify-start items-start font-poppins">
+              <img
+                src="src/assets/Ellipse 5.png"
+                alt="elipse"
+                className="-z-10 -mb-14 -ml-6"
+                height={75}
+                width={75}
+              />
+              <h3 className="font-bold text-2xl">Plan</h3>
+              <p className="text-[#232233] w-3/4 font-medium text-left text-xl">
+                Strategize the perfect blend of creative design and impactful
+                messaging to shape your brand&apos;s identity.
+              </p>
+            </div>
+            <div className="flex flex-col my-1 gap-4 justify-start items-end font-poppins">
+              <img
+                src="src/assets/Ellipse 5.png"
+                alt="elipse"
+                className="-z-10 -mb-14 -mr-6"
+                height={75}
+                width={75}
+              />
+              <h3 className="font-bold text-2xl">Execute</h3>
+              <p className="text-[#232233] w-3/4 font-medium text-right text-xl">
+                Turn strategy into reality with tailored design solutions,
+                delivering visually stunning and cohesive brand elements.
+              </p>
+            </div>
+            <div className="flex flex-col my-1 gap-4 justify-start items-start font-poppins">
+              <img
+                src="src/assets/Ellipse 5.png"
+                alt="elipse"
+                className="-z-10 -mb-14 -ml-6"
+                height={75}
+                width={75}
+              />
+              <h3 className="font-bold text-2xl">Result</h3>
+              <p className="text-[#232233] w-3/4 font-medium text-left text-xl">
+                Measure success through improved brand visibility, customer
+                loyalty, and business growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full h-screen bg-[#232233] p-16">
+        <h1 className="text-center font-poppins font-extrabold text-[#8cc540] text-7xl">
+          Our Work
+        </h1>
+        <div className="flex flex-col md:flex-row justify-center gap-12 my-10">
+          <div
+            className="relative group rounded-2xl overflow-hidden bg-[#232233] shadow-lg"
+            onMouseEnter={() => {
+              setShowCardOption(true);
+              handleHover();
+            }}
+            onMouseLeave={() => {
+              setShowCardOption(false);
+              handleHoverLeave();
+            }}
+          >
+            <img
+              src="src/assets/Vigilante Tape Mockup.png"
+              alt="mockup"
+              height={700}
+              width={650}
+              className="rounded-3xl"
+            />
+
+            <div
+              className={` absolute inset-0  flex flex-col justify-between ${
+                showCardOption ? "opacity-100" : "opacity-0"
+              } transition-opacity duration-300 ease-in-out`}
+            >
+              <div className="flex justify-between items-center p-5  bg-gradient-to-b from-[#232233] to-transparent/5">
+                <h3 className="font-poppins font-semibold text-white text-5xl">
+                  Vigilante
+                </h3>
+                <svg
+                  width="48"
+                  height="42"
+                  viewBox="0 0 48 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M29.5285 1.37913L47.1873 19.0379C48.2709 20.1216 48.2709 21.8785 47.1873 22.9621L29.5285 40.6209C28.4448 41.7046 26.6879 41.7046 25.6043 40.6209C24.5207 39.5373 24.5207 37.7804 25.6043 36.6967L38.5262 23.7748L0.14258 23.7748L0.14258 18.2252L38.5262 18.2252L25.6043 5.30331C24.5207 4.21968 24.5207 2.46276 25.6043 1.37913C26.6879 0.295496 28.4448 0.295496 29.5285 1.37913Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+
+              <div className="flex justify-center bg-gradient-to-t py-4 from-[#232233] to-transparent/5">
+                <button className=" text-white font-poppins text-2xl font-medium px-8 py-4 rounded-full border border-white  transition ">
+                  View Project
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className=" rounded-3xl w-[250px] md:w-[650px] overflow-hidden"
+            onMouseEnter={handleHover}
+            onMouseLeave={handleHoverLeave}
+          >
+            <img
+              src="src/assets/Social Media Posts Mockups 1.png"
+              alt="tour"
+              height={700}
+              width={650}
+              className="transition-transform duration-500 aspect-auto  ease-in-out hover:scale-125"
+            />
+          </div>
         </div>
       </div>
     </div>

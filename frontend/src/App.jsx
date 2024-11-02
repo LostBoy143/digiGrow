@@ -12,12 +12,16 @@ import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Social from "./components/Social";
 import DesignBrandStrategy from "./components/DesignBrandStrategy";
+import Marketing from "./components/ECommerceMarketing";
+import Affiliate from "./components/Affiliate";
 
 function App() {
   return (
     <>
       <Navbar />
-      <DesignBrandStrategy />
+      <Affiliate />
+      {/* <Marketing /> */}
+      {/* <DesignBrandStrategy /> */}
       {/* <HeroSection /> */}
       {/* <Button /> */}
       {/* <AboutUs />

@@ -3,10 +3,7 @@ import React from "react";
 
 const Social = () => {
   return (
-    <div
-      id="social-section"
-      className=" p-2  w-full relative"
-    >
+    <div id="social-section" className=" p-2  w-full relative">
       {/*shapes*/}
       <img
         src="src/assets/soci-up.png"
@@ -22,7 +19,7 @@ const Social = () => {
       ></img>
       <img
         id="instagram"
-        src="src/assets/instagram.png"
+        src="src/assets/Instagram.png"
         className="insta h-[270px]  absolute  top-[30%] xl:top-[30%] right-[0%] xl:right-[10%] transform transition-all duration-500 hover:rotate-12 hover:scale-125"
       ></img>
       <img
@@ -42,24 +39,18 @@ const Social = () => {
         <div className="square absolute top-[60%] left-0 md:h-[180px] w-[20px] bg-[#8CC540]"></div>
 
         <h1 className="font-poppins text-2xl md:text-5xl  font-medium">
-          State of The Art Technology Powering Our
-          Campaigns
+          State of The Art Technology Powering Our Campaigns
         </h1>
         <h2 className="font-poppins text-left  text-md font-small md:text-2xl md:w-[80%]">
-          Digigrove’s AI-powered platform uses
-          deep learning and real-time analytics to
-          drive smart marketing decisions. Gain a
-          competitive edge, uncover new
-          opportunities, and stay ahead with
-          dynamic digital strategies.
+          Digigrove’s AI-powered platform uses deep learning and real-time
+          analytics to drive smart marketing decisions. Gain a competitive edge,
+          uncover new opportunities, and stay ahead with dynamic digital
+          strategies.
         </h2>
         <div className="relative text-4xl md:text-9xl font-bold">
           <span>400+</span>
-          <h2 className="text-xl md:text-3xl ">
-          Customers Globally
-        </h2>
+          <h2 className="text-xl md:text-3xl ">Customers Globally</h2>
         </div>
-
       </div>
     </div>
   );

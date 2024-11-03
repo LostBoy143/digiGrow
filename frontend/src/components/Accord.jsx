@@ -34,13 +34,13 @@ const Accord = () => {
       {slogans.map((item, idx) => {
         return (
           <Link
-            className="md:group items md:hover:bg-[#232233] h-auto sm:h-[105px] w-full py-4 sm:py-0   font-thunder  px-6 sm:px-12 md:px-28 cursor-pointer "
+            className="group items md:hover:bg-[#232233] h-auto sm:h-[105px] w-full py-3 sm:py-0   font-thunder  px-6 sm:px-12 md:px-28 cursor-pointer "
             key={idx}
             to={item.way}
           >
             <h2
               id="about-h2"
-              className="md:group-hover:text-lime-500  sm:leading-4percent sm:tracking-wide lg:tracking-wider  duration-500 text-[22px] lg:text-6xl md:group-hover:text-[26px] lg:group-hover:text-[66px]"
+              className="group-hover:text-[#8cc540]  sm:leading-4percent sm:tracking-wide lg:tracking-wider  duration-500 text-[22px] lg:text-6xl md:group-hover:text-[26px] lg:group-hover:text-[66px]"
             >
               {item.name}
             </h2>

@@ -7,6 +7,7 @@ export default {
         thunder: ["Thunder", "sans-serif"],
         monument: ["PPMonument", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        porter: ["Porter", "sans-serif"],
       },
       lineHeight: {
         "4percent": "1.04",

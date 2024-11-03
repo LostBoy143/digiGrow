@@ -1,9 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DesignBrandStrategy = () => {
   const [rotate, setRotate] = useState("");
   const [slide, setSlide] = useState("md:translate-x-96");
   const [showCardOption, setShowCardOption] = useState(false);
+  const navigate = useNavigate();
+
+  const handleClick = () => navigate("/project");
 
   const handleHover = () => {
     setRotate("md:rotate-60");
@@ -247,7 +251,10 @@ const DesignBrandStrategy = () => {
               </div>
 
               <div className="flex justify-center bg-gradient-to-t py-4 from-[#232233] to-transparent/5">
-                <button className=" text-white font-poppins text-2xl font-medium px-8 py-4 rounded-full border border-white  transition ">
+                <button
+                  onClick={handleClick}
+                  className=" text-white font-poppins text-2xl font-medium px-8 py-4 rounded-full border border-white  transition "
+                >
                   View Project
                 </button>
               </div>

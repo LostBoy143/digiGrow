@@ -20,12 +20,9 @@ const Vigilante = () => {
         className="xl:h-[110vh] 2xl:h-[1180px] w-full mt-[70px]"
       />
       {/* <section-2  > */}
-      <div
-        id="hero-2"
-        className=" md:h-[100vh] w-full"
-      >
+      <div id="hero-2" className=" md:h-[100vh] w-full">
         <img
-          src="src/assets/vigilante/hero-2.png"
+          src="src/assets/vigilante/Hero-2.png"
           alt="hero2"
           className=" h-full w-full bg-cover"
         />

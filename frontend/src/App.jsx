@@ -10,7 +10,7 @@ import Email from "./components/Email";
 import ECommerceMarketing from "./components/ECommerceMarketing";
 import Choose from "./components/Choose";
 import AnimatedComponent from "./components/Ani";
-import Vigilante from "./components/vigil/Vigilante";
+import Vigilante from "./pages/Vigilante";
 import Home from "./pages/Home";
 import SearchArbitragePage from "./pages/SearchArbitragePage";
 import BrandPage from "./pages/BrandPage";
@@ -25,14 +25,15 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/SearchArbitrage" element={<SearchArbitragePage />} />
-        <Route path="/Brand" element={<BrandPage />} />
-        <Route path="/EmailLead" element={<EmailLeadPage />} />
-        <Route path="/Ecommerce" element={<EcommercePage />} />
+        <Route path="/searcharbitrage" element={<SearchArbitragePage />} />
+        <Route path="/brand" element={<BrandPage />} />
+        <Route path="/email-lead" element={<EmailLeadPage />} />
+        <Route path="/ecommerce" element={<EcommercePage />} />
         <Route
-          path="/AffiliateMarketing"
+          path="/affiliate-marketing"
           element={<AffiliateMarketingPage />}
         />
+        <Route path="/project" element={<Vigilante />} />
       </Routes>
 
       <Footer />

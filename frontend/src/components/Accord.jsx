@@ -6,23 +6,23 @@ const Accord = () => {
   const slogans = [
     {
       name: "SEARCH ARBITRAGE",
-      way: "/SearchArbitrage",
+      way: "/searcharbitrage",
     },
     {
       name: "BRAND DESIGN AND STRATEGY",
-      way: "/Brand",
+      way: "/brand",
     },
     {
       name: "EMAIL MARKETING AND LEAD GENERATION",
-      way: "/EmailLead",
+      way: "/email-lead",
     },
     {
       name: "ECOMMERCE & INFLUENCER MARKETING",
-      way: "/Ecommerce",
+      way: "/ecommerce",
     },
     {
       name: "AFFILIATE MARKETING",
-      way: "/AffiliateMarketing",
+      way: "/affiliate-marketing",
     },
   ];
 
@@ -53,10 +53,7 @@ const Accord = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]"
               >
-                <mask
-                  id="path-1-inside-1_222_21"
-                  fill="white"
-                >
+                <mask id="path-1-inside-1_222_21" fill="white">
                   <path d="M3 106C1.34315 106 -5.87108e-08 104.657 -1.31134e-07 103L-4.50227e-06 3C-4.5747e-06 1.34315 1.34314 -5.87108e-08 3 -1.31134e-07L103 -4.50227e-06C104.657 -4.5747e-06 106 1.34314 106 3L106 103C106 104.657 104.657 106 103 106L3 106Z" />
                 </mask>
                 <path

@@ -1,17 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [activeIndex, setActiveIndex] =
-    useState(null);
+  const [activeIndex, setActiveIndex] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = [
-    "Home",
-    "About",
-    "Services",
-    "Contact",
-  ];
+  const navItems = ["Home", "About", "Services", "Contact"];
   return (
     <div
       id="navbar"
@@ -51,28 +46,25 @@ const Navbar = () => {
       >
         <ul className="flex justify-evenly items-center h-full">
           {navItems.map((item, index) => (
-            <li
+            <Link
               key={index}
-              id="nav-li"
+              to={item === "Home" ? "/" : "#"}
               className={`rounded-full  flex font-semi-bold justify-center font-semibold items-center cursor-pointer w-1/4 h-full duration-500 ${
                 activeIndex === index
                   ? "bg-black text-white"
                   : "bg-slate-300 text-black"
               }`}
-              onClick={() =>
-                setActiveIndex(index)
-              }
             >
-              {item}
-            </li>
+              <li id="nav-li" onClick={() => setActiveIndex(index)}>
+                {item}
+              </li>
+            </Link>
           ))}
         </ul>
       </div>
       <div
         className={`absolute top-0 left-0 right-0 bg-white z-20 p-6 shadow-md transform ${
-          menuOpen
-            ? "translate-y-0"
-            : "-translate-y-full"
+          menuOpen ? "translate-y-0" : "-translate-y-full"
         } transition-transform duration-300 sm:hidden`}
       >
         <button
@@ -98,20 +90,24 @@ const Navbar = () => {
         <ul className="flex flex-col gap-4 mt-8">
           {" "}
           {navItems.map((item, index) => (
-            <li
+            <Link
               key={index}
+              to={item === "Home" ? "/" : "#"}
               className={`rounded-lg p-4 text-center font-semibold cursor-pointer duration-500 ${
                 activeIndex === index
                   ? "bg-black text-white"
                   : "bg-gray-200 text-black"
               }`}
-              onClick={() => {
-                setActiveIndex(index);
-                setMenuOpen(false);
-              }}
             >
-              {item}
-            </li>
+              <li
+                onClick={() => {
+                  setActiveIndex(index);
+                  setMenuOpen(false);
+                }}
+              >
+                {item}
+              </li>
+            </Link>
           ))}
         </ul>
       </div>

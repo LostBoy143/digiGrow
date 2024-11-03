@@ -1,7 +1,7 @@
-import React from "react";
+import SearchArbitrage from "../components/SearchArbitrage";
 
 const SearchArbitragePage = () => {
-  return <></>;
+  return <SearchArbitrage />;
 };
 
 export default SearchArbitragePage;

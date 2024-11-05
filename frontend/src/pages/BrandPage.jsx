@@ -1,7 +1,7 @@
-import React from "react";
+import DesignBrandStrategy from "../components/DesignBrandStrategy";
 
 const BrandPage = () => {
-  return <div></div>;
+  return <DesignBrandStrategy />;
 };
 
 export default BrandPage;

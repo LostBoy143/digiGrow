@@ -51,14 +51,195 @@
 
 @font-face {
   font-family: "Thunder";
-  src: url("THUNDER/Fonts/Web-PS/Thunder-SemiBoldLC.woff2")
-    format("woff2");
+  src: url("THUNDER/Fonts/Web-PS/Thunder-SemiBoldLC.woff2") format("woff2");
 
   /* font-weight: normal;
   font-style: normal; */
 }
 
+/* @font-face {
+  font-family: "PPMonument";
+  src: url("PPMONUMENT/MonumentExtended-Regular.otf") format("otf");
+} */
+
+@font-face {
+  font-family: "PPMonument"; /* Name for your custom font */
+  src: url("PPMONUMENT/PP Monument Extended/PP Monument Extended.woff2")
+    format("woff2"); /* Path to the .otf file */
+  font-weight: normal; /* Specify the weight (normal, bold, etc.) */
+  font-style: normal; /* Specify the style (normal, italic, etc.) */
+}
+
+/* Optional: Define a custom class for the font */
+.font-monument {
+  font-family: "PPMonument", sans-serif; /* Fallback to a system font if unavailable */
+}
+@font-face {
+  font-family: "Porter";
+  src: url("PORTER/porter-sans-inline-block-webfont.eot");
+  src: url("PORTER/porter-sans-inline-block-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("PORTER/porter-sans-inline-block-webfont.woff") format("woff"),
+    url("PORTER/porter-sans-inline-block-webfont.ttf") format("truetype"),
+    url("PORTER/porter-sans-inline-block-webfont.svg#porter_sans_blockblock")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 #footer {
   background: url("src/assets/image 6.png");
   object-fit: cover;
+}
+
+@keyframes leftToRight {
+  from {
+    transform: translate(-200px, -50px) rotate(-20deg);
+    background-image: url("/src/assets/ecom.webp");
+  }
+  to {
+    transform: translate(calc(100vw - 550px), -50px) rotate(-340deg);
+    background-image: url("/src/assets/pexels-yankrukov-7691745.jpg");
+  }
+}
+
+@keyframes rightToLeft {
+  from {
+    transform: translate(calc(100vw - 550px), -50px) rotate(-340deg);
+    background-image: url("/src/assets/pexels-yankrukov-7691745.jpg");
+  }
+  to {
+    transform: translate(-200px, -50px) rotate(-20deg);
+    background-image: url("/src/assets/ecom.webp");
+  }
+}
+
+@keyframes pinnerForward {
+  from {
+    left: calc(100vw - 300px);
+    height: 250px;
+    width: 250px;
+    background-image: url("src/assets/pinner-black.svg");
+  }
+  to {
+    left: 400px;
+    transform: rotate(-90deg);
+    height: 150px;
+    width: 150px;
+    background-image: url("src/assets/pinner.svg");
+  }
+}
+@keyframes pinnerBackward {
+  from {
+    left: 400px;
+    transform: rotate(-90deg);
+    height: 150px;
+    width: 150px;
+    background-image: url("src/assets/pinner.svg");
+  }
+  to {
+    left: calc(100vw - 300px);
+    height: 250px;
+    width: 250px;
+    background-image: url("src/assets/pinner-black.svg");
+  }
+}
+
+@keyframes clipLeanForward {
+  from {
+    transform: scaleX(-1);
+    background-image: url("src/assets/OBJECTS-white.svg");
+  }
+  to {
+    transform: scaleX(1);
+    background-image: url("src/assets/OBJECTS.svg");
+  }
+}
+@keyframes clipLeanBackward {
+  from {
+    transform: scaleX(1);
+    background-image: url("src/assets/OBJECTS.svg");
+  }
+  to {
+    transform: scaleX(-1);
+    background-image: url("src/assets/OBJECTS-white.svg");
+  }
+}
+
+#marketing-page {
+  background-color: white;
+  transition: background-color 2s ease-in-out;
+  &.right {
+    background-color: #232233;
+  }
+  &.left {
+    background-color: white;
+  }
+
+  .main-image-grp {
+    border-radius: 28px;
+    min-height: 700px;
+    max-height: 700px;
+    min-width: 700px;
+    max-width: 700px;
+    z-index: 1;
+    transform: translate(-200px, -50px) rotate(-20deg);
+    background-image: url("/src/assets/ecom.webp");
+    background-size: cover; /* Ensures the image covers the container */
+    background-attachment: fixed; /* Keeps the background fixed in place when scrolling */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Avoids repeating the background */
+    transition: background-image 0.5s ease-in-out;
+    &.right {
+      animation: leftToRight 2s forwards;
+    }
+    &.left {
+      animation: rightToLeft 2s forwards;
+    }
+  }
+
+  .pinner {
+    height: 250px;
+    width: 250px;
+    bottom: 50px;
+    background-image: url("src/assets/pinner-black.svg");
+    background-size: cover; /* Ensures the image covers the container */ /* Keeps the background fixed in place when scrolling */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Avoids repeating the background */
+    left: calc(100vw - 300px);
+    &.right {
+      animation: pinnerForward 2s forwards;
+    }
+    &.left {
+      animation: pinnerBackward 2s forwards;
+    }
+    transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+  }
+
+  .clip {
+    height: 475px;
+    width: 405px;
+    bottom: 0px;
+    background-image: url("src/assets/OBJECTS-white.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    left: calc(100vw - 1200px);
+    transition: transform 2s ease-in-out;
+    &.right {
+      animation: clipLeanForward 2s forwards;
+    }
+    &.left {
+      animation: clipLeanBackward 2s forwards;
+    }
+    /* transition: height 0.5s ease-in-out, width 0.5s ease-in-out; */
+  }
+
+  .content {
+    transition: color 2s ease-in-out;
+    /* margin-right: -180px; */
+    /* transition */
+    /* width: 25%; */
+  }
 }

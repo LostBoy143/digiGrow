@@ -23,21 +23,21 @@ const Social = () => {
       <img
         id="instagram"
         src="src/assets/instagram.png"
-        className="insta h-[270px]  absolute  top-[30%] xl:top-[30%] right-[0%] xl:right-[10%] transform transition-all duration-500 hover:rotate-12 hover:scale-125"
+        className="insta h-[100px] sm:h-[270px]  absolute  top-[30%] xl:top-[30%] right-[0%] xl:right-[10%] transform transition-all duration-500 hover:rotate-12 hover:scale-125"
       ></img>
       <img
         id="twitter"
         src="src/assets/twi.png"
-        className="insta h-[350px] overflow-visible  absolute top-0  sm:top-[-15%] 2xl:top-[-2%] 2xl:right-[-2%] right-0 sm:right-[-10%] xl:right-[-2%] transform transition-all duration-500 hover:rotate-12 hover:scale-125 z-[20]"
+        className="insta h-[100px] sm:h-[350px] overflow-visible  absolute top-0  sm:top-[-15%] 2xl:top-[-2%] 2xl:right-[-2%] right-0 sm:right-[-10%] xl:right-[-2%] transform transition-all duration-500 hover:rotate-12 hover:scale-125 z-[20]"
       ></img>
       <img
         id="facebook"
         src="src/assets/Facebook 3.png"
-        className="insta h-[250px]  absolute  bottom-[1%] md:bottom-[-2%]  right-[-5%]  transform transition-all duration-500 hover:rotate-12 hover:scale-125"
+        className="insta h-[100px] sm:h-[250px]  absolute  bottom-[1%] md:bottom-[-2%]  right-[-5%]  transform transition-all duration-500 hover:rotate-12 hover:scale-125"
       ></img>
       <div
         id="text-container"
-        className="w-[75%] md:w-[60%] pb-[152px] flex flex-col gap-2 md:gap-5 pl-[128px] mt-[12%] lg:mt-[10%] xl:mt-[12%]"
+        className="w-[75%] md:w-[60%] pb-[152px] flex flex-col gap-2 md:gap-5 pl-[10px] sm:pl-[128px] mt-[12%] lg:mt-[10%] xl:mt-[12%]"
       >
         <div className="square absolute top-[60%] left-0 md:h-[180px] w-[20px] bg-[#8CC540]"></div>
 

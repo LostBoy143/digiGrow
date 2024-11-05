@@ -50,8 +50,9 @@ const Services = () => {
 
       <div
         id="serve"
-        className="bg-[url('/src/assets/crumpled-black-shade.png')] bg-cover relative bg-center w-full stroke-white stroke-1 py-12 z-20 top-0 flex gap-8 flex-wrap justify-evenly px-12"
+        className="bg-[url('/src/assets/crumpled-black-shade.png')] bg-cover relative bg-center w-full stroke-white stroke-1 py-12 z-20 top-0 grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-8 px-2 md:px-12 2xl:px-24"
       >
+        {/* ellipse */}
         <div
           id="ellipse-container"
           className="h-[90%] sm:h-40 sm:px-20 flex flex-col justify-around  sm:flex-row sm:justify-between absolute items-center sm:top-[42%] sm:w-full"
@@ -60,19 +61,20 @@ const Services = () => {
           <div className="ellipses"></div>
           <div className="ellipses"></div>
         </div>
+        {/* ellipse end */}
         {details.map((item, idx) => {
           return (
             <div
-              className="font-poppins text-white text-center  p-5 flex flex-col items-center gap-4 md:h-[354px] md:w-[354px] h-[274px] w-[274px] bg-black rounded-3xl bg-opacity-20 backdrop-blur-lg"
+              className="font-poppins text-white text-center  p-2 md:p-5 flex flex-col items-center gap-2 md:gap-4 md:h-[354px] md:w-[354px]  bg-black rounded-3xl bg-opacity-20 backdrop-blur-lg"
               key={idx}
             >
               <img
                 src={item.img}
-                className="h-[56px] w-[56px]"
+                className="md:h-[56px] h-[24px] w-[24px] md:w-[56px]"
                 alt=""
               />
               <div className="center text-[#8cc540] text-[26px] font-bold">
-                <h1 className="font-poppins text-center text-lg sm:text-xl md:text-4xl font-bold">
+                <h1 className="font-poppins text-center text-sm sm:text-xl md:text-4xl font-bold">
                   {item.title}
                 </h1>
               </div>

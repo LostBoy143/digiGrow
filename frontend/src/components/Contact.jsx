@@ -33,36 +33,36 @@ const Contact = () => {
   };
 
   const radialStyle = {
-    background:
-      "linear-gradient(180deg, #FBE100 -9.43%, #E5FFC2 108.96%)",
+    background: "linear-gradient(180deg, #FBE100 -9.43%, #E5FFC2 108.96%)",
     filter: "blur(80px)", // Adjust the blur intensity as needed
   };
 
   return (
     <div
       id="contact-section"
-      className="relative overflow-hidden w-full flex flex-col bg-[#232233]"
+      className="relative overflow-hidden w-full flex flex-col bg-[#232233] bg-[url('/src/assets/crumpled-black-shade.png')] bg-cover"
     >
       <h1 className="font-poppins text-white w-full font-extrabold text-6xl flex items-center justify-center pt-[50px] pb-[32px]">
-        Let’s Build&nbsp;
-        <span className="text-[#8cc540]">
-          Together
-        </span>
+        Let&apos;s Build&nbsp;
+        <span className="text-[#8cc540]">Together</span>
       </h1>
-
       <div
         id="down"
-        className="w-full flex  relative items-center justify-center"
+        className="w-full font-poppins text-white flex lg:flex-row flex-col  relative items-center justify-center"
       >
+        <p className="text-center lg:hidden block py-3 px-10">
+          Interested in driving growth? Have a general question? We are just an
+          email away
+        </p>
         <div
           id="main-body"
-          className="relative gap-[152px] flex w-[80%] pb-[72px] justify-center"
+          className="relative lg:gap-[152px] flex min-w-[400px] lg:w-[80%] w-full lg:pb-[72px] pb-20 justify-center"
         >
           <form
             onSubmit={(e) => {
               submitHandle(e);
             }}
-            className="relative border w-[35%] border-semi-transparent-white rounded-3xl flex-col gap-6  flex items-center justify-evenly p-3 lg:p-6  backdrop-blur-[60px] bg-half-white"
+            className="relative border lg:w-[35%] w-3/4 border-semi-transparent-white rounded-3xl flex-col gap-10  flex items-center justify-evenly p-4 lg:p-6  backdrop-blur-[60px] bg-half-white"
           >
             <div
               className="absolute h-[100px] w-[100px] top-0 left-0"
@@ -101,10 +101,7 @@ const Contact = () => {
               placeholder="Message"
             />
 
-            <div
-              onMouseEnter={handleHover}
-              onMouseLeave={handleHoverLeave}
-            >
+            <div onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
               <Button />
             </div>
           </form>
@@ -113,17 +110,17 @@ const Contact = () => {
             id="slogan"
             className=" font-poppins text-center md:text-right right-[20%] lg:right-[5%] text-white text-3xl"
           >
-            <h2>Interested in driving growth?</h2>
-            <h2>Have a general question?</h2>
-            <h2>We are just an email away!</h2>
+            <h2 className="lg:block hidden">Interested in driving growth?</h2>
+            <h2 className="lg:block hidden">Have a general question?</h2>
+            <h2 className="lg:block hidden">We are just an email away!</h2>
           </div>
         </div>
         <div
           id="right"
-          className="absolute h-full -mr-[50%] -mt-[20%] w-[57%]  "
+          className="absolute hidden lg:block h-full -mr-[50%] -mt-[20%] w-[57%]  "
         >
           <svg
-            className={`h-[1000px] -mt-[20%] w-[1000px] ${rotate} transform transition-transform duration-500  `}
+            className={`h-[1000px] -mt-[20%] w-[1000px] ${rotate}  transform transition-transform duration-500  `}
             viewBox="0 0 1000 1000"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

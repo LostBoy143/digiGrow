@@ -28,19 +28,19 @@ const Accord = () => {
 
   return (
     <div className="py-7 " id="accord-container">
-      <div className="font-poppins text-center text-3xl md:text-6xl font-extrabold mb-5">
+      <div className="font-poppins text-center text-4xl md:text-6xl font-extrabold mb-5">
         What We Do
       </div>
       {slogans.map((item, idx) => {
         return (
           <Link
-            className="group items md:hover:bg-[#232233] h-auto sm:h-[105px] w-full py-3 sm:py-0   font-thunder  px-6 sm:px-12 md:px-28 cursor-pointer "
+            className="group items md:hover:bg-[#232233] lg:h-auto h-[105px] w-full lg:py-3 py-0   font-thunder  px-8 lg:px-28 cursor-pointer "
             key={idx}
             to={item.way}
           >
             <h2
               id="about-h2"
-              className="group-hover:text-[#8cc540]  sm:leading-4percent sm:tracking-wide lg:tracking-wider  duration-500 text-[22px] lg:text-6xl md:group-hover:text-[26px] lg:group-hover:text-[66px]"
+              className="group-hover:text-[#8cc540]  lg:leading-4percent tracking-wide lg:tracking-wider  md:duration-500 text-[34px] md:text-5xl xl:text-6xl md:group-hover:text-[26px] lg:group-hover:text-[66px]"
             >
               {item.name}
             </h2>

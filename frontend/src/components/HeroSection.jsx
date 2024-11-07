@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div
       id="hero-section"
-      className="w-full h-[780px]  relative flex  justify-between"
+      className="w-full h-[780px]  relative mt-[0px] sm:mt-[0px] flex  justify-between"
     >
       <div
         id="left-content"

@@ -70,14 +70,11 @@
     position: absolute;
     right: 0;
     z-index: -10;
-    width: 300px;
+    /* width: 300px; */
     margin-right: -10%;
   }
   /* About Section*/
 
-  #about-h2 {
-    font-size: 30px;
-  }
   #contact-section h1 {
     font-size: 2rem;
   }

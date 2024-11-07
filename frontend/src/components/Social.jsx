@@ -23,7 +23,7 @@ const Social = () => {
       <img
         id="instagram"
         src="src/assets/Instagram.png"
-        className="insta h-[270px]  absolute pb-4 top-[30%] xl:top-[30%] right-[0%] xl:right-[10%] transform transition-all duration-500 hover:rotate-12 hover:scale-125"
+        className="insta h-[100px] sm:h-[270px]  absolute pb-4 top-[30%] xl:top-[30%] right-[0%] xl:right-[10%] transform transition-all duration-500 hover:rotate-12 hover:scale-125"
       ></img>
       <img
         id="twitter"

@@ -26,8 +26,12 @@ const HeroSection = () => {
             className="inline-block h-[30px] w-[30px] lg:h-[50px] mb-[6px] lg:w-[50px]"
           />
         </h1>
-        <h2 id="hero-h2" className="font-poppins font-light text-[20px]">
-          Grow your client base with DigiGrove and targeting strategies
+        <h2
+          id="hero-h2"
+          className="font-poppins font-light text-[20px]"
+        >
+          Grow your client base with DigiGrove and
+          targeting strategies
         </h2>
       </div>
       <div id="right-content">

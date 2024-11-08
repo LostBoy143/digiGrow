@@ -13,7 +13,7 @@
     font-size: 14px;
   }
   #hero-section {
-    height: 60vh;
+    height: 60vh !important;
   }
   #left-content {
     /* margin-top: 50px; */
@@ -34,7 +34,7 @@
     height: 450px !important;
   }
   #instagram {
-    margin-right: 40px !important;
+    margin-right: 0px !important;
   }
 }
 
@@ -114,17 +114,17 @@
 @media (max-width: 385px) {
   #hero-img {
     width: 80vw;
-    height: 86vh;
-    margin-right: -55%;
+    height: 94vh;
+    margin-right: -25%;
   }
   #hero-h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   #hero-h2 {
     font-size: 14px;
   }
   #hero-section {
-    height: 60vh;
+    height: 100vh !important;
   }
   #right-content {
     width: 100%;

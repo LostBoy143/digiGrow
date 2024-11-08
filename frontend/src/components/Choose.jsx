@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import Img from "../assets/Group41.png";
 
 const Choose = () => {
   const details = [
@@ -36,7 +37,12 @@ const Choose = () => {
   ];
 
   return (
-    <div className="bg-[#0e1627] 2xl:py-16  2xl:max-h-[110vh]  flex flex-col items-center py-8 2xl:pb-[100px] px-4 md:px-8">
+    <div className="bg-[#0e1627] mt-10 pb-20 2xl:py-16  2xl:max-h-[110vh] relative overflow-hidden  -z-20 flex flex-col items-center py-8 2xl:pb-[100px] px-4 md:px-8">
+      <img
+        className="w-full h-full aspect-auto object-cover absolute top-0 left-0 mix-blend-overlay"
+        src={Img}
+        alt="Background"
+      />
       <h1 className=" font-poppins text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold md:font-extrabold text-[#8cc540] mb-10 text-center">
         Why Choose Us?
       </h1>

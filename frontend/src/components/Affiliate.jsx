@@ -1,11 +1,11 @@
 const Affiliate = () => {
   return (
-    <div className="mt-[7%] w-full ">
-      <div className="text-center lg:px-20 lg:mx-40 px-5 mx-5 py-28">
-        <h1 className="xl:text-9xl md:text-6xl text-2xl whitespace-nowrap font-thunder leading-4 tracking-widest text-[#8CC540] font-bold mb-4">
+    <div className="mt-[10%] w-full py-10">
+      <div className="text-center lg:px-20 lg:mx-40 sm:mt-10 md:mt-5">
+        <h1 className="xl:text-9xl md:text-6xl text-5xl whitespace-nowrap  font-thunder leading-4 tracking-widest text-[#8CC540] font-bold mb-4">
           AFFILIATE MARKETING
         </h1>
-        <p className="text-2xl font-medium text-[#232233] mx-20 ">
+        <p className="md:text-2xl text-xl font-medium text-[#232233] md:mx-20 mx-10">
           We partner with third-party publishers to promote your products and
           services, ensuring you only pay for actual sales or leads. Our
           advanced analytics and high-quality affiliates maximize your reach and
@@ -20,7 +20,7 @@ const Affiliate = () => {
           <img
             src="src/assets/file(3) 1.png"
             alt="paw"
-            className="overflow-hidden absolute -top-80 md:-top-[440px] -left-80 md:-left-[374px]"
+            className="overflow-hidden absolute -top-80 md:-top-[440px] lg:-left-80 -left-96 xl:-left-[374px]"
             height={800}
             width={800}
           />
@@ -33,7 +33,7 @@ const Affiliate = () => {
           />
           <div
             id="serve"
-            className="w-full stroke-white stroke-1 top-0 flex gap-8 flex-wrap justify-evenly px-12"
+            className="w-full stroke-white stroke-1 top-0 flex gap-16 flex-wrap justify-evenly px-12"
           >
             <div className="relative text-white flex flex-col items-center gap-4 md:h-[520px] md:w-[600px] h-[443px] w-[404px]  bg-white/10 border border-white/20 rounded-[35px] backdrop-blur-[30px]">
               <img
@@ -42,16 +42,16 @@ const Affiliate = () => {
                 className="absolute z-10"
               ></img>
 
-              <div className="text-[#8CC540] p-4  -mt-10 md:h-[90px] md:w-2/3 z-30 h-[60px] w-1/2 shadow-[0px_5px_5px_rgba(0,0,0,0.35)]  drop-shadow-xl bg-white/10 border border-white/20 rounded-3xl backdrop-blur-3xl">
-                <h1 className="text-center text-4xl pt-1.5 font-bold">
+              <div className="text-[#8CC540] md:p-4 p-3 -mt-8 md:-mt-10 md:h-[90px] md:w-2/3 z-30 h-[60px] w-1/2 shadow-[0px_5px_5px_rgba(0,0,0,0.35)]  drop-shadow-xl bg-white/10 border border-white/20 rounded-3xl backdrop-blur-3xl">
+                <h1 className="text-center text-2xl md:text-4xl md:pt-1.5 font-bold">
                   Publishers
                 </h1>
               </div>
-              <div className="text-center pt-8 px-10 flex flex-col gap-10 font-sans justify-center items-center space-y-10">
-                <h3 className=" font-bold text-3xl px-14">
+              <div className="text-center pt-8 px-5 md:px-10 flex flex-col md:gap-10 gap-5 font-sans justify-center items-center space-y-10">
+                <h3 className=" font-bold text-2xl md:text-3xl md:px-14 px-8">
                   We assist you in maximising profits!
                 </h3>
-                <p className="font-normal text-lg">
+                <p className="font-normal text-base md:text-lg">
                   Gain substantial commissions for any leads, installations,
                   purchases, or other transactions made by customers you brought
                   to Digigrove via the company&apos;s website, blog posts,
@@ -66,16 +66,16 @@ const Affiliate = () => {
                 alt="ellipses"
                 className="absolute z-10"
               ></img>
-              <div className="text-[#8CC540] p-4 -mt-10 md:h-[90px] md:w-2/3 z-30 h-[60px] w-1/2 shadow-[0px_5px_5px_rgba(0,0,0,0.35)] bg-opacity-20 drop-shadow-xl bg-white/10 border border-white/20 rounded-3xl backdrop-blur-[30px]">
-                <h1 className="text-center text-4xl pt-1.5 font-bold">
+              <div className="text-[#8CC540] md:p-4 p-3 -mt-8 md:-mt-10 md:h-[90px] md:w-2/3 z-30 h-[60px] w-1/2 shadow-[0px_5px_5px_rgba(0,0,0,0.35)]  drop-shadow-xl bg-white/10 border border-white/20 rounded-3xl backdrop-blur-3xl">
+                <h1 className="text-center text-2xl md:text-4xl md:pt-1.5 font-bold">
                   Advertisers
                 </h1>
               </div>
-              <div className="text-center pt-8 px-10 flex flex-col gap-10 font-sans justify-center items-center space-y-10">
-                <h3 className=" font-bold text-3xl px-14">
+              <div className="text-center pt-8 px-5 md:px-10 flex flex-col md:gap-10 gap-5 font-sans justify-center items-center space-y-10">
+                <h3 className=" font-bold text-2xl md:text-3xl md:px-14 px-8">
                   Increase the global reach of your business!
                 </h3>
-                <p className="font-normal text-lg">
+                <p className="font-normal text-base md:text-lg">
                   With our cutting-edge platform, Digigrove provide unparalleled
                   digital marketing services to facilitate connections between
                   brands and audiences that generate noteworthy results. We

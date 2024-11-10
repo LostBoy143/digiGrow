@@ -5,32 +5,32 @@ import Img from "../assets/Group41.png";
 const Choose = () => {
   const details = [
     {
-      img: "src/assets/choosy/item1.png",
+      img: "assets/choosy/item1.png",
       title: "Expert Team",
       desc: "Seasoned professionals driving results with best trends and practices for the market worldwide.",
     },
     {
-      img: "src/assets/choosy/item2.png",
+      img: "assets/choosy/item2.png",
       title: "Customized Strategies",
       desc: "We provide tailored plans for your specific goals needs",
     },
     {
-      img: "src/assets/choosy/item3.png",
+      img: "assets/choosy/item3.png",
       title: "Proven Results",
       desc: "A solid track record of success stories across industries.",
     },
     {
-      img: "src/assets/choosy/item4.png",
+      img: "assets/choosy/item4.png",
       title: "Transparent Reporting",
       desc: "Clear insights and regular reports at every step into your campaigns.",
     },
     {
-      img: "src/assets/choosy/item5.png",
+      img: "assets/choosy/item5.png",
       title: "Client-Centric Approach",
       desc: "Your goals are our priority. We work strategically to deliver impactful solutions.",
     },
     {
-      img: "src/assets/choosy/item6.png",
+      img: "assets/choosy/item6.png",
       title: "Expert Leverages",
       desc: "Our team of experts use advanced tools for superior outcomes.",
     },

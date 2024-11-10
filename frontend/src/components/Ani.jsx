@@ -9,7 +9,7 @@ const AnimatedComponent = () => {
         className="transition-all duration-300 w-1/2 h-1/2 group-hover:w-full"
         style={{
           backgroundImage:
-            "url('src/assets/choosy/Frame32.png')", // Use the correct path
+            "url('assets/choosy/Frame32.png')", // Use the correct path
           backgroundSize: "756px 690px",
           backgroundPosition: "0 0",
         }}
@@ -20,7 +20,7 @@ const AnimatedComponent = () => {
         className="transition-all duration-300 w-1/2 h-1/2 group-hover:h-3/5"
         style={{
           backgroundImage:
-            "url('src/assets/choosy/Frame32.png')", // Use the correct path
+            "url('assets/choosy/Frame32.png')", // Use the correct path
           backgroundSize: "756px 690px",
           backgroundPosition: "0 100%",
         }}
@@ -31,7 +31,7 @@ const AnimatedComponent = () => {
         className="transition-all duration-300 w-1/2 h-full group-hover:w-0 group-hover:opacity-0"
         style={{
           backgroundImage:
-            "url('src/assets/choosy/Frame32.png')", // Use the correct path
+            "url('assets/choosy/Frame32.png')", // Use the correct path
           backgroundSize: "756px 690px",
           backgroundPosition: "100% 50%",
         }}

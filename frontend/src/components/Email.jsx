@@ -34,7 +34,7 @@ const Email = () => {
       <div className="right-side h-full w-full sm:w-[45%] flex justify-center sm:justify-start items-center sm:mr-4 xl:mr-0 ">
         <div className="h-[220px] w-[220px] 2xl:h-[690px] md:h-[390px] sm:h-[280px] md:ml-4 sm:w-[346px] md:w-[456px] 2xl:w-[756px] sm:mb-[120px]  md:mb-0">
           <img
-            src="src/assets/choosy/Frame32.png"
+            src="assets/choosy/Frame32.png"
             alt="d"
             className="h-full w-full"
           />

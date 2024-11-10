@@ -33,7 +33,7 @@ const AboutUs = () => {
         </div>
         <div className="relative 2xl:p-10 xl:w-full xl:min-w-[700px] min-w-[400px] px-10 w-3/4 m-auto flex overflow-hidden">
           <img
-            src="/src/assets/hero-about.png" // Replace with the correct path
+            src="assets/hero-about.png" // Replace with the correct path
             alt="Clipped Example"
             className="w-full h-full object-cover"
           />

@@ -4,32 +4,32 @@ import React from "react";
 const Services = () => {
   const details = [
     {
-      img: "src/assets/Vector.png",
+      img: "assets/Vector.png",
       title: "Data-Driven Marketing Solutions",
       desc: "Our expert team delivers innovative marketing strategies powered by data, AI, and machine learning for impactful results.",
     },
     {
-      img: "src/assets/vector2.png",
+      img: "assets/vector2.png",
       title: "Publishers",
       desc: "Drive traffic and earn commissions for every lead, purchase, or interaction with Digigrove's platform.",
     },
     {
-      img: "src/assets/Vector3.png",
+      img: "assets/Vector3.png",
       title: "Advertiser",
       desc: "Our platform connects you with targeted audiences for both direct response and branding strategies that deliver.",
     },
     {
-      img: "src/assets/vector4.png",
+      img: "assets/vector4.png",
       title: "Global Reach & Customer Success",
       desc: "Utilize our diverse marketing strategies to connect with global audiences and drive significant revenue growth.",
     },
     {
-      img: "src/assets/vector5.png",
+      img: "assets/vector5.png",
       title: "Comprehensive Services",
       desc: "From SEO and social media to e-commerce and content marketing, we help you scale and succeed.",
     },
     {
-      img: "src/assets/vector6.png",
+      img: "assets/vector6.png",
       title: "24/7 Support",
       desc: "Our expert team delivers innovative marketing strategies powered by data, AI, and machine learning for impactful results.",
     },
@@ -42,7 +42,7 @@ const Services = () => {
     >
       {/* <div className="w-full h-full">
         <img
-          src="/src/assets/crumpled-black.png" // Replace with the correct path
+          src="assets/crumpled-black.png" // Replace with the correct path
           alt="Styled Background"
           className="top-0 left-0 w-full h-full object-cover opacity-90 mix-blend-darken"
         />
@@ -50,7 +50,7 @@ const Services = () => {
 
       <div
         id="serve"
-        className="bg-[url('/src/assets/crumpled-black-shade.png')] bg-cover relative bg-center w-full stroke-white stroke-1 py-8 xl:py-12 z-20 top-0 grid grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-8 justify-items-center px-2 lg:px-12 2xl:px-24"
+        className="bg-[url('assets/crumpled-black-shade.png')] bg-cover relative bg-center w-full stroke-white stroke-1 py-8 xl:py-12 z-20 top-0 grid grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-8 justify-items-center px-2 lg:px-12 2xl:px-24"
       >
         {/* ellipse */}
         <div

@@ -15,7 +15,7 @@ const Navbar = () => {
       <div id="logo">
         <img
           id="logo-img"
-          src="src/assets/nav-logo.png"
+          src="assets/nav-logo.png"
           alt=""
           className=" w-[150px] sm:w-[230px] h-[30px] sm:h-[40px] aspect-auto"
         />

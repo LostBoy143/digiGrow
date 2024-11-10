@@ -21,7 +21,7 @@ const HeroSection = () => {
             className="w-[175px] ml-0 lg:ml-3 mb-1 sm:mb-3 h-[1.5px] lg:h-[2.5px] bg-black inline-block"
           ></div>
           <img
-            src="src/assets/globe-icon.png"
+            src="assets/globe-icon.png"
             alt=""
             className="inline-block h-[30px] w-[30px] lg:h-[50px] mb-[6px] lg:w-[50px]"
           />
@@ -37,7 +37,7 @@ const HeroSection = () => {
       <div id="right-content">
         <img
           id="hero-img"
-          src="src/assets/Simon Lee Asset-unsplash.png"
+          src="assets/Simon Lee Asset-unsplash.png"
           className="h-[150%] w-[130%]"
         ></img>
       </div>

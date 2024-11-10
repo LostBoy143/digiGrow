@@ -13,19 +13,19 @@ const Affiliate = () => {
         </p>
       </div>
       <div
-        className="w-full mt-16 py-28 -z-40 bg-[url('/src/assets/crumpled-black-shade.png')] bg-cover" // Add mix-blend-mode here
+        className="w-full mt-16 py-28 -z-40 bg-[url('assets/crumpled-black-shade.png')] bg-cover" // Add mix-blend-mode here
         id="services-container"
       >
         <div className="relative">
           <img
-            src="src/assets/file(3) 1.png"
+            src="assets/file(3) 1.png"
             alt="paw"
             className="overflow-hidden absolute -top-80 md:-top-[440px] lg:-left-80 -left-96 xl:-left-[374px]"
             height={800}
             width={800}
           />
           <img
-            src="src/assets/file(4) 1.png"
+            src="assets/file(4) 1.png"
             alt="paw"
             className="overflow-hidden absolute -bottom-80 md:-bottom-[440px] -right-80 md:-right-[314px]"
             height={720}
@@ -37,7 +37,7 @@ const Affiliate = () => {
           >
             <div className="relative text-white flex flex-col items-center gap-4 md:h-[520px] md:w-[600px] h-[443px] w-[404px]  bg-white/10 border border-white/20 rounded-[35px] backdrop-blur-[30px]">
               <img
-                src="src/assets/Group 36.png"
+                src="assets/Group 36.png"
                 alt="ellipses"
                 className="absolute z-10"
               ></img>
@@ -62,7 +62,7 @@ const Affiliate = () => {
             </div>
             <div className="text-white relative flex flex-col z-20 items-center gap-4  md:h-[520px] md:w-[600px] h-[443px] w-[404px]  bg-white/10 border border-white/20 rounded-[35px] ">
               <img
-                src="src/assets/Group 36.png"
+                src="assets/Group 36.png"
                 alt="ellipses"
                 className="absolute z-10"
               ></img>

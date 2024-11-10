@@ -113,7 +113,7 @@ const DesignBrandStrategy = () => {
         </div>
         <div className="overflow-hidden ">
           <img
-            src="assets/Group 31.png"
+            src="/assets/Group 31.png"
             alt="pic"
             width={1500}
             height={1500}
@@ -126,7 +126,7 @@ const DesignBrandStrategy = () => {
       <div className="flex">
         <div className="-mt-64">
           <img
-            src="assets/simon-lee-ynmPY1MLwMs-unsplash 1.png"
+            src="/assets/simon-lee-ynmPY1MLwMs-unsplash 1.png"
             alt="hand"
             height={1300}
             width={975}
@@ -144,7 +144,7 @@ const DesignBrandStrategy = () => {
           <div className="px-40 py-20 ml-32">
             <div className="flex flex-col my-1 gap-2 justify-start items-end font-poppins">
               <img
-                src="assets/Ellipse 5.png"
+                src="/assets/Ellipse 5.png"
                 alt="elipse"
                 className="-z-10 -mb-14 -mr-6"
                 height={75}
@@ -158,7 +158,7 @@ const DesignBrandStrategy = () => {
             </div>
             <div className="flex flex-col my-1 gap-4 justify-start items-start font-poppins">
               <img
-                src="assets/Ellipse 5.png"
+                src="/assets/Ellipse 5.png"
                 alt="elipse"
                 className="-z-10 -mb-14 -ml-6"
                 height={75}
@@ -172,7 +172,7 @@ const DesignBrandStrategy = () => {
             </div>
             <div className="flex flex-col my-1 gap-4 justify-start items-end font-poppins">
               <img
-                src="assets/Ellipse 5.png"
+                src="/assets/Ellipse 5.png"
                 alt="elipse"
                 className="-z-10 -mb-14 -mr-6"
                 height={75}
@@ -186,7 +186,7 @@ const DesignBrandStrategy = () => {
             </div>
             <div className="flex flex-col my-1 gap-4 justify-start items-start font-poppins">
               <img
-                src="assets/Ellipse 5.png"
+                src="/assets/Ellipse 5.png"
                 alt="elipse"
                 className="-z-10 -mb-14 -ml-6"
                 height={75}
@@ -218,7 +218,7 @@ const DesignBrandStrategy = () => {
             }}
           >
             <img
-              src="assets/Vigilante Tape Mockup.png"
+              src="/assets/Vigilante Tape Mockup.png"
               alt="mockup"
               height={700}
               width={650}
@@ -267,7 +267,7 @@ const DesignBrandStrategy = () => {
             onMouseLeave={handleHoverLeave}
           >
             <img
-              src="assets/Social Media Posts Mockups 1.png"
+              src="/assets/Social Media Posts Mockups 1.png"
               alt="tour"
               height={700}
               width={650}

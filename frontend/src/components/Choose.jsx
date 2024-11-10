@@ -1,36 +1,35 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Img from "../assets/Group41.png";
 
 const Choose = () => {
   const details = [
     {
-      img: "assets/choosy/item1.png",
+      img: "/assets/choosy/item1.png",
       title: "Expert Team",
       desc: "Seasoned professionals driving results with best trends and practices for the market worldwide.",
     },
     {
-      img: "assets/choosy/item2.png",
+      img: "/assets/choosy/item2.png",
       title: "Customized Strategies",
       desc: "We provide tailored plans for your specific goals needs",
     },
     {
-      img: "assets/choosy/item3.png",
+      img: "/assets/choosy/item3.png",
       title: "Proven Results",
       desc: "A solid track record of success stories across industries.",
     },
     {
-      img: "assets/choosy/item4.png",
+      img: "/assets/choosy/item4.png",
       title: "Transparent Reporting",
       desc: "Clear insights and regular reports at every step into your campaigns.",
     },
     {
-      img: "assets/choosy/item5.png",
+      img: "/assets/choosy/item5.png",
       title: "Client-Centric Approach",
       desc: "Your goals are our priority. We work strategically to deliver impactful solutions.",
     },
     {
-      img: "assets/choosy/item6.png",
+      img: "/assets/choosy/item6.png",
       title: "Expert Leverages",
       desc: "Our team of experts use advanced tools for superior outcomes.",
     },
@@ -40,7 +39,7 @@ const Choose = () => {
     <div className="bg-[#0e1627] mt-10 pb-20 2xl:py-16  2xl:max-h-[110vh] relative overflow-hidden  -z-20 flex flex-col items-center py-8 2xl:pb-[100px] px-4 md:px-8">
       <img
         className="w-full h-full aspect-auto object-cover absolute top-0 left-0 mix-blend-overlay"
-        src={Img}
+        src="/assets/Group41.png"
         alt="Background"
       />
       <h1 className=" font-poppins text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold md:font-extrabold text-[#8cc540] mb-10 text-center">

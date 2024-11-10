@@ -23,7 +23,7 @@ const SearchArbitrage = () => {
 
   return (
     <div className="w-full mt-[10%] xl:mt-[5%]">
-      <div className=" w-full flex flex-col md:px-20 xl:flex-row px-2 lg:px-10 py-5 gap-10 md:py-10 justify-center relative bg-[url('assets/BGELEMENTS.png')] bg-cover bg-center">
+      <div className=" w-full flex flex-col md:px-20 xl:flex-row px-2 lg:px-10 py-5 gap-10 md:py-10 justify-center relative bg-[url('/assets/BGELEMENTS.png')] bg-cover bg-center">
         <svg
           width="300"
           height="300"
@@ -146,7 +146,7 @@ const SearchArbitrage = () => {
         <div className="relative ">
           <div className="rounded-[10px] overflow-hidden w-full max-w-[450px] md:max-w-[550px] lg:max-w-[650px] xl:max-w-[700px] lg:max-h-[400px] h-auto aspect-w-16 aspect-h-9">
             <img
-              src="assets/Social Media Posts Mockups 1.png"
+              src="/assets/Social Media Posts Mockups 1.png"
               alt="tour"
               className="transition-transform duration-500 ease-in-out hover:scale-125 w-full h-full object-cover"
             />
@@ -231,11 +231,11 @@ const SearchArbitrage = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[url('assets/space.png')] bg-[#232233] bg-cover md:py-20 py-10">
+      <div className="bg-[url('/assets/space.png')] bg-[#232233] bg-cover md:py-20 py-10">
         <div className="flex xl:flex-row flex-col justify-center items-center md:p-20 p-10">
           <div
             onMouseEnter={() => handleCardClick("card1")}
-            className={`relative xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('assets/Group40.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
+            className={`relative xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group40.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
               activeCard === "card1" ? "xl:rotate-0" : "xl:rotate-45"
             }`}
           >
@@ -287,7 +287,7 @@ const SearchArbitrage = () => {
           </div>
           <div
             onMouseEnter={() => handleCardClick("card2")}
-            className={`relative xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('assets/Group38.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
+            className={`relative xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group38.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
               activeCard === "card2" ? "xl:rotate-0" : "xl:rotate-45"
             }`}
           >
@@ -338,7 +338,7 @@ const SearchArbitrage = () => {
           </div>
           <div
             onMouseEnter={() => handleCardClick("card3")}
-            className={`relative xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('assets/Group39.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
+            className={`relative xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group39.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
               activeCard === "card3" ? "xl:rotate-0" : "xl:rotate-45"
             }`}
           >

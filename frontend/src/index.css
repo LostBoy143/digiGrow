@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 #accord-container {
-  background: url("assets/what_we_do-bg.png");
+  background: url("/assets/what_we_do-bg.png");
 }
 #left-content {
   font-family: "poppins", sans-serif;
@@ -102,29 +102,29 @@
 }
 
 #footer {
-  background: url("assets/image 6.png");
+  background: url("/assets/image 6.png");
   object-fit: cover;
 }
 
 @keyframes leftToRight {
   from {
     transform: translate(-200px, -50px) rotate(-20deg);
-    background-image: url("assets/ecom.webp");
+    background-image: url("/assets/ecom.webp");
   }
   to {
     transform: translate(calc(100vw - 550px), -50px) rotate(-340deg);
-    background-image: url("assets/pexels-yankrukov-7691745.jpg");
+    background-image: url("/assets/pexels-yankrukov-7691745.jpg");
   }
 }
 
 @keyframes rightToLeft {
   from {
     transform: translate(calc(100vw - 550px), -50px) rotate(-340deg);
-    background-image: url("assets/pexels-yankrukov-7691745.jpg");
+    background-image: url("/assets/pexels-yankrukov-7691745.jpg");
   }
   to {
     transform: translate(-200px, -50px) rotate(-20deg);
-    background-image: url("assets/ecom.webp");
+    background-image: url("/assets/ecom.webp");
   }
 }
 
@@ -133,14 +133,14 @@
     left: calc(100vw - 300px);
     height: 250px;
     width: 250px;
-    background-image: url("assets/pinner-black.svg");
+    background-image: url("/assets/pinner-black.svg");
   }
   to {
     left: 400px;
     transform: rotate(-90deg);
     height: 150px;
     width: 150px;
-    background-image: url("assets/pinner.svg");
+    background-image: url("/assets/pinner.svg");
   }
 }
 @keyframes pinnerBackward {
@@ -149,34 +149,34 @@
     transform: rotate(-90deg);
     height: 150px;
     width: 150px;
-    background-image: url("assets/pinner.svg");
+    background-image: url("/assets/pinner.svg");
   }
   to {
     left: calc(100vw - 300px);
     height: 250px;
     width: 250px;
-    background-image: url("assets/pinner-black.svg");
+    background-image: url("/assets/pinner-black.svg");
   }
 }
 
 @keyframes clipLeanForward {
   from {
     transform: scaleX(-1);
-    background-image: url("assets/OBJECTS-white.svg");
+    background-image: url("/assets/OBJECTS-white.svg");
   }
   to {
     transform: scaleX(1);
-    background-image: url("assets/OBJECTS.svg");
+    background-image: url("/assets/OBJECTS.svg");
   }
 }
 @keyframes clipLeanBackward {
   from {
     transform: scaleX(1);
-    background-image: url("assets/OBJECTS.svg");
+    background-image: url("/assets/OBJECTS.svg");
   }
   to {
     transform: scaleX(-1);
-    background-image: url("assets/OBJECTS-white.svg");
+    background-image: url("/assets/OBJECTS-white.svg");
   }
 }
 
@@ -198,7 +198,7 @@
     max-width: 700px;
     z-index: 1;
     transform: translate(-200px, -50px) rotate(-20deg);
-    background-image: url("assets/ecom.webp");
+    background-image: url("/assets/ecom.webp");
     background-size: cover; /* Ensures the image covers the container */
     background-attachment: fixed; /* Keeps the background fixed in place when scrolling */
     background-position: center; /* Centers the image */
@@ -216,7 +216,7 @@
     height: 250px;
     width: 250px;
     bottom: 50px;
-    background-image: url("assets/pinner-black.svg");
+    background-image: url("/assets/pinner-black.svg");
     background-size: cover; /* Ensures the image covers the container */ /* Keeps the background fixed in place when scrolling */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Avoids repeating the background */
@@ -234,7 +234,7 @@
     height: 475px;
     width: 405px;
     bottom: 0px;
-    background-image: url("assets/OBJECTS-white.svg");
+    background-image: url("/assets/OBJECTS-white.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -260,7 +260,7 @@
 
 
 .contact-section-bg {
-  background-image: url('assets/crumbple-no-blend.png');
+  background-image: url('/assets/crumbple-no-blend.png');
   background-color: #232233;
   background-blend-mode: multiply;
 }

@@ -1,5 +1,3 @@
-import Img from "../assets/DigiGrove Logo (Final-2) 1.png";
-
 const Footer = () => {
   return (
     <div id="footer">
@@ -7,7 +5,7 @@ const Footer = () => {
         {/* <img className="w-full h-96 absolute" src={Img2}></img> */}
         <div className="min-w-[130px] min-h-[120px] py-1 px-2 sm:px-4">
           <img
-            src={Img}
+            src="/assets/DigiGrove Logo (Final-2) 1.png"
             className="min-w-[130px] min-h-[120px] w-64 sm:w-64 h-42  aspect-auto object-fill"
           ></img>
         </div>

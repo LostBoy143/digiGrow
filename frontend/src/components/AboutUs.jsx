@@ -1,4 +1,3 @@
-import Img from "../assets/vackground-com-uAvq7gFQecc-unsplash 1.png";
 
 const AboutUs = () => {
   return (
@@ -8,7 +7,7 @@ const AboutUs = () => {
     >
       <img
         className="w-full h-full aspect-auto object-cover absolute top-0 left-0 mix-blend-overlay"
-        src={Img}
+        src="/assets/vackground-com-uAvq7gFQecc-unsplash 1.png"
         alt="Background"
       />
       <div className="flex flex-col xl:flex-row relative gap-4 xl:gap-[48px]">
@@ -33,7 +32,7 @@ const AboutUs = () => {
         </div>
         <div className="relative 2xl:p-10 xl:w-full xl:min-w-[700px] min-w-[400px] px-10 w-3/4 m-auto flex overflow-hidden">
           <img
-            src="assets/hero-about.png" // Replace with the correct path
+            src="/assets/hero-about.png" // Replace with the correct path
             alt="Clipped Example"
             className="w-full h-full object-cover"
           />

@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         thunder: ["Thunder", "sans-serif"],
-        monument: ["PPMonument", "sans-serif"],
+        monument: ["PP Monument Extended", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         porter: ["Porter", "sans-serif"],
       },
@@ -20,10 +20,10 @@ export default {
       },
       rotate: {
         60: "60deg",
-        colors: {
-          "semi-transparent-white": "#FFFFFF30",
-          "half-white": "rgba(255, 255, 255, 0.05)",
-        },
+      },
+      colors: {
+        "semi-transparent-white": "#FFFFFF30",
+        "half-white": "rgba(255, 255, 255, 0.05)",
       },
       plugins: [],
     },

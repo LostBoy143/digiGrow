@@ -9,7 +9,7 @@ const HeroSection = () => {
     >
       <div
         id="left-content"
-        className="  lg:ml-[10%] pl-10 w-1/3 lg:w-[480px] h-full flex flex-col justify-center items-center"
+        className="ml-[108px] w-1/3 lg:w-[480px] h-full flex flex-col justify-center items-center"
       >
         <h1
           id="hero-h1"

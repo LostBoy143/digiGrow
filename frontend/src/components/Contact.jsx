@@ -40,7 +40,7 @@ const Contact = () => {
   return (
     <div
       id="contact-section"
-      className="relative overflow-hidden w-full flex flex-col bg-[#232233] bg-[url('/src/assets/crumpled-black-shade.png')] bg-cover"
+      className="relative contact-section-bg overflow-hidden w-full flex flex-col bg-[#232233] bg-cover"
     >
       <h1 className="font-poppins text-white w-full font-extrabold text-6xl flex items-center justify-center pt-[50px] pb-[32px]">
         Let&apos;s Build&nbsp;
@@ -62,7 +62,7 @@ const Contact = () => {
             onSubmit={(e) => {
               submitHandle(e);
             }}
-            className="relative border lg:w-[35%] w-3/4 border-semi-transparent-white rounded-3xl flex-col gap-10  flex items-center justify-evenly p-4 lg:p-6  backdrop-blur-[60px] bg-half-white"
+            className="relative border w-[32vw] border-semi-transparent-white rounded-3xl flex-col gap-10  flex items-center justify-evenly p-4 lg:p-6  backdrop-blur-[60px] bg-half-white"
           >
             <div
               className="absolute h-[100px] w-[100px] top-0 left-0"

@@ -5,7 +5,7 @@ const Social = () => {
   return (
     <div
       id="social-section"
-      className="xl:min-h-screen p-2  w-full relative overflow-hidden"
+      className="p-2  w-full relative overflow-hidden"
     >
       {/*shapes*/}
       <img
@@ -37,9 +37,9 @@ const Social = () => {
       ></img>
       <div
         id="text-container"
-        className="w-[75%] md:w-[60%] pb-[152px] flex flex-col gap-2 md:gap-5 pl-4 md:pl-12 lg:pl-[128px] mt-[12%] lg:mt-[10%] xl:mt-[12%]"
+        className="relative w-[75%] md:w-[60%] mb-[152px] flex flex-col gap-2 md:gap-5 pl-4 md:pl-12 lg:pl-[128px] mt-[12%] lg:mt-[10%] xl:mt-[12%]"
       >
-        <div className="square absolute top-[60%] left-0 md:h-[180px] w-[20px] bg-[#8CC540]"></div>
+        <div className="square absolute left-[-8px] md:h-[160px] w-[20px] bg-[#8CC540] bottom-0"></div>
 
         <h1 className="font-poppins text-2xl md:text-5xl  font-medium">
           State of The Art Technology Powering Our
@@ -54,8 +54,8 @@ const Social = () => {
           dynamic digital strategies.
         </h2>
         <div className="relative text-4xl md:text-9xl font-bold">
-          <span>400+</span>
-          <h2 className="text-xl md:text-3xl ">
+          <span className="font-monument font-black">400+</span>
+          <h2 className="font-monument text-xl md:text-3xl ">
             Customers Globally
           </h2>
         </div>

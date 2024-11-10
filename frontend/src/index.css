@@ -70,6 +70,20 @@
   font-style: normal; /* Specify the style (normal, italic, etc.) */
 }
 
+@font-face{
+    font-family: "PP Monument Extended";
+    src: url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.eot");
+    src: url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.eot?#iefix")format("embedded-opentype"),
+        url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.woff")format("woff"),
+        url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.woff2")format("woff2"),
+        url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.ttf")format("truetype"),
+        url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.svg#PP Monument Extended")format("svg");
+    font-weight:bolder;
+    font-style:normal;
+    font-display:swap;
+    font-variation-settings: "wght" 900, "ital" 100;
+}
+
 /* Optional: Define a custom class for the font */
 .font-monument {
   font-family: "PPMonument", sans-serif; /* Fallback to a system font if unavailable */
@@ -242,4 +256,11 @@
     /* transition */
     /* width: 25%; */
   }
+}
+
+
+.contact-section-bg {
+  background-image: url('/src/assets/crumbple-no-blend.png');
+  background-color: #232233;
+  background-blend-mode: multiply;
 }

@@ -55,7 +55,7 @@ const Services = () => {
         {/* ellipse */}
         <div
           id="ellipse-container"
-          className="h-full px-20 flex flex-col justify-around  xl:flex-row  absolute items-center  w-full"
+          className="h-full px-[3rem] flex flex-col justify-between  xl:flex-row  absolute items-center  w-full"
         >
           <div className="ellipses"></div>
           <div className="ellipses"></div>
@@ -74,7 +74,7 @@ const Services = () => {
                 alt=""
               />
               <div className="center text-[#8cc540] text-[26px] font-bold">
-                <h1 className="font-poppins text-center text-xl md:text-4xl font-bold">
+                <h1 className="font-poppins text-center text-xl md:text-[28px] font-bold leading-[40px]">
                   {item.title}
                 </h1>
               </div>

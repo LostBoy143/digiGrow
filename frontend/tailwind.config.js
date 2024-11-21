@@ -23,6 +23,7 @@ export default {
       },
       colors: {
         "semi-transparent-white": "#FFFFFF30",
+        "semi-transparent-white-10": "#FFFFFF10",
         "half-white": "rgba(255, 255, 255, 0.05)",
       },
       plugins: [],

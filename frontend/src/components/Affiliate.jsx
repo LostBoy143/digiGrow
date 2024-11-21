@@ -35,7 +35,7 @@ const Affiliate = () => {
             id="serve"
             className="w-full stroke-white stroke-1 top-0 flex gap-16 flex-wrap justify-evenly px-12"
           >
-            <div className="relative text-white flex flex-col items-center gap-4 md:h-[520px] md:w-[600px] h-[443px] w-[404px]  bg-white/10 border border-white/20 rounded-[35px] backdrop-blur-[30px]">
+            <div className="relative text-white flex flex-col items-center gap-4 md:h-[520px] md:w-[600px] h-[443px] w-[404px]  bg-white/10 border border-white/20 rounded-[35px]">
               <img
                 src="/assets/Group 36.png"
                 alt="ellipses"

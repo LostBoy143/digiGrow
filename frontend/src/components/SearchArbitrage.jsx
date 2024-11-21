@@ -133,11 +133,10 @@ const SearchArbitrage = () => {
           </defs>
         </svg>
         <div className="max-w-[600px] relative md:space-x-6 text-center xl:text-left space-x-3 md:tracking-wide tracking-normal">
-
-          <h1 className="xl:text-9xl font-thunder md:tracking-wide tracking-normal font-semibold md:text-7xl text-6xl text-[#8cc540] md:m-2 m-1 md:p-2 p-1">
+          <h1 className="xl:text-9xl font-thunder md:tracking-wide tracking-normal font-medium md:text-7xl text-6xl text-[#8cc540] md:m-2 m-1 md:p-2 p-1">
             SEARCH ARBITRAGE
           </h1>
-          <p className="font-poppins text-lg font-medium text-[#232233]">
+          <p className="font-poppins text-lg font-normal text-[#232233]">
             Maximize profit by driving traffic from low-cost ads to
             higher-paying search results, bridging the gap between ad costs and
             revenue.

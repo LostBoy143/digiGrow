@@ -15,26 +15,28 @@ const Marketing = () => {
           showDiv ? "right" : "left"
         }`}
       >
-        <div className="flex relative">
+        <div className="flex relative  pr-10">
           <div
             alt="marketing"
-            onClick={toggleDiv}
+            onScrollCapture={toggleDiv}
             className={`main-image-grp aspect-auto object-fill ${
               prepAnims ? (showDiv ? "right" : "left") : ""
             }`}
           ></div>
 
           <div
-            className={`content  pt-10 ${
-              !showDiv ? "-mr-[40rem] w-2/3 text-right" : "-ml-[40rem] w-1/3"
+            className={`content h-full  pt-12 ${
+              !showDiv
+                ? "-mr-[10rem] w-full text-right"
+                : "2xl:-ml-[30rem]  w-1/3"
             }`}
           >
-            <h1 className="xl:text-9xl text-6xl font-thunder leading-4 tracking-widest text-[#8CC540] font-bold mb-4">
+            <h1 className="xl:text-8xl text-6xl font-thunder 2xl:leading-4 md:tracking-wider tracking-wide 2xl:tracking-widest whitespace-nowrap text-[#8CC540] font-semibold mb-6">
               {!showDiv ? "E-COMMERCE" : "INFLUENCER MARKETING"}
             </h1>
             <p
               className={`${
-                showDiv ? "text-white" : "pl-64"
+                showDiv ? "text-white" : ""
               } text-xl  font-medium text-[#232233]`}
             >
               {!showDiv
@@ -50,13 +52,13 @@ const Marketing = () => {
               className={`pinner absolute ${
                 prepAnims ? (showDiv ? "right" : "left") : ""
               }`}
-              onClick={toggleDiv}
+              onScrollCapture={toggleDiv}
             />
             <div
               className={`clip absolute ${
                 prepAnims ? (showDiv ? "right" : "left") : ""
               }`}
-              onClick={toggleDiv}
+              onScrollCapture={toggleDiv}
             />
           </div>
         </div>

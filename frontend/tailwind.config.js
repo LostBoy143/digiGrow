@@ -25,6 +25,13 @@ export default {
         "semi-transparent-white": "#FFFFFF30",
         "half-white": "rgba(255, 255, 255, 0.05)",
       },
+      transitionProperty: {
+        all: "all",
+      },
+      translate: {
+        full: "100%",
+        "-full": "-100%",
+      },
       plugins: [],
     },
   },

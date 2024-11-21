@@ -70,18 +70,23 @@
   font-style: normal; /* Specify the style (normal, italic, etc.) */
 }
 
-@font-face{
-    font-family: "PP Monument Extended";
-    src: url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.eot");
-    src: url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.eot?#iefix")format("embedded-opentype"),
-        url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.woff")format("woff"),
-        url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.woff2")format("woff2"),
-        url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.ttf")format("truetype"),
-        url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.svg#PP Monument Extended")format("svg");
-    font-weight:bolder;
-    font-style:normal;
-    font-display:swap;
-    font-variation-settings: "wght" 900, "ital" 100;
+@font-face {
+  font-family: "PP Monument Extended";
+  src: url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.eot");
+  src: url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.eot?#iefix")
+      format("embedded-opentype"),
+    url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.woff")
+      format("woff"),
+    url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.woff2")
+      format("woff2"),
+    url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.ttf")
+      format("truetype"),
+    url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.svg#PP Monument Extended")
+      format("svg");
+  font-weight: bolder;
+  font-style: normal;
+  font-display: swap;
+  font-variation-settings: "wght" 900, "ital" 100;
 }
 
 /* Optional: Define a custom class for the font */
@@ -258,9 +263,8 @@
   }
 }
 
-
 .contact-section-bg {
-  background-image: url('/assets/crumbple-no-blend.png');
+  background-image: url("/assets/crumbple-no-blend.png");
   background-color: #232233;
   background-blend-mode: multiply;
 }

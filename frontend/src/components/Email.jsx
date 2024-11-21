@@ -13,18 +13,16 @@ const Email = () => {
           id="text"
           className=" text-[#8cc540] 2xl:w-[1097px] md:mt-[15%] px-5 pb-8 sm:p-0 sm:pb-0   "
         >
-          <h1 className="text-center sm:text-start 2xl:text-[140px] xl:text-[100px] md:text-[60px]  sm:text-[50px] text-[40px] font-bold mt-2 font-thunder">
+          <h1 className="text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px]  sm:text-[30px] text-[40px] font-bold mt-2 font-thunder">
             EMAIL MARKETING
           </h1>
-          <h1 className="text-center sm:text-start 2xl:text-[140px] xl:text-[100px] md:text-[60px] sm:text-[50px] text-[40px] xl:mt-[-50px] sm:mt-[-30px] mt-[-20px]   font-bold  font-thunder">
+          <h1 className="text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px] sm:text-[30px] text-[40px] xl:mt-[-50px] sm:mt-[-30px] mt-[-20px]   font-bold  font-thunder">
             & LEAD GENERATION
           </h1>{" "}
-          <h3 className="text-center sm:text-start w-full 2xl:w-[55%]  md:w-[60%] sm:w-[80%] text-black 2xl:text-[28px] taxt-[14px] sm:text-[16px] font-semibold">
-            Our targeted email campaigns and lead
-            generation strategies are designed to
-            engage, nurture, and convert leads,
-            driving growth and maximizing ROI for
-            your business.
+          <h3 className="text-center sm:text-start w-full 2xl:w-[55%]  md:w-[60%] sm:w-[80%] text-black 2xl:text-[24px] text-[14px] sm:text-[12px] font-semibold">
+            Our targeted email campaigns and lead generation strategies are
+            designed to engage, nurture, and convert leads, driving growth and
+            maximizing ROI for your business.
           </h3>
         </div>
         <div className=" md:mt-[20%]">

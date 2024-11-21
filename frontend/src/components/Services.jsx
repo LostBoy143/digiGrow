@@ -65,7 +65,7 @@ const Services = () => {
         {details.map((item, idx) => {
           return (
             <div
-              className="font-poppins text-white text-center  p-2 md:p-5 flex flex-col justify-evenly items-center  h-[275px] md:h-[354px]  md:w-[354px]   rounded-3xl bg-opacity-20   shadow-[0px_5px_5px_rgba(0,0,0,0.35)]  drop-shadow-xl bg-white/5 border border-white/20  backdrop-blur-lg"
+              className="font-poppins text-white text-center border bg-semi-transparent-white-10 border-semi-transparent-white p-2 md:p-5 flex flex-col justify-evenly items-center  h-[275px] md:h-[354px]  md:w-[354px]  bg-black rounded-3xl bg-opacity-20 backdrop-blur-lg"
               key={idx}
             >
               <img

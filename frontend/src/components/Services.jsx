@@ -73,12 +73,12 @@ const Services = () => {
                 className="md:h-[56px] h-[36px] w-[36px] md:w-[56px]"
                 alt=""
               />
-              <div className="center text-[#8cc540] text-[26px] font-bold">
-                <h1 className="font-poppins text-center text-xl md:text-[28px] font-bold leading-[40px]">
+              <div className="center text-[#8cc540] md:text-[26px] text-[12px] font-bold">
+                <h1 className="font-poppins text-center text-xl md:text-[28px] font-bold md:leading-[40px]">
                   {item.title}
                 </h1>
               </div>
-              <h3 className="font-poppins text-center font-small text-[15px] md:text-[18px]">
+              <h3 className="font-poppins text-center  text-[14px] md:text-[18px]">
                 {item.desc}
               </h3>
             </div>

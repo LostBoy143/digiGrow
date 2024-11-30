@@ -62,7 +62,7 @@ const Contact = () => {
             onSubmit={(e) => {
               submitHandle(e);
             }}
-            className="relative border w-[32vw] border-semi-transparent-white rounded-3xl flex-col gap-10  flex items-center justify-evenly p-4 lg:p-6  backdrop-blur-[60px] bg-half-white"
+            className="relative border md:min-w-[500px] min-w-[350px] border-semi-transparent-white rounded-3xl flex-col gap-10  flex items-center justify-evenly p-4 lg:p-6  backdrop-blur-[60px] bg-half-white"
           >
             <div
               className="absolute h-[100px] w-[100px] top-0 left-0"

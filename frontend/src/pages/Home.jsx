@@ -5,6 +5,7 @@ import Services from "../components/Services";
 import Contact from "../components/Contact";
 import Social from "../components/Social";
 import Advertiser from "../components/Advertiser";
+import TrafficSources from "../components/TrafficSources";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Services />
       <Social />
       <Advertiser />
+      <TrafficSources />
       <Contact />
     </>
   );

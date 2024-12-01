@@ -30,7 +30,7 @@ const Social = () => {
       <img
         id="facebook"
         src="/assets/Facebook 3.png"
-        className="insta h-[100px] sm:h-[250px] pb-4 absolute  bottom-[1%] md:bottom-[-2%]  right-0  transform transition-all duration-500 hover:rotate-12 hover:scale-125"
+        className="insta h-[100px] sm:h-[250px] pb-4 absolute  bottom-[1%] md:bottom-[-3%]  right-0  transform transition-all duration-500 hover:rotate-12 hover:scale-125"
       ></img>
       <div
         id="text-container"

@@ -6,18 +6,37 @@ import Contact from "../components/Contact";
 import Social from "../components/Social";
 import Advertiser from "../components/Advertiser";
 import TrafficSources from "../components/TrafficSources";
+import { Element } from "react-scroll";
+import { useEffect } from "react";
+
+
 
 const Home = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <>
-      <HeroSection />
-      <AboutUs />
-      <Accord />
+      <Element name="Home">
+        <HeroSection />
+      </Element>
+
+      <Element name="AboutUs">
+        <AboutUs  />
+      </Element>
+
+
+      <Element name="Services">
+        <Accord />
+      </Element>
       <Services />
       <Social />
       <Advertiser />
       <TrafficSources />
-      <Contact />
+
+      <Element name="Contact">
+        <Contact  />
+      </Element>
     </>
   );
 };

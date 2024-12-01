@@ -19,13 +19,13 @@ const DesignBrandStrategy = () => {
   };
   return (
     <div>
-      <div className="w-full h-screen bg-[#232233] flex justify-between">
-        <div className="w-1/2 md:mt-44 mt-32 px-8 md:px-20">
+      <div className="w-full bg-[#232233] flex justify-between relative">
+        <div className="md:mt-36 mt-32 mb-[208px] px-8 md:px-20">
           <h1 className="font-thunder text-5xl md:text-9xl text-[#8cc540]">
             DESIGN &<br /> BRAND STRATEGY
           </h1>
           <svg
-            width="959"
+            width="630"
             height="45"
             viewBox="0 0 959 45"
             fill="none"
@@ -117,83 +117,83 @@ const DesignBrandStrategy = () => {
             alt="pic"
             width={1500}
             height={1500}
-            className={`${rotate} transform transition-transform duration-500 ml-44 pl-40 -mt-10`}
+            className={`${rotate} transform transition-transform duration-500 absolute top-0 right-[-168px] h-[720px] w-[720px]`}
             onMouseEnter={handleHover}
             onMouseLeave={handleHoverLeave}
           />
         </div>
       </div>
       <div className="flex">
-        <div className="-mt-64">
+        <div className="-mt-40 relative">
           <img
             src="/assets/simon-lee-ynmPY1MLwMs-unsplash 1.png"
             alt="hand"
-            height={1300}
-            width={975}
+            height="1030"
+            width="900"
           />
         </div>
         <div className="-ml-52 my-12">
           <div className="overflow-hidden">
             <h2
-              className={`${slide}  font-monument font-extrabold text-right mr-12 capitalize text-6xl transition-transform ease-in-out transform  duration-700 tracking-tight text-[#8CC540]`}
+              className={`font-monument w-full pr-[80px] font-extrabold text-right mr-32 capitalize text-5xl tracking-tight text-[#8CC540]`}
             >
-              DESIGN THAT SPEAKS. <br />
+              DESIGN THAT SPEAKS, <br />
               STRATEGY THAT DELIVERS
             </h2>
           </div>
-          <div className="px-40 py-20 ml-32">
-            <div className="flex flex-col my-1 gap-2 justify-start items-end font-poppins">
+          <div className="px-32 py-20 ml-32">
+            <div className="flex flex-col my-1 gap-2 justify-start items-end font-poppins relative">
               <img
                 src="/assets/Ellipse 5.png"
                 alt="elipse"
-                className="-z-10 -mb-14 -mr-6"
+                className="absolute top-[-22px] right-[-35px]"
                 height={75}
                 width={75}
               />
-              <h3 className="font-bold text-2xl">Understand</h3>
-              <p className="text-[#232233] w-3/4 font-medium text-right text-xl">
+              <h3 className="font-bold text-2xl z-10">Understand</h3>
+              <p className="text-[#232233] w-3/4 font-medium text-right text-xl z-10">
                 We dive deep into your brand, market, and audience to grasp your
                 unique needs and goals.
               </p>
             </div>
-            <div className="flex flex-col my-1 gap-4 justify-start items-start font-poppins">
+            <div className="flex flex-col my-1 gap-4 justify-start items-start font-poppins relative">
               <img
                 src="/assets/Ellipse 5.png"
                 alt="elipse"
-                className="-z-10 -mb-14 -ml-6"
+                className="absolute top-[-22px] left-[-35px]"
                 height={75}
                 width={75}
               />
-              <h3 className="font-bold text-2xl">Plan</h3>
-              <p className="text-[#232233] w-3/4 font-medium text-left text-xl">
+              <h3 className="font-bold text-2xl z-10">Plan</h3>
+              <p className="text-[#232233] w-3/4 font-medium text-left text-xl z-10">
                 Strategize the perfect blend of creative design and impactful
                 messaging to shape your brand&apos;s identity.
               </p>
             </div>
-            <div className="flex flex-col my-1 gap-4 justify-start items-end font-poppins">
+            <div className="flex flex-col my-1 gap-4 justify-start items-end font-poppins relative">
               <img
                 src="/assets/Ellipse 5.png"
                 alt="elipse"
-                className="-z-10 -mb-14 -mr-6"
+                className="absolute top-[-22px] right-[-35px]"
                 height={75}
                 width={75}
               />
-              <h3 className="font-bold text-2xl">Execute</h3>
-              <p className="text-[#232233] w-3/4 font-medium text-right text-xl">
+              <h3 className="font-bold text-2xl z-10">Execute</h3>
+              <p className="text-[#232233] w-3/4 font-medium text-right text-xl z-10">
                 Turn strategy into reality with tailored design solutions,
                 delivering visually stunning and cohesive brand elements.
               </p>
             </div>
-            <div className="flex flex-col my-1 gap-4 justify-start items-start font-poppins">
+            <div className="flex flex-col my-1 gap-4 justify-start items-start font-poppins relative">
               <img
                 src="/assets/Ellipse 5.png"
                 alt="elipse"
-                className="-z-10 -mb-14 -ml-6"
+                className="absolute top-[-22px] left-[-35px]"
                 height={75}
                 width={75}
               />
-              <h3 className="font-bold text-2xl">Result</h3>
-              <p className="text-[#232233] w-3/4 font-medium text-left text-xl">
+              <h3 className="font-bold text-2xl z-10">Result</h3>
+              <p className="text-[#232233] w-3/4 font-medium text-left text-xl z-10">
                 Measure success through improved brand visibility, customer
                 loyalty, and business growth.
               </p>
@@ -201,7 +201,7 @@ const DesignBrandStrategy = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-screen bg-[#232233] p-16">
+      <div className="w-full  bg-[#232233] p-16">
         <h1 className="text-center font-poppins font-extrabold text-[#8cc540] text-7xl">
           Our Work
         </h1>

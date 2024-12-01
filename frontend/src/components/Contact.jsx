@@ -25,10 +25,10 @@ const Contact = () => {
     }
   };
   const submitHandle = (e) => {
-    e.preventDefault();
-    setName("");
-    setEmail("");
-    setMsg("");
+    // e.preventDefault();
+    // setName("");
+    // setEmail("");
+    // setMsg("");
     console.log("submitted");
   };
 
@@ -62,6 +62,7 @@ const Contact = () => {
             onSubmit={(e) => {
               submitHandle(e);
             }}
+            action="https://formsubmit.co/support@digigrove.com" method="POST"
             className="relative border md:min-w-[500px] min-w-[350px] border-semi-transparent-white rounded-3xl flex-col gap-10  flex items-center justify-evenly p-4 lg:p-6  backdrop-blur-[60px] bg-half-white"
           >
             <div
@@ -100,6 +101,9 @@ const Contact = () => {
               onChange={(e) => change(e)}
               placeholder="Message"
             />
+            <input type="hidden" name="_captcha" value="false"></input>
+            {/* <input type="hidden" name="_next" value="/"></input> */}
+
 
             <div onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
               <Button />

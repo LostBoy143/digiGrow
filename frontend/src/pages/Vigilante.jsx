@@ -1,7 +1,11 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from "react";
 
 const Vigilante = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
   const images = [
     { image: "/assets/vigilante/logo-1.png" },
     { image: "/assets/vigilante/logo-2.png" },

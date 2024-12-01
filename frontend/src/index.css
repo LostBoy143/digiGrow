@@ -49,50 +49,64 @@
   box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
+.email-grad {
+  background: rgb(170,0,230);
+  background: linear-gradient(150deg, rgba(170,0,230,0.5) 0%,
+   rgba(255,255,255,0) 40%,
+   rgba(255,255,255,0) 60%,
+    rgba(229,255,194,0.5) 100%);
+
+}
+
 @font-face {
   font-family: "Thunder";
   src: url("THUNDER/Fonts/Web-PS/Thunder-SemiBoldLC.woff2") format("woff2");
-
-  /* font-weight: normal;
-  font-style: normal; */
 }
 
-/* @font-face {
-  font-family: "PPMonument";
-  src: url("PPMONUMENT/MonumentExtended-Regular.otf") format("otf");
-} */
 
 @font-face {
-  font-family: "PPMonument"; /* Name for your custom font */
-  src: url("PPMONUMENT/PP Monument Extended/PP Monument Extended.woff2")
-    format("woff2"); /* Path to the .otf file */
-  font-weight: normal; /* Specify the weight (normal, bold, etc.) */
-  font-style: normal; /* Specify the style (normal, italic, etc.) */
+  font-family: "PPMonumentExtended";
+  src: url("assets/PPMonumentExtended/PPMonumentExtended-Black.woff2") format("woff2");
+}
+/*
+@font-face {
+  font-family: "PP Monument Extended";
+  src: url("PP Monument Extended/PPMonumentExtended-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "PP Monument Extended";
-  src: url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.eot");
-  src: url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.eot?#iefix")
-      format("embedded-opentype"),
-    url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.woff")
-      format("woff"),
-    url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.woff2")
-      format("woff2"),
-    url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.ttf")
-      format("truetype"),
-    url("PPMONUMENT/PP Monument Extended/Web Fonts/2bc662e7204dfbe2bf8d7b6f4eb6f446.svg#PP Monument Extended")
-      format("svg");
-  font-weight: bolder;
-  font-style: normal;
-  font-display: swap;
-  font-variation-settings: "wght" 900, "ital" 100;
+  src: url("PP Monument Extended/PPMonumentExtended-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
 }
 
-/* Optional: Define a custom class for the font */
-.font-monument {
-  font-family: "PPMonument", sans-serif; /* Fallback to a system font if unavailable */
+@font-face {
+  font-family: "PP Monument Extended";
+  src: url("PP Monument Extended/PPMonumentExtended-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "PP Monument Extended";
+  src: url("PP Monument Extended/PPMonumentExtended-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PP Monument Extended";
+  src: url("PP Monument Extended/PPMonumentExtended-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+/* Optional: Define a custom class for the font */
+
 @font-face {
   font-family: "Porter";
   src: url("PORTER/porter-sans-inline-block-webfont.eot");
@@ -184,6 +198,43 @@
     background-image: url("/assets/OBJECTS-white.svg");
   }
 }
+
+.animate-pop{
+  animation: pop 0.45s forwards;
+}
+
+.animate-pop-reversed{
+  animation: pop-reversed 0.45s forwards;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0);
+    margin-top: 100px;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    margin-top: 0px;
+  }
+}
+
+@keyframes pop-reversed {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    /* right: 0; */
+    margin-top: 0px;
+  }
+  to {
+    opacity: 0;
+    /* right: 20px; */
+    transform: scale(0);
+    margin-top: 100px;
+  }
+}
+
 
 #marketing-page {
   background-color: white;

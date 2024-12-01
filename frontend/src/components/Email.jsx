@@ -6,14 +6,14 @@ const Email = () => {
   return (
     <div
       id="email-marketing-container"
-      className="2xl:h-[100vh] md:h-[110vh] sm:h-[110vh] max-h-[110vh] sm:min-h-[100vh] w-full flex flex-col gap-6  sm:gap-0 sm:flex-row py-12 sm:py-0  mt-[40px] "
+      className="md:mt-[15%] w-full flex flex-col gap-6  sm:gap-0 sm:flex-row py-12 sm:py-0  mt-[40px] "
     >
-      <div className="left-side sm:pl-[10%] 2xl:pl-[10%] h-full w-full sm:w-[55%] pt-5 flex flex-col items-center sm:items-start sm:justify-evenly ">
+      <div className="left-side sm:pl-[10%] 2xl:pl-[10%] h-full w-full sm:w-[55%] flex flex-col items-center sm:items-start sm:justify-evenly ">
         <div
           id="text"
-          className=" text-[#8cc540] 2xl:w-[1097px] md:mt-[15%] px-5 pb-8 sm:p-0 sm:pb-0   "
+          className=" text-[#8cc540] 2xl:w-[1097px] px-5 pb-8 sm:p-0 sm:pb-0   "
         >
-          <h1 className="text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px]  sm:text-[30px] text-[40px] font-bold mt-2 font-thunder">
+          <h1 className="text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px]  sm:text-[30px] text-[40px] font-bold mt-[-1.5rem] font-thunder">
             EMAIL MARKETING
           </h1>
           <h1 className="text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px] sm:text-[30px] text-[40px] xl:mt-[-50px] sm:mt-[-30px] mt-[-20px]   font-bold  font-thunder">

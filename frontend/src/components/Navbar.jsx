@@ -1,11 +1,21 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, ReactDOM } from "react";
+import { scroller } from "react-scroll";
+import { Link, useNavigate, useLocation } from 'react-router-dom'
+
 
 const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const scrolls = {
+    "Home": "Home",
+    "About": "AboutUs",
+    "Services": "Services",
+    "Contact": "Contact"
+  }
 
+  const navigate = useNavigate();
+  const location = useLocation();
   const navItems = ["Home", "About", "Services", "Contact"];
   return (
     <div
@@ -46,19 +56,30 @@ const Navbar = () => {
       >
         <ul className="flex justify-evenly items-center h-full">
           {navItems.map((item, index) => (
-            <Link
+            <div
               key={index}
-              to={item === "Home" ? "/" : "#"}
+              onClick={() => {
+                navigate('/')
+                setTimeout(() => {
+                  scroller.scrollTo(scrolls[item] || "#", {
+                    duration: 500,
+                    smooth: true,
+                    offset: -50
+                  })
+                  setActiveIndex(index)
+                })
+              }
+            }
               className={`rounded-full  flex font-semi-bold justify-center font-semibold items-center cursor-pointer w-1/4 h-full duration-500 ${
                 activeIndex === index
                   ? "bg-black text-white"
                   : "bg-slate-300 text-black"
               }`}
             >
-              <li id="nav-li" onClick={() => setActiveIndex(index)}>
+              <li id="nav-li">
                 {item}
               </li>
-            </Link>
+            </div>
           ))}
         </ul>
       </div>

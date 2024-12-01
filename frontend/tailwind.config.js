@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         thunder: ["Thunder", "sans-serif"],
-        monument: ["PP Monument Extended", "sans-serif"],
+        monument: ["PPMonumentExtended", "serif"],
         poppins: ["Poppins", "sans-serif"],
         porter: ["Porter", "sans-serif"],
       },

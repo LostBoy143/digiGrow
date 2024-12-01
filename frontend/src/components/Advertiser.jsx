@@ -6,14 +6,14 @@ const Advertiser = () => {
     <div className='w-full relative'>
       <img src="/assets/DigiGrove Website Frame 70.png" alt="" className='md:block hidden'/>
       <div
-      className={`pt-[70px] text-[#232233] font-poppins text-center text-[26px] font-extrabold md:block hidden bg-[rgb(140,197,64)] h-[200px] w-[200px] absolute top-[44%] right-0 rounded-full animate-${isHovered ? 'pop' : 'pop-reversed'}`}>
+      className={`flex flex-col align-center justify-center pt-[16px] text-[#232233] font-poppins text-center text-[150%] font-extrabold md:block hidden bg-[rgb(140,197,64)] h-[25%] w-[14.2%] absolute top-[44%] right-0 rounded-full animate-${isHovered ? 'pop' : 'pop-reversed'}`}>
       We saved you a spot!
       </div>
 
       <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`md:block h-[200px] w-[200px] absolute top-[44%] right-0 rounded-full`}></div>
+      className={`h-[25%] w-[14.2%] absolute top-[44%] right-0 rounded-full hidden lg:block`}></div>
 
       <img src="/assets/Frame71.png" alt="" className='md:hidden block'/>
     </div>

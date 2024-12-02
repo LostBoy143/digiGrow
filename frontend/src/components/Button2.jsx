@@ -1,11 +1,17 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 const Button2 = () => {
+  const navigate = useNavigate();
   return (
     <div
       id="button"
       className="group flex h-10 sm:h-16 duration-1000 w-52 sm:w-72"
+      onClick={() => {
+        navigate('/?scrollToContact=true')
+      }}
     >
       <button
         className="w-40 sm:w-60 h-full text-md font-bold sm:text-2xl bg-[#8cc540] text-black md:font-semibold 2xl:font-bold rounded-tl-full rounded-bl-full transition-all duration-500 group-hover:bg-black group-hover:text-[#8cc540] group-hover:rounded-full"

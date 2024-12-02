@@ -6,20 +6,20 @@ const Email = () => {
   return (
     <div
       id="email-marketing-container"
-      className="md:mt-[15%] w-full flex flex-col gap-6  sm:gap-0 sm:flex-row py-12 sm:py-0  mt-[40px] "
+      className="md:mt-[150px] w-full flex flex-col gap-6  sm:gap-0 sm:flex-row py-12 sm:py-0  mt-[40px] "
     >
-      <div className="left-side sm:pl-[10%] 2xl:pl-[10%] h-full w-full sm:w-[55%] flex flex-col items-center sm:items-start sm:justify-evenly ">
+      <div className="left-side pl-[108px] h-full w-full sm:w-[55%] flex flex-col items-center sm:items-start sm:justify-evenly ">
         <div
           id="text"
           className=" text-[#8cc540] 2xl:w-[1097px] px-5 pb-8 sm:p-0 sm:pb-0   "
         >
-          <h1 className="text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px]  sm:text-[30px] text-[40px] font-bold mt-[-1.5rem] font-thunder">
+          <h1 className="tracking-[0.04em] text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px]  sm:text-[30px] text-[40px] font-bold mt-[-1.5rem] font-thunder">
             EMAIL MARKETING
           </h1>
-          <h1 className="text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px] sm:text-[30px] text-[40px] xl:mt-[-50px] sm:mt-[-30px] mt-[-20px]   font-bold  font-thunder">
+          <h1 className="tracking-[0.04em] text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px] sm:text-[30px] text-[40px] xl:mt-[-50px] sm:mt-[-30px] mt-[-20px]   font-bold  font-thunder">
             & LEAD GENERATION
           </h1>{" "}
-          <h3 className="text-center sm:text-start w-full 2xl:w-[55%]  md:w-[60%] sm:w-[80%] text-black 2xl:text-[24px] text-[14px] sm:text-[12px] font-semibold">
+          <h3 className="text-center sm:text-start w-full 2xl:w-[55%]  md:w-[60%] sm:w-[80%] text-black 2xl:text-[24px] text-[14px] sm:text-[12px] font-normal font-poppins">
             Our targeted email campaigns and lead generation strategies are
             designed to engage, nurture, and convert leads, driving growth and
             maximizing ROI for your business.

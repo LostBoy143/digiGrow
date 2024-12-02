@@ -34,11 +34,13 @@ const HeroSection = () => {
           targeting strategies
         </h2>
       </div>
-      <div id="right-content">
+      <div id="right-content"
+
+      className="max-w-[50%]">
         <img
           id="hero-img"
           src="/assets/Simon Lee Asset-unsplash.png"
-          className="h-[150%] w-[130%]"
+          className="h-[150%] w-[130%] object-cover"
         ></img>
       </div>
     </div>

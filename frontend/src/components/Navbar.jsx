@@ -76,7 +76,9 @@ const Navbar = () => {
                   : "bg-slate-300 text-black"
               }`}
             >
-              <li id="nav-li">
+              <li id="nav-li"
+              className="font-poppins font-normal"
+              >
                 {item}
               </li>
             </div>

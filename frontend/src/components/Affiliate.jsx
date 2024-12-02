@@ -1,8 +1,8 @@
 const Affiliate = () => {
   return (
-    <div className="mt-[14%] w-full py-10">
+    <div className="mt-[10%] w-full py-10">
       <div className="text-center lg:px-20 lg:mx-40 sm:mt-10 md:mt-5">
-        <h1 className="xl:text-9xl md:text-6xl text-5xl whitespace-nowrap  font-thunder leading-4 tracking-wide md:tracking-wider lg:tracking-widest text-[#8CC540] font-semibold mb-4">
+        <h1 className="xl:text-9xl md:text-6xl text-5xl whitespace-nowrap  font-thunder leading-4 tracking-widest text-[#8CC540] font-bold mb-4">
           AFFILIATE MARKETING
         </h1>
         <p className="md:text-2xl text-xl font-medium text-[#232233] md:mx-20 mx-10">

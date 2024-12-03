@@ -6,37 +6,35 @@ const Email = () => {
   return (
     <div
       id="email-marketing-container"
-      className="md:mt-[150px] w-full flex flex-col gap-6  sm:gap-0 sm:flex-row py-12 sm:py-0  mt-[40px] "
+      className="lg:mt-[152px] mt-28 w-full flex  gap-6 xl:flex-wrap  items-center xl:items-start flex-col xl:flex-row pt-12 sm:py-0  "
     >
-      <div className="left-side pl-[108px] h-full w-full sm:w-[55%] flex flex-col items-center sm:items-start sm:justify-evenly ">
-        <div
-          id="text"
-          className=" text-[#8cc540] 2xl:w-[1097px] px-5 pb-8 sm:p-0 sm:pb-0   "
-        >
-          <h1 className="tracking-[0.04em] text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px]  sm:text-[30px] text-[40px] font-bold mt-[-1.5rem] font-thunder">
+      <div className="left-side xl:pl-[108px]  h-full w-full sm:w-[45%] flex flex-col items-center  sm:justify-evenly ">
+        <div id="text" className=" text-[#8cc540]  px-5 pb-6 sm:p-0 sm:pb-0   ">
+          <h3 className="xl:tracking-[0.04em] leading-none text-center xl:text-left  2xl:text-[100px] xl:text-[72px] md:text-[50px]   text-[40px] font-bold  font-thunder">
             EMAIL MARKETING
-          </h1>
-          <h1 className="tracking-[0.04em] text-center sm:text-start 2xl:text-[100px] xl:text-[80px] md:text-[50px] sm:text-[30px] text-[40px] xl:mt-[-50px] sm:mt-[-30px] mt-[-20px]   font-bold  font-thunder">
+          </h3>
+          <h3 className="xl:tracking-[0.04em] leading-none text-center xl:text-left  2xl:text-[100px] xl:text-[72px] md:text-[50px]  text-[40px]   font-bold  font-thunder">
             & LEAD GENERATION
-          </h1>{" "}
-          <h3 className="text-center sm:text-start w-full 2xl:w-[55%]  md:w-[60%] sm:w-[80%] text-black 2xl:text-[24px] text-[14px] sm:text-[12px] font-normal font-poppins">
+          </h3>{" "}
+          <h5 className="text-center xl:text-left xl:w-1/2  text-black 2xl:text-[24px] text-[14px] sm:text-[12px] font-normal font-poppins">
             Our targeted email campaigns and lead generation strategies are
             designed to engage, nurture, and convert leads, driving growth and
             maximizing ROI for your business.
-          </h3>
-        </div>
-        <div className=" md:mt-[20%]">
-          <Button2 />
+          </h5>
         </div>
       </div>
-      <div className="right-side h-full w-full sm:w-[45%] flex justify-center sm:justify-start items-center sm:mr-4 xl:mr-0 ">
-        <div className="h-[220px] w-[220px] 2xl:h-[690px] md:h-[390px] sm:h-[280px] md:ml-4 sm:w-[346px] md:w-[456px] 2xl:w-[756px] sm:mb-[120px]  md:mb-0">
+      <div className="right-side  h-full w-full sm:w-[45%] flex justify-center items-center">
+        <div className="h-[220px] w-[220px] sm:h-[280px] sm:w-[346px] md:h-[390px] md:w-[456px] 2xl:h-[690px] 2xl:w-[756px] md:ml-4 sm:mb-[120px] md:mb-0">
           <img
             src="/assets/choosy/Frame32.png"
-            alt="d"
-            className="h-full w-full"
+            alt="Responsive Image"
+            className="h-full w-full object-contain"
           />
         </div>
+      </div>
+
+      <div className="mx-auto xl:ml-28">
+        <Button2 />
       </div>
     </div>
   );

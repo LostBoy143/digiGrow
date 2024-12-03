@@ -6,9 +6,35 @@ const SearchArbitrage = () => {
   const [showText, setShowText] = React.useState(true);
 
   /* Card states */
+  const [isMobile, setIsMobile] = React.useState(false);
   const [activeCard, setActiveCard] = React.useState("card1");
+
+  React.useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.matchMedia("(max-width: 1280px)").matches);
+    };
+
+    // Check on mount
+    checkIfMobile();
+    if (isMobile) setActiveCard("all");
+    else setActiveCard("card1");
+    // Add event listener for viewport changes
+    const mediaQuery = window.matchMedia("(max-width: 1280px)");
+    const handleResize = (e) => setIsMobile(e.matches);
+    mediaQuery.addEventListener("change", handleResize);
+
+    // Cleanup on unmount
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, [isMobile]);
+
   const handleCardClick = (card) => {
-    setActiveCard(card);
+    if (isMobile) {
+      // In mobile view, consider all cards as active
+      setActiveCard("all");
+    } else {
+      // For desktop, set the clicked card
+      setActiveCard(card);
+    }
   };
   const handleHover = () => {
     setLeftBtnWidth("xl:w-40 w-28");
@@ -23,7 +49,7 @@ const SearchArbitrage = () => {
 
   return (
     <div className="w-full mt-[10%] xl:mt-[5%]">
-      <div className=" w-full flex flex-col md:px-20 xl:flex-row px-2 lg:px-10 py-5 gap-10 md:py-10 justify-center relative bg-[url('/assets/BGELEMENTS.png')] bg-cover bg-center">
+      <div className=" w-full flex mx-auto flex-col md:px-20 xl:flex-row px-2 lg:px-10 py-5 gap-10 md:py-10 justify-center items-center xl:items-start relative bg-[url('/assets/BGELEMENTS.png')] bg-cover bg-center">
         <svg
           width="300"
           height="300"
@@ -151,7 +177,7 @@ const SearchArbitrage = () => {
             />
           </div>
 
-          <div className="flex gap-1 rounded-[10px] py-1  max-w-[450px] md:max-w-[550px] lg:max-w-[650px] xl:max-w-[700px] xl:h-40 lg:h-32 md:h-28 h-20 ">
+          <div className="flex gap-1 rounded-[10px] py-1  max-w-[450px] md:max-w-[550px] lg:max-w-[650px] xl:max-w-[700px] xl:h-40 lg:h-32 md:h-28 h-24 ">
             <button
               className={`${leftbtnWidth} bg-[#8cc540] overflow-hidden rounded-[10px]  text-white font-bold py-1  duration-300 ease-in-out`}
             >
@@ -230,18 +256,20 @@ const SearchArbitrage = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/assets/space.png')] bg-[#232233] bg-cover md:py-20 py-10">
+      <div className="bg-[url('/assets/space.png')] bg-[#232233] xl:h-full h-[1100px]  bg-cover xl:py-20 py-5">
         <div className="flex xl:flex-row flex-col justify-center items-center md:p-20 p-10">
           <div
             onMouseEnter={() => handleCardClick("card1")}
-            className={`relative xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group40.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
+            className={`relative min-h-[275px]  xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group40.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
               activeCard === "card1" ? "xl:rotate-0" : "xl:rotate-45"
             }`}
           >
             <div
               className={`absolute inset-0 flex flex-col items-center justify-center transform px-10 ${
-                activeCard === "card1" ? "xl:rotate-0" : "xl:-rotate-45 hidden"
-              }`}
+                activeCard === "card1" || isMobile
+                  ? "xl:rotate-0"
+                  : "xl:-rotate-45 hidden"
+              } `}
             >
               <h3 className="absolute top-6 font-bold text-3xl">WHAT WE DO</h3>
               <div className="block md:flex flex-col items-center xl:mt-24 mt-4">
@@ -286,14 +314,16 @@ const SearchArbitrage = () => {
           </div>
           <div
             onMouseEnter={() => handleCardClick("card2")}
-            className={`relative xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group38.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
+            className={`relative min-h-[275px] xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group38.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
               activeCard === "card2" ? "xl:rotate-0" : "xl:rotate-45"
             }`}
           >
             <div
               className={`absolute inset-0 flex flex-col items-center justify-center transform px-10 ${
-                activeCard === "card2" ? "xl:rotate-0" : "xl:-rotate-45 hidden"
-              }`}
+                activeCard === "card2" || isMobile
+                  ? "xl:rotate-0"
+                  : "xl:-rotate-45 hidden"
+              } `}
             >
               <h3 className="absolute top-6 font-bold text-3xl">HOW WE DO</h3>
               <div className="block md:flex flex-col items-center xl:mt-24 mt-4">
@@ -337,14 +367,16 @@ const SearchArbitrage = () => {
           </div>
           <div
             onMouseEnter={() => handleCardClick("card3")}
-            className={`relative xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group39.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
+            className={`relative min-h-[275px] xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group39.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
               activeCard === "card3" ? "xl:rotate-0" : "xl:rotate-45"
             }`}
           >
             <div
               className={`absolute inset-0 flex flex-col items-center justify-center transform px-10 ${
-                activeCard === "card3" ? "xl:rotate-0" : "xl:-rotate-45 hidden"
-              }`}
+                activeCard === "card3" || isMobile
+                  ? "xl:rotate-0"
+                  : "xl:-rotate-45 hidden"
+              } `}
             >
               <h3 className="absolute top-6 font-bold text-3xl">OUR PURPOSE</h3>
 

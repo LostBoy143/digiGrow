@@ -15,21 +15,16 @@ const AboutUs = () => {
             About Us
           </h1>
           <h3 className="font-poppins text-center xl:text-left text-[16px] xl:text-[22px]  xl:leading-[32px]  font-xlall py-1 xl:py-4">
-            DigiGrove is a company comprised of
-            integrated teams of
-            technicians/engineers, project
-            leaders, account managers, writers and
-            administrative support staff.
+            DigiGrove is a company comprised of integrated teams of
+            technicians/engineers, project leaders, account managers, writers
+            and administrative support staff.
           </h3>
           <h3 className="font-poppins text-[16px] xl:text-[22px] xl:leading-[32px]   mt-2 font-xlall px-3 xl:px-0">
-            <span className="text-[#FCE100] ">
-              Our Goal
-            </span>{" "}
-            : To Develop and sell high quality
-            products.
+            <span className="text-[#FCE100] ">Our Goal</span> : To Develop and
+            sell high quality products.
           </h3>
         </div>
-        <div className="relative 2xl:p-10 xl:w-full xl:min-w-[700px] min-w-[400px] px-10 w-3/4 m-auto flex overflow-hidden">
+        <div className="relative 2xl:p-10 xl:w-full xl:min-w-[700px] min-w-[400px] pr-10 w-3/4 m-auto flex overflow-hidden">
           <img
             src="/assets/hero-about.png" // Replace with the correct path
             alt="Clipped Example"

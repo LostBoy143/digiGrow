@@ -34,7 +34,7 @@ const Accord = () => {
       {slogans.map((item, idx) => {
         return (
           <Link
-            className="group items md:hover:bg-[#232233] lg:h-auto h-[105px] w-full lg:py-3 py-0   font-thunder  px-8 lg:px-28 cursor-pointer "
+            className="group items md:hover:bg-[#232233] lg:h-auto h-[105px] w-full lg:py-3 py-0   font-thunder  px-6 lg:px-28 cursor-pointer "
             key={idx}
             to={item.way}
           >

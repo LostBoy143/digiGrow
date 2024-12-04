@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const SearchArbitrage = () => {
   const [leftbtnWidth, setLeftBtnWidth] = React.useState("w-[534px]");
   const [rightbtnWidth, setRightBtnWidth] = React.useState("xl:w-40 w-28");
   const [showText, setShowText] = React.useState(true);
+  const navigate = useNavigate()
 
   /* Card states */
   const [isMobile, setIsMobile] = React.useState(false);
@@ -182,11 +184,11 @@ const SearchArbitrage = () => {
               className={`${leftbtnWidth} bg-[#8cc540] overflow-hidden rounded-[10px]  text-white font-bold py-1  duration-300 ease-in-out`}
             >
               {showText ? (
-                <div className=" md:pt-6 p-2 w-full flex justify-between ">
+                <div className="pl-6 md:pt-6 p-2 w-full flex justify-between ">
                   <span
-                    className={` font-porter text-[#232233] xl:text-3xl md:text-xl text-sm  duration-700 ease-in-out`}
+                    className={` font-porter text-[#232233] xl:text-3xl md:text-xl text-sm  duration-700 ease-in-out text-left`}
                   >
-                    STATE OF THE ART TECHNOLOGY
+                    STATE OF <br /> THE ART <br /> TECHNOLOGY
                   </span>
                   <svg
                     width="212"

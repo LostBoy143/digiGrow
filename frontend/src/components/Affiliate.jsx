@@ -5,7 +5,7 @@ const Affiliate = () => {
         <h1 className="xl:text-9xl md:text-6xl text-5xl whitespace-nowrap  font-thunder leading-4 tracking-widest text-[#8CC540] font-bold mb-4">
           AFFILIATE MARKETING
         </h1>
-        <p className="md:text-2xl text-xl font-medium text-[#232233] md:mx-20 mx-10">
+        <p className="font-poppins font-medium md:text-[18px] text-xl font-medium text-[#232233] md:mx-20 mx-10">
           We partner with third-party publishers to promote your products and
           services, ensuring you only pay for actual sales or leads. Our
           advanced analytics and high-quality affiliates maximize your reach and
@@ -35,43 +35,54 @@ const Affiliate = () => {
             id="serve"
             className="w-full stroke-white stroke-1 top-0 flex gap-16 flex-wrap justify-evenly px-12"
           >
-            <div className="relative text-white flex flex-col items-center gap-4 md:h-[520px] md:w-[600px] h-[443px] w-[404px]  bg-white/10 border border-white/20 rounded-[35px]">
-              <img
-                src="/assets/Group 36.png"
-                alt="ellipses"
-                className="absolute z-10"
-              ></img>
 
-              <div className="text-[#8CC540] md:p-4 p-3 -mt-8 md:-mt-10 md:h-[90px] md:w-2/3 z-30 h-[60px] w-1/2 shadow-[0px_5px_5px_rgba(0,0,0,0.35)]  drop-shadow-xl bg-white/10 border border-white/20 rounded-3xl backdrop-blur-3xl">
+            <div className="flex flex-col justify-center items-center">
+
+            <div className="mb-[-46px] text-[#8CC540] md:p-4 p-3 -mt-8 md:-mt-10 md:h-[90px] md:w-2/3 z-30 h-[60px] w-1/2 shadow-[0px_5px_5px_rgba(0,0,0,0.35)]  drop-shadow-xl bg-white/10 border border-white/20 rounded-3xl backdrop-blur-3xl">
                 <h1 className="text-center text-2xl md:text-4xl md:pt-1.5 font-bold">
                   Publishers
                 </h1>
               </div>
-              <div className="text-center pt-8 px-5 md:px-10 flex flex-col md:gap-10 gap-5 font-sans justify-center items-center space-y-10">
-                <h3 className=" font-bold text-2xl md:text-3xl md:px-14 px-8">
-                  We assist you in maximising profits!
-                </h3>
-                <p className="font-normal text-base md:text-lg">
-                  Gain substantial commissions for any leads, installations,
-                  purchases, or other transactions made by customers you brought
-                  to Digigrove via the company&apos;s website, blog posts,
-                  articles, banner ads, emails, landing pages, and social media
-                  channels.
-                </p>
+
+
+                <div className="glass relative text-white flex flex-col items-center gap-4 md:h-[520px] md:w-[600px] h-[443px] w-[404px]  bg-white/10 border border-white/20 rounded-[35px]">
+                <img
+                  src="/assets/Group 36.png"
+                  alt="ellipses"
+                  className="absolute z-10"
+                ></img>
+                <div className="pt-[80px] text-center pt-8 px-5 md:px-10 flex flex-col md:gap-10 gap-5 font-sans justify-center items-center space-y-10">
+                  <h3 className="font-bold text-2xl md:text-3xl md:px-14 px-8">
+                    We assist you in maximising profits!
+                  </h3>
+                  <p className="font-normal text-base md:text-lg">
+                    Gain substantial commissions for any leads, installations,
+                    purchases, or other transactions made by customers you brought
+                    to Digigrove via the company&apos;s website, blog posts,
+                    articles, banner ads, emails, landing pages, and social media
+                    channels.
+                  </p>
+                </div>
               </div>
+
+
             </div>
-            <div className="text-white relative flex flex-col z-20 items-center gap-4  md:h-[520px] md:w-[600px] h-[443px] w-[404px]  bg-white/10 border border-white/20 rounded-[35px] ">
+
+
+            <div className="flex flex-col justify-center items-center">
+            <div className="mb-[-46px] text-[#8CC540] md:p-4 p-3 -mt-8 md:-mt-10 md:h-[90px] md:w-2/3 z-30 h-[60px] w-1/2 shadow-[0px_5px_5px_rgba(0,0,0,0.35)]  drop-shadow-xl bg-white/10 border border-white/20 rounded-3xl backdrop-blur-3xl">
+                <h1 className="text-center text-2xl md:text-4xl md:pt-1.5 font-bold">
+                  Advertisers
+                </h1>
+              </div>
+
+              <div className="glass text-white relative flex flex-col z-20 items-center gap-4  md:h-[520px] md:w-[600px] h-[443px] w-[404px]  bg-white/10 border border-white/20 rounded-[35px] ">
               <img
                 src="/assets/Group 36.png"
                 alt="ellipses"
                 className="absolute z-10"
               ></img>
-              <div className="text-[#8CC540] md:p-4 p-3 -mt-8 md:-mt-10 md:h-[90px] md:w-2/3 z-30 h-[60px] w-1/2 shadow-[0px_5px_5px_rgba(0,0,0,0.35)]  drop-shadow-xl bg-white/10 border border-white/20 rounded-3xl backdrop-blur-3xl">
-                <h1 className="text-center text-2xl md:text-4xl md:pt-1.5 font-bold">
-                  Advertisers
-                </h1>
-              </div>
-              <div className="text-center pt-8 px-5 md:px-10 flex flex-col md:gap-10 gap-5 font-sans justify-center items-center space-y-10">
+              <div className="pt-[80px] text-center pt-8 px-5 md:px-10 flex flex-col md:gap-10 gap-5 font-sans justify-center items-center space-y-10">
                 <h3 className=" font-bold text-2xl md:text-3xl md:px-14 px-8">
                   Increase the global reach of your business!
                 </h3>
@@ -83,6 +94,8 @@ const Affiliate = () => {
                 </p>
               </div>
             </div>
+            </div>
+
           </div>
         </div>
 

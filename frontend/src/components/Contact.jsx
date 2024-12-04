@@ -121,10 +121,10 @@ const Contact = () => {
         </div>
         <div
           id="right"
-          className="absolute hidden lg:block h-full -mr-[50%] -mt-[20%] w-[57%]  "
+          className="absolute hidden lg:block h-full -mr-[55%] -mt-[20%] w-[57%]  "
         >
           <svg
-            className={`h-[1000px] -mt-[20%] w-[1000px] ${rotate}  transform transition-transform duration-500  `}
+            className={`h-[940px] -mt-[10%] w-[1000px] ${rotate}  transform transition-transform duration-500  `}
             viewBox="0 0 1000 1000"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

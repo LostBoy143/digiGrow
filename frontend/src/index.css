@@ -35,8 +35,6 @@
 }
 .ellipses {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
   background: rgb(140, 197, 64);
   background: linear-gradient(
     90deg,
@@ -318,4 +316,18 @@
   background-image: url("/assets/crumbple-no-blend.png");
   background-color: #232233;
   background-blend-mode: multiply;
+}
+
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);  /* Slightly transparent white */
+  border-radius: 32px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);  /* Creates the blur effect */
+  -webkit-backdrop-filter: blur(10px);  /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+  width: 300px;
 }

@@ -33,8 +33,8 @@ const HeroSection = () => {
       <div id="right-content" className="max-w-[50%]">
         <img
           id="hero-img"
-          src="/assets/Simon Lee Asset-unsplash.png"
-          className="h-[150%] w-[130%] object-cover"
+          src="assets/Simon Lee Asset-unsplash.png"
+          className="max-w-max h-[150%] w-[130%] object-cover"
         ></img>
       </div>
     </div>

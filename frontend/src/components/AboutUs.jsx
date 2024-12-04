@@ -14,7 +14,7 @@ const AboutUs = () => {
           <h1 className="w-full flex justify-center xl:justify-start font-poppins text-[#8cc540] text-4xl xl:text-7xl font-extrabold pb-4 xl:pb-12">
             About Us
           </h1>
-          <h3 className="font-poppins text-center xl:text-left text-[16px] xl:text-[22px]  xl:leading-[32px]  font-xlall py-1 xl:py-4">
+          <h3 className="font-poppins text-center xl:text-left text-[14px] xl:text-[22px]  xl:leading-[32px]  font-xlall py-1 xl:py-4">
             DigiGrove is a company comprised of integrated teams of
             technicians/engineers, project leaders, account managers, writers
             and administrative support staff.

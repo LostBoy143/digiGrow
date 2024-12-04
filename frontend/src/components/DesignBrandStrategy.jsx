@@ -105,7 +105,7 @@ const DesignBrandStrategy = () => {
               fill="#FBE100"
             />
           </svg>
-          <p className="font-medium text-2xl pt-4 md:pt-8 text-white">
+          <p className="font-poppins font-medium text-lg pt-4 md:pt-8 text-white">
             At Digigrove, we are dedicated to create innovative <br /> design
             solutions that integrate seamlessly with <br /> your business needs,
             inspiring growth.

@@ -3,7 +3,7 @@
 @media (min-width: 385px) and (max-width: 488px) {
   #hero-img {
     width: 80vw;
-    height: 86vh;
+    height: 69vh;
     margin-right: -55%;
   }
   #hero-h1 {
@@ -13,7 +13,7 @@
     font-size: 14px;
   }
   #hero-section {
-    height: 60vh !important;
+    height: 45vh !important;
   }
   #left-content {
     /* margin-top: 50px; */
@@ -49,7 +49,7 @@
   }
   #hero-img {
     width: 80vw;
-    height: 110vh;
+    height: 102vh;
     margin-right: -55%;
   }
   #hero-h1 {
@@ -59,20 +59,18 @@
     font-size: 20px;
   }
   #hero-section {
-    height: 80vh;
-    overflow: hidden;
+    height: 69vh;
   }
   #hero-line {
     width: 50px;
     margin-bottom: 10px;
   }
-  #right-content {
+  /* #right-content {
     position: absolute;
     right: 0;
     z-index: -10;
-    /* width: 300px; */
     margin-right: -10%;
-  }
+  } */
   /* About Section*/
 
   #contact-section h1 {
@@ -113,9 +111,9 @@
 }
 @media (max-width: 385px) {
   #hero-img {
-    width: 80vw;
-    height: 94vh;
-    margin-right: -25%;
+    width: 100vw;
+    height: 52vh;
+    margin-left: 80%;
   }
   #hero-h1 {
     font-size: 1rem;
@@ -123,17 +121,14 @@
   #hero-h2 {
     font-size: 14px;
   }
-  #hero-section {
-    height: 100vh !important;
-  }
-  #right-content {
+  /* #right-content {
     width: 100%;
     position: absolute;
     z-index: -10;
     display: flex;
     justify-content: end;
     overflow: hidden;
-  }
+  } */
   #left-content {
     width: 200px;
     position: absolute;
@@ -153,7 +148,7 @@
     font-size: 1.3rem;
   }
   #hero-h2 {
-    font-size: 14px;
+    font-size: 12px;
   }
   #hero-line {
     width: 50px;

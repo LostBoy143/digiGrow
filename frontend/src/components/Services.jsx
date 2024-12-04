@@ -50,16 +50,16 @@ const Services = () => {
 
       <div
         id="serve"
-        className="bg-[url('/assets/crumpled-black-shade.png')] bg-cover relative bg-center w-full stroke-white stroke-1 py-8 xl:py-12 z-20 top-0 grid grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-8 justify-items-center px-2 lg:px-12 2xl:px-24"
+        className="bg-[url('/assets/crumpled-black-shade.png')] bg-cover relative bg-center w-full stroke-white stroke-1 py-8 xl:py-12 z-20 top-0 grid grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-8 justify-items-center px-8 lg:px-12 2xl:px-24"
       >
         {/* ellipse */}
         <div
           id="ellipse-container"
-          className="w-[85vw] h-full flex flex-col justify-between  xl:flex-row  absolute items-center"
+          className="w-[85vw] h-full flex flex-col justify-between  xl:flex-row  absolute items-center py-[40px] md:py-[0px]"
         >
-          <div className="ellipses"></div>
-          <div className="ellipses"></div>
-          <div className="ellipses"></div>
+          <div className="ellipses h-[60px] md:h-[100px] w-[60px] md:w-[100px]"></div>
+          <div className="ellipses h-[60px] md:h-[100px] w-[60px] md:w-[100px]"></div>
+          <div className="ellipses h-[60px] md:h-[100px] w-[60px] md:w-[100px]"></div>
         </div>
         {/* ellipse end */}
         {details.map((item, idx) => {
@@ -74,11 +74,11 @@ const Services = () => {
                 alt=""
               />
               <div className="center text-[#8cc540] md:text-[26px] text-[12px] font-bold">
-                <h1 className="font-poppins text-center text-xl md:text-[28px] font-bold md:leading-[40px]">
+                <h1 className="font-poppins text-center text-[14px] md:text-[28px] font-bold md:leading-[40px]">
                   {item.title}
                 </h1>
               </div>
-              <h3 className="font-poppins text-center  text-[14px] md:text-[18px]">
+              <h3 className="font-poppins text-center  text-[12px] sm:text-[14px] md:text-[18px]">
                 {item.desc}
               </h3>
             </div>

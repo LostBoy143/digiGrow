@@ -259,7 +259,9 @@
     background-repeat: no-repeat; /* Avoids repeating the background */
     transition: background-image 0.5s ease-in-out;
     &.right {
-      animation: leftToRight 2s forwards;
+      /* animation: leftToRight 2s forwards; */
+      transform: translate(212px, -50px) rotate(-340deg);
+    background-image: url("/assets/pexels-yankrukov-7691745.jpg");
     }
     &.left {
       animation: rightToLeft 2s forwards;

@@ -8,7 +8,7 @@ const Marketing = () => {
     setShowDiv(!showDiv);
   };
   return (
-    <div className="relative w-full h-[720px]">
+    <div className="relative w-full">
       <div
         id="marketing-page"
         className={`main-section mt-[72px] overflow-hidden ${
@@ -27,17 +27,17 @@ const Marketing = () => {
           <div
             className={`content h-full  pt-20 ${
               !showDiv
-                ? "-mr-[10rem] w-full text-right"
+                ? "-mr-[25rem] w-full text-right"
                 : "2xl:-ml-[30rem]  w-1/3"
             }`}
           >
-            <h1 className="xl:text-8xl text-6xl font-thunder 2xl:leading-4 md:tracking-wider tracking-wide 2xl:tracking-widest whitespace-nowrap text-[#8CC540] font-semibold mb-6">
+            <h1 className="text-[128px] pb-[12px] tracking-[0.02em] font-thunder 2xl:leading-4 m whitespace-nowrap text-[#8CC540] font-semibold mb-6">
               {!showDiv ? "E-COMMERCE" : "INFLUENCER MARKETING"}
             </h1>
             <p
               className={`${
                 showDiv ? "text-white" : ""
-              } text-xl  font-medium text-[#232233]`}
+              } text-[18px]  font-medium text-[#232233]`}
             >
               {!showDiv
                 ? `Transform your online store with Digigrove's tailored
@@ -69,24 +69,20 @@ const Marketing = () => {
         className={`main-section overflow-hidden right`}
       >
                 <div className="flex relative  pr-10">
-          <div
-            alt="marketing"
-            onScrollCapture={toggleDiv}
-            className={`main-image-grp aspect-auto object-fill right`}
-          ></div>
+
 
           <div
-            className={`content h-full  pt-20 ${
-                "2xl:-ml-[30rem]  w-1/3"
+            className={`content h-full  pt-20 pl-20 ${
+                "w-1/3"
             }`}
           >
-            <h1 className="xl:text-8xl text-6xl font-thunder 2xl:leading-4 md:tracking-wider tracking-wide 2xl:tracking-widest whitespace-nowrap text-[#8CC540] font-semibold mb-6">
+            <h1 className="text-[128px] pb-[12px] tracking-[0.02em] font-thunder 2xl:leading-4 whitespace-nowrap text-[#8CC540] font-semibold mb-6">
               {"INFLUENCER MARKETING"}
             </h1>
             <p
               className={`${
                "text-white"
-              } text-xl  font-medium text-[#232233]`}
+              } text-[18px]  font-medium text-[#232233]`}
             >
               {false
                 ? `Transform your online store with Digigrove's tailored
@@ -106,6 +102,12 @@ const Marketing = () => {
               onScrollCapture={toggleDiv}
             />
           </div>
+
+          <div
+            alt="marketing"
+            onScrollCapture={toggleDiv}
+            className={`main-image-grp aspect-auto object-fill right`}
+          ></div>
         </div>
       </div>
     </div>

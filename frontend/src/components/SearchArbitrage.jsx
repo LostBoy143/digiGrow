@@ -223,6 +223,9 @@ const SearchArbitrage = () => {
             <button
               onMouseEnter={handleHover}
               onMouseLeave={handleHoverLeave}
+              onClick={() => {
+                navigate('/?scrollToContact=true')
+              }}
               className={`${rightbtnWidth} flex justify-between items-center xl:px-4  bg-[#232233] rounded-[10px]  text-white font-bold py-2  duration-300 ease-in-out`}
             >
               {!showText && (
@@ -288,6 +291,9 @@ const SearchArbitrage = () => {
                   <button
                     className=" group-hover:text-black w-60 h-full text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-white bg-white text-black font-semibold rounded-tl-full rounded-bl-full   duration-500 group-hover:bg-white group-hover:border-none   group-hover:rounded-full "
                     id="btn1"
+                    onClick={() => {
+                      navigate('/?scrollToContact=true')
+                    }}
                   >
                     Connect With Us!
                   </button>
@@ -341,6 +347,9 @@ const SearchArbitrage = () => {
                   <button
                     className=" group-hover:text-black w-60 h-full text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-white  bg-white text-black font-semibold rounded-tl-full rounded-bl-full   duration-500 group-hover:bg-white group-hover:border-none   group-hover:rounded-full "
                     id="btn1"
+                    onClick={() => {
+                      navigate('/?scrollToContact=true')
+                    }}
                   >
                     Connect With Us!
                   </button>
@@ -395,6 +404,9 @@ const SearchArbitrage = () => {
                   <button
                     className="group-hover:text-black w-60 h-full text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-white bg-white text-black font-semibold rounded-tl-full rounded-bl-full  duration-500 group-hover:bg-white group-hover:border-none group-hover:rounded-full"
                     id="btn1"
+                    onClick={() => {
+                      navigate('/?scrollToContact=true')
+                    }}
                   >
                     Connect With Us!
                   </button>

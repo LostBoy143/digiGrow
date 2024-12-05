@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
+
 const Affiliate = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="mt-[10%] w-full py-10">
       <div className="text-center lg:px-20 lg:mx-40 sm:mt-10 md:mt-5">
-        <h1 className="xl:text-9xl md:text-6xl text-5xl whitespace-nowrap  font-thunder leading-4 tracking-widest text-[#8CC540] font-bold mb-4">
+        <h1 className="xl:text-[128px] whitespace-nowrap  font-thunder leading-4 tracking-[0.06rem] text-[#8CC540] font-bold mb-16">
           AFFILIATE MARKETING
         </h1>
         <p className="font-poppins font-medium md:text-[18px] text-xl font-medium text-[#232233] md:mx-20 mx-10">
@@ -107,6 +112,9 @@ const Affiliate = () => {
           <button
             className=" group-hover:text-black w-60 h-full text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-white text-white font-semibold rounded-tl-full rounded-bl-full  transition-all duration-500 group-hover:bg-[#8cc540] group-hover:border-none   group-hover:rounded-full "
             id="btn1"
+            onClick={() => {
+              navigate('/?scrollToContact=true')
+            }}
           >
             Connect With Us!
           </button>

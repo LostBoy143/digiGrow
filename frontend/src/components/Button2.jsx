@@ -14,7 +14,7 @@ const Button2 = () => {
       }}
     >
       <button
-        className="text-[22px] font-poppins font-normal w-40 sm:w-60 h-full text-md bg-[#8cc540] text-black  rounded-tl-full rounded-bl-full transition-all duration-500 group-hover:bg-black group-hover:text-[#8cc540] group-hover:rounded-full"
+        className="text-[14px] md:text-[22px] font-poppins font-normal w-40 sm:w-60 h-full text-md bg-[#8cc540] text-black  rounded-tl-full rounded-bl-full transition-all duration-500 group-hover:bg-black group-hover:text-[#8cc540] group-hover:rounded-full"
         id="btn1"
       >
         Connect with Us !

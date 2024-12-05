@@ -25,6 +25,7 @@ const Footer = () => {
             </li>
           </ul>
           <span className="flex items-center gap-4 pt-4">
+            <a href="https://www.instagram.com/digigrovedigital?igsh=bjluNWpsNzdkYm02">
             <svg
               width="36"
               height="36"
@@ -37,6 +38,8 @@ const Footer = () => {
                 fill="#232233"
               />
             </svg>
+            </a>
+
             <svg
               width="30"
               height="26"
@@ -49,6 +52,8 @@ const Footer = () => {
                 fill="#232233"
               />
             </svg>
+
+            <a href="https://www.linkedin.com/company/digigrove-digital-pvt-ltd/">
             <svg
               width="30"
               height="30"
@@ -61,6 +66,7 @@ const Footer = () => {
                 fill="#232233"
               />
             </svg>
+            </a>
           </span>
         </div>
       </div>

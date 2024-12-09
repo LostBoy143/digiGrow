@@ -19,9 +19,9 @@ const DesignBrandStrategy = () => {
   };
   return (
     <div>
-      <div className="w-full bg-[#232233] flex justify-between relative">
-        <div className="md:mt-36 mt-32 mb-[208px] px-8 md:px-20">
-          <h1 className="font-thunder text-5xl md:text-9xl text-[#8cc540]">
+      <div className="w-full bg-[#232233] flex flex-col xl:flex-row justify-between items-center relative">
+        <div className="md:mt-36 mt-32 xl:mb-[208px] px-8 md:px-20">
+          <h1 className="text-center xl:text-left font-thunder text-7xl md:text-9xl text-[#8cc540]">
             DESIGN &<br /> BRAND STRATEGY
           </h1>
           <svg
@@ -105,43 +105,42 @@ const DesignBrandStrategy = () => {
               fill="#FBE100"
             />
           </svg>
-          <p className="font-poppins font-medium text-lg pt-4 md:pt-8 text-white">
+          <p className="text-center xl:text-left font-poppins font-medium text-lg pt-4 md:pt-8 text-white">
             At Digigrove, we are dedicated to create innovative <br /> design
             solutions that integrate seamlessly with <br /> your business needs,
             inspiring growth.
           </p>
         </div>
-        <div className="overflow-hidden ">
+        <div className="overflow-hidden mx-auto">
           <img
             src="/assets/Group 31.png"
             alt="pic"
-            width={1500}
-            height={1500}
-            className={`${rotate} transform transition-transform duration-500 absolute top-0 right-[-168px] h-[720px] w-[720px]`}
+            className={`${rotate} transform transition-transform duration-500 xl:absolute top-0 right-[-168px] md:h-[720px] md:w-[720px] h-[500px] w-[500px]`}
             onMouseEnter={handleHover}
             onMouseLeave={handleHoverLeave}
           />
         </div>
       </div>
-      <div className="flex">
-        <div className="-mt-40 relative">
+      <div className="flex flex-col-reverse xl:flex-row">
+        <div className="-mt-40 relative mx-auto">
           <img
             src="/assets/simon-lee-ynmPY1MLwMs-unsplash 1.png"
             alt="hand"
             height="1030"
             width="900"
+            className="max-h-[1000px] max-w-[500px] aspect-square min-h-[800px]"
           />
         </div>
-        <div className="-ml-52 my-12">
-          <div className="overflow-hidden">
+        <div className="box  my-12">
+          <div className="excluded overflow-hidden mx-auto">
             <h2
-              className={`font-monument w-full pr-[80px] font-extrabold text-right mr-32 capitalize text-5xl tracking-tight text-[#8CC540]`}
+              className={`font-monument w-full xl:pr-[80px] font-extrabold xl:text-right text-center  capitalize text-5xl tracking-tight text-[#8CC540]`}
             >
               DESIGN THAT SPEAKS, <br />
               STRATEGY THAT DELIVERS
             </h2>
           </div>
-          <div className="px-32 py-20 ml-32">
+          <div className="pr-32 py-20 ml-20">
             <div className="flex flex-col my-1 gap-2 justify-start items-end font-poppins relative">
               <img
                 src="/assets/Ellipse 5.png"
@@ -262,7 +261,7 @@ const DesignBrandStrategy = () => {
           </div>
 
           <div
-            className=" rounded-3xl w-[250px] md:w-[650px] overflow-hidden"
+            className=" rounded-3xl  overflow-hidden"
             onMouseEnter={handleHover}
             onMouseLeave={handleHoverLeave}
           >

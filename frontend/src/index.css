@@ -48,19 +48,20 @@
 }
 
 .email-grad {
-  background: rgb(170,0,230);
-  background: linear-gradient(150deg, rgba(170,0,230,0.5) 0%,
-   rgba(255,255,255,0) 40%,
-   rgba(255,255,255,0) 60%,
-    rgba(229,255,194,0.5) 100%);
-
+  background: rgb(170, 0, 230);
+  background: linear-gradient(
+    150deg,
+    rgba(170, 0, 230, 0.5) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(229, 255, 194, 0.5) 100%
+  );
 }
 
 @font-face {
   font-family: "Thunder";
   src: url("THUNDER/Fonts/Web-PS/Thunder-SemiBoldLC.woff2") format("woff2");
 }
-
 
 @font-face {
   font-family: "PPMonumentExtended";
@@ -101,7 +102,6 @@
   font-weight: 400;
   font-style: normal;
 } */
-
 
 /* Optional: Define a custom class for the font */
 
@@ -197,11 +197,11 @@
   }
 }
 
-.animate-pop{
+.animate-pop {
   animation: pop 0.45s forwards;
 }
 
-.animate-pop-reversed{
+.animate-pop-reversed {
   animation: pop-reversed 0.45s forwards;
 }
 
@@ -233,7 +233,6 @@
   }
 }
 
-
 #marketing-page {
   background-color: white;
   transition: background-color 2s ease-in-out;
@@ -252,7 +251,7 @@
     max-width: 700px;
     z-index: 1;
     transform: translate(-200px, -50px) rotate(-20deg);
-    background-image: url("/assets/ecom.webp");
+    background-image: url("/assets/image[1].png");
     background-size: cover; /* Ensures the image covers the container */
     background-attachment: fixed; /* Keeps the background fixed in place when scrolling */
     background-position: center; /* Centers the image */
@@ -261,7 +260,7 @@
     &.right {
       /* animation: leftToRight 2s forwards; */
       transform: translate(212px, -50px) rotate(-340deg);
-    background-image: url("/assets/pexels-yankrukov-7691745.jpg");
+      background-image: url("/assets/image[2].png");
     }
     &.left {
       animation: rightToLeft 2s forwards;
@@ -320,13 +319,12 @@
   background-blend-mode: multiply;
 }
 
-
 .glass {
-  background: rgba(255, 255, 255, 0.1);  /* Slightly transparent white */
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
   border-radius: 32px;
   padding: 2rem;
-  backdrop-filter: blur(10px);  /* Creates the blur effect */
-  -webkit-backdrop-filter: blur(10px);  /* For Safari */
+  backdrop-filter: blur(10px); /* Creates the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: white;

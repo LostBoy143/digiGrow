@@ -25,7 +25,7 @@ const Marketing = () => {
           ></div>
 
           <div
-            className={`content h-full  pt-20 ${
+            className={`content h-full  pt-40 ${
               !showDiv
                 ? "-mr-[25rem] w-full text-right"
                 : "2xl:-ml-[30rem]  w-1/3"
@@ -37,7 +37,7 @@ const Marketing = () => {
             <p
               className={`${
                 showDiv ? "text-white" : ""
-              } text-[18px]  font-medium text-[#232233]`}
+              } text-[18px] pt-10  font-medium text-[#232233]`}
             >
               {!showDiv
                 ? `Transform your online store with Digigrove's tailored
@@ -72,7 +72,7 @@ const Marketing = () => {
 
 
           <div
-            className={`content h-full  pt-20 pl-20 ${
+            className={`content h-full  pt-40 pl-20 ${
                 "w-1/3"
             }`}
           >
@@ -82,7 +82,7 @@ const Marketing = () => {
             <p
               className={`${
                "text-white"
-              } text-[18px]  font-medium text-[#232233]`}
+              } text-[18px] pt-10  font-medium text-[#232233]`}
             >
               {false
                 ? `Transform your online store with Digigrove's tailored

@@ -16,7 +16,7 @@
     height: 45vh !important;
   }
   #left-content {
-    /* margin-top: 50px; */
+    margin-top: 30px;
     width: 250px;
     margin-left: 5%;
   }
@@ -112,7 +112,7 @@
 @media (max-width: 385px) {
   #hero-img {
     width: 100vw;
-    height: 52vh;
+    height: 60vh;
     margin-left: 80%;
   }
   #hero-h1 {
@@ -141,7 +141,7 @@
     margin-left: 10px;
   }
   #hero-section {
-    height: 60vh;
+    height: 75vh;
   }
 
   #hero-h1 {
@@ -179,7 +179,6 @@
 }
 
 @media (min-width: 1900px) {
-
   #left-content {
     width: 580px;
   }

@@ -24,14 +24,14 @@ const Affiliate = () => {
           <img
             src="/assets/file(3) 1.png"
             alt="paw"
-            className="overflow-hidden absolute md:-top-80 -top-64  -left-80 xl:-left-[374px]"
+            className="overflow-hidden absolute md:-top-80 -top-64  -left-64 md:-left-80 xl:-left-[374px]"
             height={800}
             width={800}
           />
           <img
             src="/assets/file(4) 1.png"
             alt="paw"
-            className="overflow-hidden absolute -bottom-80 md:-bottom-[440px] -right-80 md:-right-[314px]"
+            className="overflow-hidden absolute -bottom-80 md:-bottom-[440px] -right-72 md:-right-80 xl:-right-[314px]"
             height={720}
             width={720}
           />

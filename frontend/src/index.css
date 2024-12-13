@@ -244,11 +244,9 @@
   }
 
   .main-image-grp {
+    /* margin-left: -300px; */
     border-radius: 28px;
-    min-height: 700px;
-    max-height: 700px;
-    min-width: 700px;
-    max-width: 700px;
+
     z-index: 1;
     transform: translate(-200px, -50px) rotate(-20deg);
     background-image: url("/assets/image[1].png");
@@ -268,14 +266,15 @@
   }
 
   .pinner {
-    height: 250px;
-    width: 250px;
-    bottom: 50px;
+    position: absolute;
+    bottom: 10px;
+    height: 200px;
+    width: 200px;
     background-image: url("/assets/pinner-black.svg");
     background-size: cover; /* Ensures the image covers the container */ /* Keeps the background fixed in place when scrolling */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Avoids repeating the background */
-    left: calc(100vw - 300px);
+    left: calc(100vw - 280px);
     &.right {
       animation: pinnerForward 2s forwards;
     }

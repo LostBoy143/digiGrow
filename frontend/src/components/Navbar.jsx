@@ -1,18 +1,17 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, ReactDOM } from "react";
 import { scroller } from "react-scroll";
-import { Link, useNavigate, useLocation } from 'react-router-dom'
-
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const scrolls = {
-    "Home": "Home",
-    "About": "AboutUs",
-    "Services": "Services",
-    "Contact": "Contact"
-  }
+    Home: "Home",
+    About: "AboutUs",
+    Services: "Services",
+    Contact: "Contact",
+  };
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -32,7 +31,10 @@ const Navbar = () => {
       </div>
       <button
         className="block md:hidden"
-        onClick={() => setMenuOpen(!menuOpen)}
+        onClick={() => {
+          console.log(menuOpen);
+          setMenuOpen(!menuOpen);
+        }}
       >
         <svg
           className="w-8 h-8 text-black"
@@ -59,81 +61,80 @@ const Navbar = () => {
             <div
               key={index}
               onClick={() => {
-                navigate('/')
+                navigate("/");
                 setTimeout(() => {
                   scroller.scrollTo(scrolls[item] || "#", {
                     duration: 500,
                     smooth: true,
-                    offset: -50
-                  })
-                  setActiveIndex(index)
-                })
-              }
-            }
+                    offset: -50,
+                  });
+                  setActiveIndex(index);
+                });
+              }}
               className={`rounded-full  flex font-semi-bold justify-center font-semibold items-center cursor-pointer w-1/4 h-full duration-500 ${
                 activeIndex === index
                   ? "bg-black text-white"
                   : "bg-slate-300 text-black"
               }`}
             >
-              <li id="nav-li"
-              className="font-poppins font-normal"
-              >
+              <li id="nav-li" className="font-poppins font-normal">
                 {item}
               </li>
             </div>
           ))}
         </ul>
       </div>
-      <div
-        className={`absolute top-0 left-0 right-0 bg-white z-20 p-6 shadow-md transform ${
-          menuOpen ? "translate-y-0" : "-translate-y-full"
-        } transition-transform duration-300 sm:hidden`}
-      >
-        <button
-          className="absolute top-4 right-4"
-          onClick={() => setMenuOpen(false)}
+      {menuOpen && (
+        <div
+          className={`absolute w-1/2 top-0 h-screen right-0 bg-white z-20 py-6 shadow-md transform ${
+            menuOpen ? "translate-y-0" : "-translate-y-full"
+          } transition-transform duration-300 `}
         >
-          <svg
-            className="w-6 h-6 text-black"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <button
+            className="absolute  top-8 right-8"
+            onClick={() => setMenuOpen(false)}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-
-        <ul className="flex flex-col gap-4 mt-8">
-          {" "}
-          {navItems.map((item, index) => (
-            <Link
-              key={index}
-              to={item === "Home" ? "/" : "#"}
-              className={`rounded-lg p-4 text-center font-semibold cursor-pointer duration-500 ${
-                activeIndex === index
-                  ? "bg-black text-white"
-                  : "bg-gray-200 text-black"
-              }`}
+            <svg
+              className="w-6 h-6 text-black"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <li
-                onClick={() => {
-                  setActiveIndex(index);
-                  setMenuOpen(false);
-                }}
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <ul className="flex flex-col border-black border-t-[1px]  mt-10">
+            {" "}
+            {navItems.map((item, index) => (
+              <Link
+                key={index}
+                to={item === "Home" ? "/" : "#"}
+                className={` py-4 pr-8  border-black border-b-[1px] text-right font-poppins capitalize font-normal tracking-wide cursor-pointer duration-500 ${
+                  activeIndex === index
+                    ? "bg-black text-white"
+                    : "bg-white text-black"
+                }`}
               >
-                {item}
-              </li>
-            </Link>
-          ))}
-        </ul>
-      </div>
+                <li
+                  onClick={() => {
+                    setActiveIndex(index);
+                    setMenuOpen(false);
+                  }}
+                >
+                  {item}
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

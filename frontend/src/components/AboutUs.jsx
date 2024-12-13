@@ -24,7 +24,7 @@ const AboutUs = () => {
             sell high quality products.
           </h3>
         </div>
-        <div className="relative 2xl:p-10 xl:w-full xl:min-w-[700px] min-w-[400px] pr-10 w-3/4 m-auto flex overflow-hidden">
+        <div className="relative 2xl:p-10 xl:w-full xl:min-w-[700px] min-w-[300px] pr-10 w-3/4 m-auto flex overflow-hidden">
           <img
             src="/assets/hero-about.png" // Replace with the correct path
             alt="Clipped Example"

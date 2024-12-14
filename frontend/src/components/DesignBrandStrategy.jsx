@@ -134,13 +134,13 @@ const DesignBrandStrategy = () => {
         <div className="box  my-12">
           <div className="excluded overflow-hidden mx-auto">
             <h2
-              className={`font-monument w-full xl:pr-[80px] font-extrabold xl:text-right text-center  capitalize text-5xl tracking-tight text-[#8CC540]`}
+              className={`font-monument w-full xl:pr-[80px] font-black xl:text-right text-center  capitalize text-5xl tracking-tight text-[#8CC540]`}
             >
               DESIGN THAT SPEAKS, <br />
               STRATEGY THAT DELIVERS
             </h2>
           </div>
-          <div className="pr-32 py-20 ml-20">
+          <div className=" md:p-20 sm:p-16 p-12 ">
             <div className="flex flex-col my-1 gap-2 justify-start items-end font-poppins relative">
               <img
                 src="/assets/Ellipse 5.png"

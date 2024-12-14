@@ -5,7 +5,7 @@ const SearchArbitrage = () => {
   const [leftbtnWidth, setLeftBtnWidth] = React.useState("w-[534px]");
   const [rightbtnWidth, setRightBtnWidth] = React.useState("xl:w-40 w-28");
   const [showText, setShowText] = React.useState(true);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   /* Card states */
   const [isMobile, setIsMobile] = React.useState(false);
@@ -161,7 +161,7 @@ const SearchArbitrage = () => {
           </defs>
         </svg>
         <div className="max-w-[600px] relative md:space-x-6 text-center xl:text-left space-x-3 md:tracking-wide tracking-normal">
-          <h1 className="xl:text-9xl font-thunder md:tracking-wide tracking-normal font-medium md:text-7xl text-6xl text-[#8cc540] md:m-2 m-1 md:p-2 p-1">
+          <h1 className="xl:text-9xl pt-6 font-thunder md:tracking-wide tracking-normal font-medium md:text-7xl text-6xl text-[#8cc540] md:m-2 m-1 md:p-2 p-1">
             SEARCH ARBITRAGE
           </h1>
           <p className="font-poppins text-lg font-normal text-[#232233]">
@@ -171,7 +171,7 @@ const SearchArbitrage = () => {
           </p>
         </div>
         <div className="relative ">
-          <div className="rounded-[10px] overflow-hidden w-full max-w-[450px] md:max-w-[550px] lg:max-w-[650px] xl:max-w-[700px] lg:max-h-[400px] h-auto aspect-w-16 aspect-h-9">
+          <div className="rounded-[10px] overflow-hidden w-full max-w-[350px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[650px] xl:max-w-[700px] lg:max-h-[400px] h-auto aspect-w-16 aspect-h-9">
             <img
               src="/assets/Social Media Posts Mockups 1.png"
               alt="tour"
@@ -179,12 +179,12 @@ const SearchArbitrage = () => {
             />
           </div>
 
-          <div className="flex gap-1 rounded-[10px] py-1  max-w-[450px] md:max-w-[550px] lg:max-w-[650px] xl:max-w-[700px] xl:h-40 lg:h-32 md:h-28 h-24 ">
+          <div className="flex gap-1 rounded-[10px] py-1  max-w-[350px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[650px] xl:max-w-[700px] xl:h-40 lg:h-32 md:h-28 h-24 ">
             <button
               className={`${leftbtnWidth} bg-[#8cc540] overflow-hidden rounded-[10px]  text-white font-bold py-1  duration-300 ease-in-out`}
             >
               {showText ? (
-                <div className="pl-6 md:pt-6 p-2 w-full flex justify-between ">
+                <div className="pl-6 md:py-3 p-2 w-full flex justify-between ">
                   <span
                     className={` font-porter text-[#232233] xl:text-3xl md:text-xl text-sm  duration-700 ease-in-out text-left`}
                   >
@@ -224,7 +224,7 @@ const SearchArbitrage = () => {
               onMouseEnter={handleHover}
               onMouseLeave={handleHoverLeave}
               onClick={() => {
-                navigate('/?scrollToContact=true')
+                navigate("/?scrollToContact=true");
               }}
               className={`${rightbtnWidth} flex justify-between items-center xl:px-4  bg-[#232233] rounded-[10px]  text-white font-bold py-2  duration-300 ease-in-out`}
             >
@@ -265,7 +265,7 @@ const SearchArbitrage = () => {
         <div className="flex xl:flex-row flex-col justify-center items-center md:p-20 p-10">
           <div
             onMouseEnter={() => handleCardClick("card1")}
-            className={`relative min-h-[275px]  xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group40.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
+            className={`relative min-h-[275px]  xl:h-[25rem] w-[21rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group40.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
               activeCard === "card1" ? "xl:rotate-0" : "xl:rotate-45"
             }`}
           >
@@ -292,7 +292,7 @@ const SearchArbitrage = () => {
                     className=" group-hover:text-black w-60 h-full text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-white bg-white text-black font-semibold rounded-tl-full rounded-bl-full   duration-500 group-hover:bg-white group-hover:border-none   group-hover:rounded-full "
                     id="btn1"
                     onClick={() => {
-                      navigate('/?scrollToContact=true')
+                      navigate("/?scrollToContact=true");
                     }}
                   >
                     Connect With Us!
@@ -322,7 +322,7 @@ const SearchArbitrage = () => {
           </div>
           <div
             onMouseEnter={() => handleCardClick("card2")}
-            className={`relative min-h-[275px] xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group38.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
+            className={`relative min-h-[275px] xl:h-[25rem] w-[21rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group38.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
               activeCard === "card2" ? "xl:rotate-0" : "xl:rotate-45"
             }`}
           >
@@ -348,7 +348,7 @@ const SearchArbitrage = () => {
                     className=" group-hover:text-black w-60 h-full text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-white  bg-white text-black font-semibold rounded-tl-full rounded-bl-full   duration-500 group-hover:bg-white group-hover:border-none   group-hover:rounded-full "
                     id="btn1"
                     onClick={() => {
-                      navigate('/?scrollToContact=true')
+                      navigate("/?scrollToContact=true");
                     }}
                   >
                     Connect With Us!
@@ -378,7 +378,7 @@ const SearchArbitrage = () => {
           </div>
           <div
             onMouseEnter={() => handleCardClick("card3")}
-            className={`relative min-h-[275px] xl:h-[25rem] w-[25rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group39.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
+            className={`relative min-h-[275px] xl:h-[25rem] w-[21rem] rounded-3xl overflow-hidden xl:min-w-[25rem] cursor-pointer bg-[url('/assets/Group39.png')] bg-cover p-8 m-4 flex items-center justify-center gap-10 text-center text-white font-poppins transition-transform duration-500  ${
               activeCard === "card3" ? "xl:rotate-0" : "xl:rotate-45"
             }`}
           >
@@ -405,7 +405,7 @@ const SearchArbitrage = () => {
                     className="group-hover:text-black w-60 h-full text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-white bg-white text-black font-semibold rounded-tl-full rounded-bl-full  duration-500 group-hover:bg-white group-hover:border-none group-hover:rounded-full"
                     id="btn1"
                     onClick={() => {
-                      navigate('/?scrollToContact=true')
+                      navigate("/?scrollToContact=true");
                     }}
                   >
                     Connect With Us!

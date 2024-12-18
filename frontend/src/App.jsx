@@ -16,6 +16,7 @@ import BrandPage from "./pages/BrandPage";
 import EmailLeadPage from "./pages/EmailLeadPage";
 import EcommercePage from "./pages/EcommercePage";
 import AffiliateMarketingPage from "./pages/AffiliateMarketingPage";
+import ThankYou from "./components/ThankYou";
 
 function App() {
   return (
@@ -47,6 +48,10 @@ function App() {
         <Route
           path="/project"
           element={<Vigilante />}
+        />
+        <Route
+          path="/thankyou"
+          element={<ThankYou />}
         />
       </Routes>
 

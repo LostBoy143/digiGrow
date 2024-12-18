@@ -85,6 +85,7 @@ const Contact = () => {
               onChange={(e) => change(e)}
               placeholder="Name"
             />
+            <input type="hidden" name="_next" value="https://extraordinary-sunflower-12d7fc.netlify.app/thankyou"></input>
             <input
               className="w-full h-[50px] p-2 bg-transparent border-[1px]  border-semi-transparent-white  outline-none rounded-lg text-white"
               type="text"

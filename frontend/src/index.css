@@ -325,8 +325,11 @@
     background-position: center;
     background-repeat: no-repeat;
     transform: scaleX(-1);
-    left: calc(100vw - 60%);
+    left: calc(100vw - 80%);
     transition: transform 2s ease-in-out;
+    &.bottom {
+      left: calc(100vw - 40%);
+    }
     &.right {
       animation: clipLeanForward 2s forwards;
     }

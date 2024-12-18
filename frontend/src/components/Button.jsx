@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
-const Button = () => {
+const Button = ({ ctaText = "Submit" }) => {
   return (
     <div
       id="button"
@@ -12,7 +13,7 @@ const Button = () => {
         className=" group-hover:text-black w-32 h-full text-md md:text-xl bg-transparent border-t-[1px] border-b-[1px] border-l-[1px] border-half-white text-white font-medium font-poppins rounded-tl-full rounded-bl-full  transition-all duration-500 group-hover:bg-[#8cc540] group-hover:border-none   group-hover:rounded-full "
         id="btn1"
       >
-        Submit
+        { ctaText }
       </button>
       <button
         className="w-12 h-full  bg-transparent  text-white border-t-[1px] border-r-[1px] border-b-[1px] border-half-white font-bold rounded-tr-full rounded-br-full flex justify-start items-center  transition-all duration-500 group-hover:bg-[#8cc540] group-hover:border-none   group-hover:rounded-full  "
@@ -35,6 +36,10 @@ const Button = () => {
       </button>
     </div>
   );
+};
+
+Button.propTypes = {
+  ctaText: PropTypes.string,
 };
 
 export default Button;

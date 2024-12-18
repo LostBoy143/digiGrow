@@ -38,7 +38,7 @@ const Marketing = () => {
             <p
               className={`${
                 showDiv ? "text-white" : ""
-              } text-[18px] font-medium text-[#232233]`}
+              } text-[18px] font-medium text-[#232233] -mt-[32px]`}
             >
               {!showDiv
                 ? `Transform your online store with Digigrove's tailored
@@ -87,7 +87,7 @@ const Marketing = () => {
               INFLUENCER <br /> MARKETING
             </h1>
             <p
-              className={`text-white md:text-[18px] text-sm xl:text-2xl xl:pt-16 lg:pt-8 pt-4   font-medium `}
+              className={`text-white text-[18px] font-medium -mt-[2px] `}
             >
               {`Leverage our global network of influencers to build authentic connections with your target audience. Digigrove ensures impactful collaborations that drive visibility and growth.`}
             </p>
@@ -102,7 +102,7 @@ const Marketing = () => {
           </div>
           <div className="inset-0 left-1/2 top-[15%] text-center p-4">
             <div
-              className={`clip absolute right`}
+              className={`clip bottom absolute right`}
               onScrollCapture={toggleDiv}
             />
           </div>

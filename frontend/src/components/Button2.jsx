@@ -2,22 +2,27 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { scroller } from "react-scroll";
+import PropTypes from "prop-types";
 
-const Button2 = () => {
+const Button2 = ({ ctaText = "Connect with Us !", navigateToContact = true }) => {
   const navigate = useNavigate();
   return (
     <div
       id="button"
       className="group flex h-10 sm:h-16 duration-1000 w-52 sm:w-72"
       onClick={() => {
-        navigate('/?scrollToContact=true')
+        if (navigateToContact){
+          navigate('/?scrollToContact=true')
+        }else {
+          navigate('/')
+        }
       }}
     >
       <button
         className="text-[14px] md:text-[22px] font-poppins font-normal w-40 sm:w-60 h-full text-md bg-[#8cc540] text-black  rounded-tl-full rounded-bl-full transition-all duration-500 group-hover:bg-black group-hover:text-[#8cc540] group-hover:rounded-full"
         id="btn1"
       >
-        Connect with Us !
+        { ctaText }
       </button>
       <button
         className="w-16 h-full bg-[#8cc540] text-black font-bold rounded-tr-full rounded-br-full flex justify-start items-center transition-all duration-500 group-hover:bg-black group-hover:rounded-full"
@@ -40,6 +45,11 @@ const Button2 = () => {
       </button>
     </div>
   );
+};
+
+Button2.propTypes = {
+  ctaText: PropTypes.string,
+  navigateToContact: PropTypes.bool
 };
 
 export default Button2;

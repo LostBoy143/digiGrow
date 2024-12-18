@@ -40,7 +40,7 @@ const Accord = () => {
           >
             <h2
               id="about-h2"
-              className="group-hover:text-[#8cc540] font-semibold lg:leading-4percent  lg:tracking-wider  md:duration-500 text-3xl md:text-5xl xl:text-6xl md:group-hover:text-[26px] lg:group-hover:text-[66px]"
+              className="group-hover:text-[#8cc540] font-semibold lg:leading-4percent  lg:tracking-wider  md:duration-500 text-3xl md:text-5xl xl:text-6xl lg:group-hover:text-[66px]"
             >
               {item.name}
             </h2>

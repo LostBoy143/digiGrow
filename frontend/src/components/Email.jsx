@@ -8,7 +8,7 @@ const Email = () => {
       id="email-marketing-container"
       className="lg:mt-[152px] mt-28 w-full flex  gap-6 xl:flex-wrap  items-center xl:items-start flex-col xl:flex-row pt-12 sm:py-0  "
     >
-      <div className="main flex flex-col md:flex-row">
+      <div className="main flex flex-col md:flex-row md:pr-[92px]">
         <div className="left-side h-auto md:pl-[108px]  h-full w-full flex flex-col  sm:justify-between ">
           <div
             id="text"
@@ -27,13 +27,14 @@ const Email = () => {
             </h5>
           </div>
 
-          <div className="hidden md:block md:mt-[200px]">
+          <div className="hidden md:block md:mt-[160px]">
             <Button2 />
           </div>
         </div>
 
         <div className="right-side  h-full w-full flex justify-center items-center">
-          <div className="flex flex-col items-center h-[220px] w-[220px] sm:h-[280px] sm:w-[346px] md:h-[390px] md:w-[456px] 2xl:h-[690px] 2xl:w-[756px] md:ml-4 sm:mb-[120px] md:mb-0">
+          {/* <div className="flex flex-col items-center h-[220px] w-[220px] sm:h-[280px] sm:w-[346px] md:h-[390px] md:w-[456px] 2xl:h-[690px] 2xl:w-[756px] md:ml-4 sm:mb-[120px] md:mb-0"> */}
+          <div className="flex flex-col items-center md:ml-4 sm:mb-[120px] md:mb-0">
             <img
               src="/assets/choosy/Frame32.png"
               alt="Responsive Image"
